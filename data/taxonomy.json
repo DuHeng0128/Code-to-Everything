@@ -3,8 +3,8 @@
     "id": "vision",
     "title": "Visual reasoning & graphics",
     "title_zh": "视觉推理与图形",
-    "description": "Programs connect perception, reasoning and editable visual outputs.",
-    "description_zh": "程序连接感知、推理和可编辑的视觉产物。",
+    "description": "Answer visual questions and produce editable graphics.",
+    "description_zh": "回答视觉问题，生成可编辑图形。",
     "subcategories": [
       {
         "id": "reasoning",
@@ -26,14 +26,23 @@
         "title": "Perception & tool-orchestration context",
         "title_zh": "感知与工具编排参照"
       }
+    ],
+    "overview": "Visual programs represent either reasoning steps or editable graphics. NS-VQA uses symbolic operations; VisProg composes fixed visual modules; ViperGPT adds Python control flow; PyVision constructs image-processing tools during inference. Chart generation uses rendered figures as feedback, extending evaluation to data presentation and layout.",
+    "overview_zh": "视觉程序有两种主要产物：推理步骤与可编辑图形。NS-VQA 使用符号操作，VisProg 组合固定视觉模块，ViperGPT 将模块接入 Python 控制流，PyVision 进一步在运行中编写图像处理工具。图表生成则以渲染图为反馈，评价从程序执行扩展到数据表达与版面质量。",
+    "focus_papers": [
+      "VisProg",
+      "ViperGPT",
+      "PyVision",
+      "MatPlotAgent",
+      "JanusCoder"
     ]
   },
   {
     "id": "media",
     "title": "Audio, video & documents",
     "title_zh": "音频、视频与文档",
-    "description": "Distinguish model-written programs, compiled scripts and expert generation models.",
-    "description_zh": "区分模型直接写代码、脚本编译器和专用生成模型。",
+    "description": "Arrange sound, animation and document layout through programs.",
+    "description_zh": "通过程序组织声音、动画和文档布局。",
     "subcategories": [
       {
         "id": "audio",
@@ -50,14 +59,24 @@
         "title": "Slides, posters & document programs",
         "title_zh": "幻灯片、海报与文档程序"
       }
+    ],
+    "overview": "Multimedia programs organize time, assets and layouts. WavJourney compiles audio-event scripts into mixing programs; WavCraft generates audio-tool workflows. SlideCoder reconstructs supplied designs, whereas Paper2Poster selects paper content and allocates poster space. Design reconstruction and information compression have different inputs and evaluation targets.",
+    "overview_zh": "多媒体生成中的代码负责时间组织、资产组合与版面构造。WavJourney 将音频事件脚本编译成混音程序；WavCraft 直接编排音频工具。SlideCoder 从参考设计重建页面，Paper2Poster 则从论文中选择内容并分配版面。两者分别对应设计还原与信息压缩，输入条件和评价目标不同。",
+    "focus_papers": [
+      "WavJourney",
+      "WavCraft",
+      "SlideCoder",
+      "Paper2Poster",
+      "Code2Video",
+      "Table2LaTeXRL"
     ]
   },
   {
     "id": "spatial",
     "title": "3D, CAD & scene reconstruction",
-    "title_zh": "3D、CAD与场景重建",
-    "description": "An executable construction can preserve editable structure that a final image or mesh does not.",
-    "description_zh": "可执行构造能保留最终图像或网格未显式表达的可编辑结构。",
+    "title_zh": "3D、CAD 与场景重建",
+    "description": "Recover construction, articulation and scene-editing operations.",
+    "description_zh": "恢复建模步骤、关节结构与场景编辑操作。",
     "subcategories": [
       {
         "id": "reconstruction",
@@ -74,14 +93,21 @@
         "title": "Procedural shape & scene editing",
         "title_zh": "程序化形状与场景编辑"
       }
+    ],
+    "overview": "3D programs encode construction histories, articulation or scene properties. CAD-Recode maps point clouds to sketch-and-extrude programs; Real2Code maps part bounding boxes to joints; BlenderAlchemy searches edits to materials, geometry and lighting. Surface similarity, joint error and rendered appearance measure different aspects of these outputs.",
+    "overview_zh": "三维程序分别描述构造历史、运动结构和场景属性。CAD-Recode 将点云映射为草图—拉伸程序；Real2Code 将部件包围盒映射为关节结构；BlenderAlchemy 搜索已有场景的材质、几何与灯光修改。几何相似度衡量重建表面，关节误差衡量运动结构，渲染评价衡量编辑效果。",
+    "focus_papers": [
+      "CADRecode",
+      "Real2Code",
+      "BlenderAlchemy"
     ]
   },
   {
     "id": "digital",
     "title": "Computer use & digital workflows",
-    "title_zh": "Computer use与数字工作流",
-    "description": "Code actions, browser operations and GUI interaction solve different parts of a workflow.",
-    "description_zh": "代码动作、浏览器操作和GUI交互承担工作流中不同的任务。",
+    "title_zh": "电脑操作与数字工作流",
+    "description": "Combine tools, browsing and computer actions to finish tasks.",
+    "description_zh": "组合工具、浏览与电脑操作，完成数字任务。",
     "subcategories": [
       {
         "id": "actions",
@@ -98,14 +124,20 @@
         "title": "Digital-task evaluation",
         "title_zh": "数字任务评估"
       }
+    ],
+    "overview": "Code actions store tool results in variables and compose subsequent operations through loops, branches and functions. CodeAct compares code, JSON and text actions under the same model; OpenHands-Versa applies a code workspace to multiple non-software tasks. Browser, desktop and enterprise environments expose different interfaces, jointly constraining the action space and task outcomes.",
+    "overview_zh": "代码动作把工具返回值保存在变量中，用循环、分支和函数组合后续操作。CodeAct 在同一模型下比较代码、JSON 与文本动作；OpenHands-Versa 将代码环境用于多类非软件任务。浏览器、操作系统和企业应用开放的接口不同，任务成功率取决于动作表示与环境权限的共同作用。",
+    "focus_papers": [
+      "CodeAct",
+      "OpenHandsVersa"
     ]
   },
   {
     "id": "robotics",
     "title": "Embodied agents & robotics",
     "title_zh": "具身智能与机器人",
-    "description": "Separate policies, reusable skills, reward programs and training-data generation.",
-    "description_zh": "区分策略、可复用技能、奖励程序和训练数据生成。",
+    "description": "Write policies, accumulate skills or generate training signals.",
+    "description_zh": "编写策略、积累技能，或生成训练信号。",
     "subcategories": [
       {
         "id": "policies",
@@ -127,14 +159,24 @@
         "title": "Vision-language-action comparators",
         "title_zh": "VLA参照路线"
       }
+    ],
+    "overview": "Robot programs intervene at different stages of control and learning. Code as Policies composes control APIs; VoxPoser builds spatial value maps for a planner; Eureka generates rewards; GenSim2 generates demonstrations. Voyager accumulates successful programs in a skill library. API composition, reward optimization and skill reuse entail different training costs and generalization tests.",
+    "overview_zh": "机器人程序介入控制与学习的不同环节：Code as Policies 组合控制 API，VoxPoser 构造空间价值图供规划器求解；Eureka 生成奖励，GenSim2 生成训练示范。Voyager 将成功程序积累为技能库。API 组合、奖励优化与经验复用因此对应不同的训练成本和泛化实验。",
+    "focus_papers": [
+      "CodeAsPolicies",
+      "VoxPoser",
+      "Eureka",
+      "GenSim2",
+      "Voyager",
+      "RoboticProgrammer"
     ]
   },
   {
     "id": "worlds",
     "title": "World models & environment construction",
     "title_zh": "世界模型与环境构建",
-    "description": "Transition code, next-observation code and explicit state with neural rendering are different targets.",
-    "description_zh": "转移程序、下一观察代码、显式状态与神经渲染对应不同的建模对象。",
+    "description": "Predict transitions, render observations or maintain persistent state.",
+    "description_zh": "预测状态转移、渲染观察，或维护持久状态。",
     "subcategories": [
       {
         "id": "transition",
@@ -151,14 +193,22 @@
         "title": "Neural world-model comparators",
         "title_zh": "神经世界模型参照"
       }
+    ],
+    "overview": "Programmatic world models differ in their prediction targets. WorldCoder and GIF-MCTS produce transition and reward functions for repeated planner queries; Code2World represents the next interface in HTML; other models maintain entities and persistent state. Transition accuracy, planning return and visual consistency assess dynamics, decisions and observations respectively.",
+    "overview_zh": "程序化世界模型的区别首先在预测对象。WorldCoder 与 GIF-MCTS 输出状态转移及奖励函数，供规划器反复调用；Code2World 用 HTML 表示下一界面；另一些工作显式维护实体与持久状态。转移准确率、长程规划回报和画面一致性分别对应模型的动力学、决策与观察层。",
+    "focus_papers": [
+      "WorldCoder",
+      "GIFMCTS",
+      "Code2World",
+      "ProgrammableWorldModel"
     ]
   },
   {
     "id": "math",
     "title": "Mathematics & formal proofs",
     "title_zh": "数学与形式化证明",
-    "description": "Computation, a checked construction and a formal proof support different conclusions.",
-    "description_zh": "计算、经检查的构造与形式证明支持不同层次的结论。",
+    "description": "Compute answers, search formal proofs and explore constructions.",
+    "description_zh": "计算答案、搜索形式证明，探索数学构造。",
     "subcategories": [
       {
         "id": "computation",
@@ -175,14 +225,23 @@
         "title": "Mathematical research systems",
         "title_zh": "数学研究系统"
       }
+    ],
+    "overview": "Computational reasoning maps problems to executable steps; formal proving maps propositions to checkable derivations. PAL delegates calculation to an interpreter; Chain of Code adds model-based simulation for semantic operations. LeanDojo supports premise retrieval and tactic execution; DeepSeek-Prover-V2 constructs training data through subgoal decomposition; AlphaProof uses formal feedback for learning and test-time adaptation.",
+    "overview_zh": "计算推理将题意映射为可执行步骤，形式证明将命题映射为可检查的推导。PAL 委托解释器完成计算；Chain of Code 为语义操作引入模型模拟。LeanDojo 支持前提检索与策略执行，DeepSeek-Prover-V2 用子目标分解构造训练数据，AlphaProof 将形式反馈用于学习和测试时适应。",
+    "focus_papers": [
+      "PAL",
+      "ChainOfCode",
+      "LeanDojo",
+      "DeepSeekProverV2",
+      "AlphaProof"
     ]
   },
   {
     "id": "science",
     "title": "Scientific & algorithmic discovery",
     "title_zh": "科学与算法发现",
-    "description": "Search code, scientific objectives and experimental confirmation must be examined together.",
-    "description_zh": "结合搜索程序、科学目标和实验确认来理解成果。",
+    "description": "Search algorithms and equations, run analyses and physical experiments.",
+    "description_zh": "搜索算法与方程，开展分析和物理实验。",
     "subcategories": [
       {
         "id": "algorithms",
@@ -204,14 +263,24 @@
         "title": "Scientific evaluation & reproduction",
         "title_zh": "科学评估与复现"
       }
+    ],
+    "overview": "Scientific program search depends on computable candidate evaluation. FunSearch and AlphaEvolve optimize programs that generate solutions; LLM-SR separates equation structure from numerical parameter fitting. Research agents organize data, experiments and reports, while Coscientist operates a physical laboratory. ScienceAgentBench measures valid execution and scientific task success separately.",
+    "overview_zh": "科学程序搜索依赖可计算的候选评价。FunSearch 与 AlphaEvolve 优化产生解的程序，LLM-SR 将方程结构搜索与数值参数拟合分开。实验智能体进一步组织数据、运行实验与撰写结果，Coscientist 接入物理实验室。ScienceAgentBench 将程序可执行率与科学任务成功率分开统计。",
+    "focus_papers": [
+      "FunSearch",
+      "AlphaEvolve",
+      "LLMSR",
+      "Coscientist",
+      "ScienceAgentBench",
+      "AIScientistV2"
     ]
   },
   {
     "id": "foundations",
     "title": "Shared foundations, tools & skills",
     "title_zh": "共同基础、工具与技能",
-    "description": "The lineage includes synthesis, execution, search and reusable libraries, not only recent LLM agents.",
-    "description_zh": "这一方向源于程序合成、执行、搜索与库复用，也包含LLM agent之前的研究。",
+    "description": "Trace program synthesis, interaction loops and reusable experience.",
+    "description_zh": "梳理程序合成、交互循环与经验复用。",
     "subcategories": [
       {
         "id": "synthesis",
@@ -228,20 +297,33 @@
         "title": "Tool building & skill management",
         "title_zh": "工具构建与技能管理"
       }
+    ],
+    "overview": "Program synthesis, interaction feedback and experience representations underpin these systems. DreamCoder learns reusable subroutines from solved tasks; ReAct interleaves reasoning and actions; Reflexion compresses failure feedback into textual memory. Library functions, complete skills and textual lessons support different reuse granularities, changing search spaces, action composition and subsequent prompts.",
+    "overview_zh": "程序合成、交互反馈与经验表示构成这些系统的共同基础。DreamCoder 从已解任务中学习可复用子程序；ReAct 交替生成推理与动作；Reflexion 将失败反馈压缩为文本记忆。库函数、完整技能和文本经验具有不同的复用粒度，分别改变程序搜索空间、行动组合与后续提示。",
+    "focus_papers": [
+      "DreamCoder",
+      "ReAct",
+      "Reflexion"
     ]
   },
   {
     "id": "surveys",
     "title": "Related surveys",
     "title_zh": "相关综述",
-    "description": "Compare coverage and arguments directly; breadth alone is not a claim of novelty.",
-    "description_zh": "直接比较覆盖和论证；覆盖更广本身不等于首次提出共同视角。",
+    "description": "Surveys of code models, execution frameworks and domain applications.",
+    "description_zh": "代码模型、执行框架与领域应用的研究综述。",
     "subcategories": [
       {
         "id": "surveys",
         "title": "Surveys & perspectives",
         "title_zh": "综述与观点"
       }
+    ],
+    "overview": "Related surveys organize the literature around training, execution and applications. Beyond NL2Code covers inputs, representations and training for multimodal code models; Code as Agent Harness covers execution interfaces, state and task acceptance. Domain surveys address scientific agents, multimodal generation and world models.",
+    "overview_zh": "相关综述从训练、执行与应用三个层面组织文献。Beyond NL2Code 讨论多模态代码模型的输入、表示与训练；Code as Agent Harness 讨论执行接口、状态与任务验收。领域综述进一步覆盖科学智能体、多模态生成和世界模型。",
+    "focus_papers": [
+      "BeyondNL2Code",
+      "CodeHarnessSurvey"
     ]
   }
 ]

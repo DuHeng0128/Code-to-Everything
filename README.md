@@ -8,474 +8,421 @@
 
 [![Papers](https://img.shields.io/badge/papers-167-167D8D)](#paper-index) [![Stars](https://img.shields.io/github/stars/DuHeng0128/Code-to-Everything?style=social)](https://github.com/DuHeng0128/Code-to-Everything/stargazers)
 
-![Code to Everything: programs for creating, acting, and discovering](assets/overview.svg)
+![Code to Everything: programs, execution and domain-specific feedback](assets/overview.svg)
 
-**Code agents are crossing domain boundaries.** They use programs to reason about images, create editable media and 3D assets, operate computers and robots, build environments, prove theorems, and advance scientific research. This collection follows those concrete developments and asks what code actually contributes.
+Coding agents for visual reasoning, content creation, robotics, formal proofs and scientific discovery. A collection of methods, benchmarks and foundational work, with program representations, system mechanisms and experimental results.
 
-Our organizing idea is **Code Agents Unify the World**: a shared way to solve problems through programs. It is a research direction, not a claim that one model has already unified every domain. Methods, historical foundations, benchmarks and complementary approaches are labeled separately.
+**167 papers** · Updated 2026-09-28 · [Methods and experiments](docs/paper-notes.md) · [Cross-method comparisons](docs/evidence.md)
 
-**Curated 2026-09-28.** Broad review through 2026-09-13; targeted additions checked on 2026-09-28, not an exhaustive update of the intervening period. **167 records**, including **45 with key full-text sections examined**; other entries are abstract/metadata screened.
-
-**Start here:** [Field map](#field-map) · [Milestones](#milestones) · [Paper index](#paper-index) · [Reading paths](docs/reading-guide.md) · [Evidence comparisons](docs/evidence.md) · [Contribute](CONTRIBUTING.md)
-
-📚 [BibTeX](references.bib) · [Zotero RIS](references.ris) · [CSV](data/papers.csv) · [JSON](data/papers.json)
-
-Contributions are welcome: missing papers, better classifications, and factual corrections. If this collection is useful, a star helps others find it.
-
-## Updates
-
-- **2026-09-28** — Initial bilingual collection, milestone map, evidence comparisons, and reusable metadata. Added 12 historical/missing works and four September preprints; these additions are abstract-screened.
-- A weekly discovery workflow prepares candidates for maintainer review. It does not automatically accept papers or rewrite the curated list. See [maintenance](docs/maintenance.md).
+[BibTeX](references.bib) · [RIS](references.ris) · [CSV](data/papers.csv) · [JSON](data/papers.json)
 
 <a id="field-map"></a>
 
-## Field map
+## Areas
 
-| Area | Organizing question | Records |
+| Area | Tasks | Papers |
 |---|---|---:|
-| [Visual reasoning & graphics](#vision) | Programs connect perception, reasoning and editable visual outputs. | 25 |
-| [Audio, video & documents](#media) | Distinguish model-written programs, compiled scripts and expert generation models. | 10 |
-| [3D, CAD & scene reconstruction](#spatial) | An executable construction can preserve editable structure that a final image or mesh does not. | 17 |
-| [Computer use & digital workflows](#digital) | Code actions, browser operations and GUI interaction solve different parts of a workflow. | 12 |
-| [Embodied agents & robotics](#robotics) | Separate policies, reusable skills, reward programs and training-data generation. | 20 |
-| [World models & environment construction](#worlds) | Transition code, next-observation code and explicit state with neural rendering are different targets. | 10 |
-| [Mathematics & formal proofs](#math) | Computation, a checked construction and a formal proof support different conclusions. | 21 |
-| [Scientific & algorithmic discovery](#science) | Search code, scientific objectives and experimental confirmation must be examined together. | 26 |
-| [Shared foundations, tools & skills](#foundations) | The lineage includes synthesis, execution, search and reusable libraries, not only recent LLM agents. | 16 |
-| [Related surveys](#surveys) | Compare coverage and arguments directly; breadth alone is not a claim of novelty. | 10 |
-
-
-
-Each paper has one primary home; cross-domain connections are stored as facets. See the [taxonomy](docs/taxonomy.md) for definitions.
-
-<a id="milestones"></a>
-
-## Milestones along the main thread
-
-★ marks an editorial reading anchor, not a citation ranking or an endorsement of every claim. The full index also includes precursors and follow-up work.
-
-| First public | Work | What changed |
-|---|---|---|
-| 2018-10-04 | [NSVQA](https://arxiv.org/abs/1810.02338) | Before LLMs, programs already connected perception to explicit reasoning. |
-| 2020-06 | [DreamCoder](https://arxiv.org/abs/2006.08381) | Reusable abstractions can be learned and accumulated as programs. |
-| 2020-09-07 | [GPTf](https://arxiv.org/abs/2009.03393) | Language-model generation enters machine-checked proof search. |
-| 2022-09 | [CodeAsPolicies](https://arxiv.org/abs/2209.07753) | A language model writes hierarchical robot policies over existing APIs. |
-| 2022-11 | [PAL](https://arxiv.org/abs/2211.10435) | Writing a small program becomes a way to answer a reasoning question. |
-| 2022-11 | [VisProg](https://arxiv.org/abs/2211.11559) | Visual tasks can be decomposed into executable specialist modules. |
-| 2023-03 | [ViperGPT](https://arxiv.org/abs/2303.08128) | Ordinary Python control flow connects visual tools and reasoning. |
-| 2023-05 | [Voyager](https://arxiv.org/abs/2305.16291) | Successful programs persist as skills for later embodied tasks. |
-| 2023-06 | [LeanDojo](https://arxiv.org/abs/2306.15626) | Proof states, premise retrieval and execution form a reusable proving interface. |
-| 2023-07 | [VoxPoser](https://arxiv.org/abs/2307.05973) | Generated spatial programs can guide continuous motion planners. |
-| 2023-10 | [Eureka](https://arxiv.org/abs/2310.12931) | The generated program defines how another policy learns. |
-| 2023-12-14 | [FunSearch](https://www.nature.com/articles/s41586-023-06924-6) | Program search produces mathematical constructions and useful algorithms. |
-| 2023-12-20 | [Coscientist](https://www.nature.com/articles/s41586-023-06792-0) | Code and tool orchestration reach an automated physical laboratory. |
-| 2024-02 | [CodeAct](https://arxiv.org/abs/2402.01030) | The action representation itself becomes an experimentally tested design choice. |
-| 2024-02 | [WorldCoder](https://arxiv.org/abs/2402.12275) | The program describes the environment, not only the agent action. |
-| 2024-06 | [Real2Code](https://arxiv.org/abs/2406.08474) | Reconstruction produces executable articulation structure. |
-| 2024-12 | [CADRecode](https://arxiv.org/abs/2412.14042) | Point clouds become editable construction programs. |
-| 2025-06 | [OpenHandsVersa](https://arxiv.org/abs/2506.03011) | A coding-agent framework is evaluated on several non-software task families. |
-| 2025-06 | [AlphaEvolve](https://arxiv.org/abs/2506.13131) | Automatic evaluators support wider program evolution for discovery. |
-| 2025-10 | [JanusCoder](https://arxiv.org/abs/2510.23538) | Joint visual-program training makes cross-task gains and interference testable. |
-| 2025-11-12 | [AlphaProof](https://www.nature.com/articles/s41586-025-09833-y) | Formal feedback supports large-scale proof learning and test-time adaptation. |
+| [Visual reasoning & graphics](#vision) | Answer visual questions and produce editable graphics. | 25 |
+| [Audio, video & documents](#media) | Arrange sound, animation and document layout through programs. | 10 |
+| [3D, CAD & scene reconstruction](#spatial) | Recover construction, articulation and scene-editing operations. | 17 |
+| [Computer use & digital workflows](#digital) | Combine tools, browsing and computer actions to finish tasks. | 12 |
+| [Embodied agents & robotics](#robotics) | Write policies, accumulate skills or generate training signals. | 20 |
+| [World models & environment construction](#worlds) | Predict transitions, render observations or maintain persistent state. | 10 |
+| [Mathematics & formal proofs](#math) | Compute answers, search formal proofs and explore constructions. | 21 |
+| [Scientific & algorithmic discovery](#science) | Search algorithms and equations, run analyses and physical experiments. | 26 |
+| [Shared foundations, tools & skills](#foundations) | Trace program synthesis, interaction loops and reusable experience. | 16 |
+| [Related surveys](#surveys) | Surveys of code models, execution frameworks and domain applications. | 10 |
 
 <a id="paper-index"></a>
 
-## Paper index
+## Papers and methods
 
-**Reading labels:** K = key full-text sections examined; A = abstract/metadata screened. Neither means independently reproduced. Dates refer to first public release where known; month-level dates are not padded with invented days. Full authors, versions, check dates and protocol notes are in JSON/CSV and bibliography exports.
-
-**Types:** Method, Benchmark, Background, Comparison, Survey. Historical milestones remain visible alongside new papers; each subsection is sorted by first public date, newest first.
+★ marks representative advances in program representation, execution or learning; the contribution appears below the paper title. Papers are ordered by first public release within each subarea, newest first.
 
 <a id="vision"></a>
 
 ### Visual reasoning & graphics
 
-Programs connect perception, reasoning and editable visual outputs.
+Visual programs represent either reasoning steps or editable graphics. NS-VQA uses symbolic operations; VisProg composes fixed visual modules; ViperGPT adds Python control flow; PyVision constructs image-processing tools during inference. Chart generation uses rendered figures as feedback, extending evaluation to data presentation and layout.
 
 #### Visual reasoning through programs
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-12 | **CodeVision** · Method · A<br>Thinking with Programming Vision: Towards a Unified View for Thinking with Images | tool composition | Proposes programming-based visual thinking; a method paper rather than a survey. | [Paper](https://arxiv.org/abs/2512.03746) |
-| 2025-11 | **CodeV** · Method · A<br>CodeV: Code with Images for Faithful Visual Reasoning via Tool-Aware Policy Optimization | tool composition | Studies whether code-based visual reasoning remains faithful to available tools. | [Paper](https://arxiv.org/abs/2511.19661) |
-| 2025-07 | **PyVision** · Method · K<br>PyVision: Agentic Vision with Dynamic Tooling | tool composition | Builds task-specific visual tools dynamically through Python execution. | [Paper](https://arxiv.org/abs/2507.07998) |
-| 2025-06 | **ChartReasoner** · Method · A<br>ChartReasoner: Code-Driven Modality Bridging for Long-Chain Reasoning in Chart Question Answering | tool composition | Uses code to bridge chart perception and multi-step reasoning. | [Paper](https://arxiv.org/abs/2506.10116) |
-| 2023-03 | ★ **ViperGPT** · Method · K<br>ViperGPT: Visual Inference via Python Execution for Reasoning | tool composition | Generates Python that composes visual APIs and ordinary computation for visual reasoning. | [Paper](https://arxiv.org/abs/2303.08128) · [Code](https://github.com/cvlab-columbia/viper) · [Project](https://viper.cs.columbia.edu/) |
-| 2022-11 | ★ **VisProg** · Method · K<br>Visual Programming: Compositional visual reasoning without training | tool composition | Composes visual modules into executable programs without training a new end-to-end reasoning model. | [Paper](https://arxiv.org/abs/2211.11559) |
-| 2018-10-04 | ★ **NSVQA** · Background · A<br>Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding | symbolic reasoning program | Separates perception from symbolic program execution for visual question answering; a pre-LLM milestone. | [Paper](https://arxiv.org/abs/1810.02338) · [Code](https://github.com/kexinyi/ns-vqa) · [Project](http://nsvqa.csail.mit.edu) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-12 | **CodeVision** · Method<br>Thinking with Programming Vision: Towards a Unified View for Thinking with Images | Proposes programming-based visual thinking; a method paper rather than a survey. | [Paper](https://arxiv.org/abs/2512.03746) |
+| 2025-11 | **CodeV** · Method<br>CodeV: Code with Images for Faithful Visual Reasoning via Tool-Aware Policy Optimization | Studies whether code-based visual reasoning remains faithful to available tools. | [Paper](https://arxiv.org/abs/2511.19661) |
+| 2025-07 | **PyVision** · Method<br>PyVision: Agentic Vision with Dynamic Tooling | Writes Python tools during multi-turn visual reasoning, using general libraries for crops, enhancement, geometry and annotations. Text and processed images return to context, with state preserved across turns. | [Paper](https://arxiv.org/abs/2507.07998) · [Analysis](docs/paper-notes.md#pyvision) |
+| 2025-06 | **ChartReasoner** · Method<br>ChartReasoner: Code-Driven Modality Bridging for Long-Chain Reasoning in Chart Question Answering | Uses code to bridge chart perception and multi-step reasoning. | [Paper](https://arxiv.org/abs/2506.10116) |
+| 2023-03 | **ViperGPT** · Method<br>ViperGPT: Visual Inference via Python Execution for Reasoning<br>★ Ordinary Python control flow connects visual tools and reasoning. | Generates Python that delegates detection and attribute checks to visual APIs while executing filtering, sorting, counting and branches in the interpreter; API signatures and documentation support composition without task-specific training. | [Paper](https://arxiv.org/abs/2303.08128) · [Code](https://github.com/cvlab-columbia/viper) · [Project](https://viper.cs.columbia.edu/) · [Analysis](docs/paper-notes.md#vipergpt) |
+| 2022-11 | **VisProg** · Method<br>Visual Programming: Compositional visual reasoning without training<br>★ Visual tasks can be decomposed into executable specialist modules. | Turns a visual request into a sequence of predefined modules for tasks such as reasoning, recognition and image editing. | [Paper](https://arxiv.org/abs/2211.11559) · [Analysis](docs/paper-notes.md#visprog) |
+| 2018-10-04 | **NSVQA** · Background<br>Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding<br>★ Before LLMs, programs already connected perception to explicit reasoning. | Separates perception from symbolic program execution for visual question answering; a pre-LLM milestone. | [Paper](https://arxiv.org/abs/1810.02338) · [Code](https://github.com/kexinyi/ns-vqa) · [Project](http://nsvqa.csail.mit.edu) |
 
 #### Charts, vector graphics & interaction
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-04 | **OmniDiagram** · Method · A<br>OmniDiagram: Advancing Unified Diagram Code Generation via Visual Interrogation Reward | visual artifact | Generates diagram code using visual interrogation rewards. | [Paper](https://arxiv.org/abs/2604.05514) |
-| 2025-08 | **ChartMaster** · Method · A<br>ChartMaster: Advancing Chart-to-Code Generation with Real-World Charts and Chart Similarity Reinforcement Learning | visual artifact | Uses real-world charts and similarity-based reinforcement learning for chart code generation. | [Paper](https://arxiv.org/abs/2508.17608) |
-| 2025-01 | **ChartCoder** · Method · A<br>ChartCoder: Advancing Multimodal Large Language Model for Chart-to-Code Generation | visual artifact | Trains multimodal models specifically for chart-to-code generation. | [Paper](https://arxiv.org/abs/2501.06598) |
-| 2024-08 | **SymbolicGraphics** · Benchmark · A<br>Can Large Language Models Understand Symbolic Graphics Programs? | visual artifact | Tests whether models understand programs describing graphics, not just their rendered appearance. | [Paper](https://arxiv.org/abs/2408.08313) |
-| 2024-02 | **MatPlotAgent** · Method · K<br>MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization | visual artifact | Refines scientific plotting code using execution errors and visual feedback. | [Paper](https://arxiv.org/abs/2402.11453) |
-| 2023-10 | **AutomaTikZ** · Method · A<br>AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ | visual artifact | Generates editable scientific vector graphics as TikZ programs. | [Paper](https://arxiv.org/abs/2310.00367) · [Code](https://github.com/potamides/AutomaTikZ) |
-| 2023-05 | **VPGen** · Method · A<br>Visual Programming for Text-to-Image Generation and Evaluation | visual artifact | Uses visual programs to organize text-to-image generation and evaluation. | [Paper](https://arxiv.org/abs/2305.15328) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-04 | **OmniDiagram** · Method<br>OmniDiagram: Advancing Unified Diagram Code Generation via Visual Interrogation Reward | Generates diagram code using visual interrogation rewards. | [Paper](https://arxiv.org/abs/2604.05514) |
+| 2025-08 | **ChartMaster** · Method<br>ChartMaster: Advancing Chart-to-Code Generation with Real-World Charts and Chart Similarity Reinforcement Learning | Uses real-world charts and similarity-based reinforcement learning for chart code generation. | [Paper](https://arxiv.org/abs/2508.17608) |
+| 2025-01 | **ChartCoder** · Method<br>ChartCoder: Advancing Multimodal Large Language Model for Chart-to-Code Generation | Trains multimodal models specifically for chart-to-code generation. | [Paper](https://arxiv.org/abs/2501.06598) |
+| 2024-08 | **SymbolicGraphics** · Benchmark<br>Can Large Language Models Understand Symbolic Graphics Programs? | Tests whether models understand programs describing graphics, not just their rendered appearance. | [Paper](https://arxiv.org/abs/2408.08313) |
+| 2024-02 | **MatPlotAgent** · Method<br>MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization | Expands plotting requests, generates and debugs code, then critiques rendered drafts visually. Runtime and visual feedback are separate; the 100-task MatPlotBench evaluates final figures against references. | [Paper](https://arxiv.org/abs/2402.11453) · [Analysis](docs/paper-notes.md#matplotagent) |
+| 2023-10 | **AutomaTikZ** · Method<br>AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ | Generates editable scientific vector graphics as TikZ programs. | [Paper](https://arxiv.org/abs/2310.00367) · [Code](https://github.com/potamides/AutomaTikZ) |
+| 2023-05 | **VPGen** · Method<br>Visual Programming for Text-to-Image Generation and Evaluation | Uses visual programs to organize text-to-image generation and evaluation. | [Paper](https://arxiv.org/abs/2305.15328) |
 
 #### Multimodal coding models & benchmarks
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-11 | **VCode** · Benchmark · A<br>VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation | visual artifact | Uses SVG programs as a symbolic visual representation for multimodal coding evaluation. | [Paper](https://arxiv.org/abs/2511.02778) · [Code](https://github.com/CSU-JPG/VCode) |
-| 2025-11 | **VinciCoder** · Method · A<br>VinciCoder: Unifying Multimodal Code Generation via Coarse-to-fine Visual Reinforcement Learning | visual artifact | Uses staged visual reinforcement learning for multimodal code generation. | [Paper](https://arxiv.org/abs/2511.00391) |
-| 2025-10 | **VisCoder2** · Method · A<br>VisCoder2: Building Multi-Language Visualization Coding Agents | visual artifact | Studies visualization agents that generate programs in multiple languages. | [Paper](https://arxiv.org/abs/2510.23642) |
-| 2025-10 | ★ **JanusCoder** · Method · K<br>JanusCoder: Towards a Foundational Visual-Programmatic Interface for Code Intelligence | visual artifact | Trains across visual and textual program tasks; data ablations show both gains and interference. | [Paper](https://arxiv.org/abs/2510.23538) · [Code](https://github.com/InternLM/JanusCoder) |
-| 2025-10 | **InteractScience** · Benchmark · A<br>InteractScience: Programmatic and Visually-Grounded Evaluation of Interactive Scientific Demonstration Code Generation | visual artifact | Evaluates code for interactive scientific demonstrations using programmatic and visual checks. | [Paper](https://arxiv.org/abs/2510.09724) |
-| 2025-08 | **VisCodex** · Method · A<br>VisCodex: Unified Multimodal Code Generation via Merging Vision and Coding Models | visual artifact | Combines vision and coding models for multimodal program generation. | [Paper](https://arxiv.org/abs/2508.09945) |
-| 2025-07 | **ArtifactsBench** · Benchmark · A<br>ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation | visual artifact | Evaluates interactive visual artifacts beyond static screenshot similarity. | [Paper](https://arxiv.org/abs/2507.04952) |
-| 2024-06 | **ChartMimic** · Benchmark · A<br>ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation | visual artifact | Tests chart-image reconstruction as executable plotting code. | [Paper](https://arxiv.org/abs/2406.09961) · [Code](https://github.com/ChartMimic/ChartMimic) |
-| 2024-04 | **MMCode** · Benchmark · A<br>MMCode: Benchmarking Multimodal Large Language Models for Code Generation with Visually Rich Programming Problems | visual artifact | Evaluates code generation from visually rich programming problems. | [Paper](https://arxiv.org/abs/2404.09486) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-11 | **VCode** · Benchmark<br>VCode: a Multimodal Coding Benchmark with SVG as Symbolic Visual Representation | Uses SVG programs as a symbolic visual representation for multimodal coding evaluation. | [Paper](https://arxiv.org/abs/2511.02778) · [Code](https://github.com/CSU-JPG/VCode) |
+| 2025-11 | **VinciCoder** · Method<br>VinciCoder: Unifying Multimodal Code Generation via Coarse-to-fine Visual Reinforcement Learning | Uses staged visual reinforcement learning for multimodal code generation. | [Paper](https://arxiv.org/abs/2511.00391) |
+| 2025-10 | **VisCoder2** · Method<br>VisCoder2: Building Multi-Language Visualization Coding Agents | Studies visualization agents that generate programs in multiple languages. | [Paper](https://arxiv.org/abs/2510.23642) |
+| 2025-10 | **JanusCoder** · Method<br>JanusCoder: Towards a Foundational Visual-Programmatic Interface for Code Intelligence<br>★ Joint visual-program training makes cross-task gains and interference testable. | Trains one code model on textual and visual program tasks; data-removal experiments expose both cross-task gains and interference. | [Paper](https://arxiv.org/abs/2510.23538) · [Code](https://github.com/InternLM/JanusCoder) · [Analysis](docs/paper-notes.md#januscoder) |
+| 2025-10 | **InteractScience** · Benchmark<br>InteractScience: Programmatic and Visually-Grounded Evaluation of Interactive Scientific Demonstration Code Generation | Evaluates code for interactive scientific demonstrations using programmatic and visual checks. | [Paper](https://arxiv.org/abs/2510.09724) |
+| 2025-08 | **VisCodex** · Method<br>VisCodex: Unified Multimodal Code Generation via Merging Vision and Coding Models | Combines vision and coding models for multimodal program generation. | [Paper](https://arxiv.org/abs/2508.09945) |
+| 2025-07 | **ArtifactsBench** · Benchmark<br>ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation | Evaluates interactive visual artifacts beyond static screenshot similarity. | [Paper](https://arxiv.org/abs/2507.04952) |
+| 2024-06 | **ChartMimic** · Benchmark<br>ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation | Tests chart-image reconstruction as executable plotting code. | [Paper](https://arxiv.org/abs/2406.09961) · [Code](https://github.com/ChartMimic/ChartMimic) |
+| 2024-04 | **MMCode** · Benchmark<br>MMCode: Benchmarking Multimodal Large Language Models for Code Generation with Visually Rich Programming Problems | Evaluates code generation from visually rich programming problems. | [Paper](https://arxiv.org/abs/2404.09486) |
 
 #### Perception & tool-orchestration context
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2023-03 | **HuggingGPT** · Comparison · A<br>HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face | comparison | Coordinates specialized models through structured task planning; a boundary case for code-based agency. | [Paper](https://arxiv.org/abs/2303.17580) |
-| 2023-01 | **BLIP2** · Comparison · A<br>BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models | comparison | Bridges visual encoders and language models; context for perception supplied to code agents. | [Paper](https://arxiv.org/abs/2301.12597) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2023-03 | **HuggingGPT** · Comparison<br>HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face | Coordinates specialized models through structured task planning; a boundary case for code-based agency. | [Paper](https://arxiv.org/abs/2303.17580) |
+| 2023-01 | **BLIP2** · Comparison<br>BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models | Bridges visual encoders and language models; context for perception supplied to code agents. | [Paper](https://arxiv.org/abs/2301.12597) |
 
 <a id="media"></a>
 
 ### Audio, video & documents
 
-Distinguish model-written programs, compiled scripts and expert generation models.
+Multimedia programs organize time, assets and layouts. WavJourney compiles audio-event scripts into mixing programs; WavCraft generates audio-tool workflows. SlideCoder reconstructs supplied designs, whereas Paper2Poster selects paper content and allocates poster space. Design reconstruction and information compression have different inputs and evaluation targets.
 
 #### Audio generation & editing
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2024-10 | **AudioAgent** · Comparison · K<br>Audio-Agent: Leveraging LLMs For Audio Generation, Editing and Composition | JSON calls / neural tokens | Uses JSON audio-event calls and a neural video-to-audio branch; not unrestricted program generation. | [Paper](https://arxiv.org/abs/2410.03335) |
-| 2024-03 | **WavCraft** · Method · K<br>WavCraft: Audio Editing and Generation with Large Language Models | audio workflow | Generates programs to analyze, edit and compose audio using expert tools. | [Paper](https://arxiv.org/abs/2403.09527) |
-| 2023-07 | **WavJourney** · Method · K<br>WavJourney: Compositional Audio Creation with Large Language Models | compiled audio script | Generates audio scripts compiled into tool-calling Python; the compiler is human-designed. | [Paper](https://arxiv.org/abs/2307.14335) · [Code](https://github.com/Audio-AGI/WavJourney) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2024-10 | **AudioAgent** · Comparison<br>Audio-Agent: Leveraging LLMs For Audio Generation, Editing and Composition | Uses JSON audio-event calls and a neural video-to-audio branch; not unrestricted program generation. | [Paper](https://arxiv.org/abs/2410.03335) |
+| 2024-03 | **WavCraft** · Method<br>WavCraft: Audio Editing and Generation with Large Language Models | Describes input recordings, then writes programs that combine expert tools for local audio edits and new compositions. | [Paper](https://arxiv.org/abs/2403.09527) · [Analysis](docs/paper-notes.md#wavcraft) |
+| 2023-07 | **WavJourney** · Method<br>WavJourney: Compositional Audio Creation with Large Language Models | Represents speech, music and effects as JSON events with volume, duration and foreground/background relations; a compiler schedules specialist generation, concatenation and mixing. | [Paper](https://arxiv.org/abs/2307.14335) · [Code](https://github.com/Audio-AGI/WavJourney) · [Analysis](docs/paper-notes.md#wavjourney) |
 
 #### Video editing & programmatic animation
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-10 | **Paper2Video** · Method · K<br>Paper2Video: Automatic Video Generation from Scientific Papers | video workflow | Generates Beamer slides while specialized models supply speech and talking-head video. | [Paper](https://arxiv.org/abs/2510.05096) |
-| 2025-10 | **Code2Video** · Method · K<br>Code2Video: A Code-centric Paradigm for Educational Video Generation | video workflow | Generates and refines Manim programs for educational videos. | [Paper](https://arxiv.org/abs/2510.01174) |
-| 2024-02 | **LAVE** · Method · A<br>LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing | video workflow | Assists video editing through language-driven agent workflows. | [Paper](https://arxiv.org/abs/2402.10294) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-10 | **Paper2Video** · Method<br>Paper2Video: Automatic Video Generation from Scientific Papers | Generates Beamer slides while specialized models supply speech and talking-head video. | [Paper](https://arxiv.org/abs/2510.05096) |
+| 2025-10 | **Code2Video** · Method<br>Code2Video: A Code-centric Paradigm for Educational Video Generation | Plans an educational video as a storyboard, generates Manim scenes, and revises the animation through visual critique. | [Paper](https://arxiv.org/abs/2510.01174) · [Analysis](docs/paper-notes.md#code2video) |
+| 2024-02 | **LAVE** · Method<br>LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing | Assists video editing through language-driven agent workflows. | [Paper](https://arxiv.org/abs/2402.10294) |
 
 #### Slides, posters & document programs
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-09 | **Table2LaTeXRL** · Method · K<br>Table2LaTeX-RL: High-Fidelity LaTeX Code Generation from Table Images via Reinforced Multimodal Language Models | document artifact | Optimizes LaTeX table generation through compilation, structural and visual rewards. | [Paper](https://arxiv.org/abs/2509.17589) |
-| 2025-06 | **SlideCoder** · Method · K<br>SlideCoder: Layout-aware RAG-enhanced Hierarchical Slide Generation from Design | document artifact | Generates editable single-slide code from a design and separately provided picture assets. | [Paper](https://arxiv.org/abs/2506.07964) |
-| 2025-05 | **Paper2Poster** · Method · K<br>Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers | layout + fixed code generator | Plans paper content and layout; a deterministic generator produces the presentation code. | [Paper](https://arxiv.org/abs/2505.21497) · [Code](https://github.com/Paper2Poster/Paper2Poster) |
-| 2024-12 | **BigDocs** · Benchmark · A<br>BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks | document artifact | Provides multimodal document and code data for training and evaluation. | [Paper](https://arxiv.org/abs/2412.04626) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-09 | **Table2LaTeXRL** · Method<br>Table2LaTeX-RL: High-Fidelity LaTeX Code Generation from Table Images via Reinforced Multimodal Language Models | Trains image-to-LaTeX table generation with rewards from compilation, rendered similarity and table structure. | [Paper](https://arxiv.org/abs/2509.17589) · [Analysis](docs/paper-notes.md#table2latexrl) |
+| 2025-06 | **SlideCoder** · Method<br>SlideCoder: Layout-aware RAG-enhanced Hierarchical Slide Generation from Design | Recursively segments a reference slide by color gradients, generates code per block and assembles the layout. Hierarchical retrieval selects shape types then API operations; inputs include the design and separate image assets. | [Paper](https://arxiv.org/abs/2506.07964) · [Analysis](docs/paper-notes.md#slidecoder) |
+| 2025-05 | **Paper2Poster** · Method<br>Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers | Extracts text and figures, matches them semantically and allocates panels through a binary-tree layout. Models compress content; a deterministic python-pptx generator renders panels for zoomed visual critique. | [Paper](https://arxiv.org/abs/2505.21497) · [Code](https://github.com/Paper2Poster/Paper2Poster) · [Analysis](docs/paper-notes.md#paper2poster) |
+| 2024-12 | **BigDocs** · Benchmark<br>BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks | Provides multimodal document and code data for training and evaluation. | [Paper](https://arxiv.org/abs/2412.04626) |
 
 <a id="spatial"></a>
 
 ### 3D, CAD & scene reconstruction
 
-An executable construction can preserve editable structure that a final image or mesh does not.
+3D programs encode construction histories, articulation or scene properties. CAD-Recode maps point clouds to sketch-and-extrude programs; Real2Code maps part bounding boxes to joints; BlenderAlchemy searches edits to materials, geometry and lighting. Surface similarity, joint error and rendered appearance measure different aspects of these outputs.
 
 #### Reconstructing objects as programs
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-08 | **MeshCoder** · Method · A<br>MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds | structure recovery | Reconstructs structured mesh-generation code from point clouds. | [Paper](https://arxiv.org/abs/2508.14879) |
-| 2024-12 | ★ **CADRecode** · Method · K<br>CAD-Recode: Reverse Engineering CAD Code from Point Clouds | structure recovery | Reconstructs editable CadQuery programs from point clouds. | [Paper](https://arxiv.org/abs/2412.14042) |
-| 2024-06 | ★ **Real2Code** · Method · K<br>Real2Code: Reconstruct Articulated Objects via Code Generation | structure recovery | Recovers articulated object structure as code using perception and geometry front ends. | [Paper](https://arxiv.org/abs/2406.08474) · [Code](https://github.com/MandiZhao/real2code) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-08 | **MeshCoder** · Method<br>MeshCoder: LLM-Powered Structured Mesh Code Generation from Point Clouds | Reconstructs structured mesh-generation code from point clouds. | [Paper](https://arxiv.org/abs/2508.14879) |
+| 2024-12 | **CADRecode** · Method<br>CAD-Recode: Reverse Engineering CAD Code from Point Clouds<br>★ Point clouds become editable construction programs. | Projects 256 sampled points through Fourier features into Qwen2-1.5B to generate CadQuery sketch-and-extrude code. Training uses a million synthetic CAD programs; inference selects among ten executed candidates by Chamfer distance. | [Paper](https://arxiv.org/abs/2412.14042) · [Analysis](docs/paper-notes.md#cadrecode) |
+| 2024-06 | **Real2Code** · Method<br>Real2Code: Reconstruct Articulated Objects via Code Generation<br>★ Reconstruction produces executable articulation structure. | Segments and completes part geometry, then feeds oriented bounding boxes to fine-tuned CodeLlama. Joint axes and positions become box-axis and edge selections, replacing continuous regression with discrete choices for MuJoCo reconstruction. | [Paper](https://arxiv.org/abs/2406.08474) · [Code](https://github.com/MandiZhao/real2code) · [Analysis](docs/paper-notes.md#real2code) |
 
 #### Parametric CAD & verification
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-12 | **ReCAD** · Method · A<br>ReCAD: Reinforcement Learning Enhanced Parametric CAD Model Generation with Vision-Language Models | CAD operations | Uses reinforcement learning for parametric CAD generation with vision-language models. | [Paper](https://arxiv.org/abs/2512.06328) |
-| 2025-08 | **CADJudge** · Benchmark · A<br>CAD-Judge: Toward Efficient Morphological Grading and Verification for Text-to-CAD Generation | CAD operations | Evaluates morphological correctness in text-to-CAD generation. | [Paper](https://arxiv.org/abs/2508.04002) |
-| 2025-05 | **CADReview** · Method · A<br>CADReview: Automatically Reviewing CAD Programs with Error Detection and Correction | CAD operations | Detects and corrects errors in CAD programs. | [Paper](https://arxiv.org/abs/2505.22304) |
-| 2025-05 | **CADCoderText** · Method · A<br>CAD-Coder: Text-to-CAD Generation with Chain-of-Thought and Geometric Reward | CAD operations | Generates CAD from text with chain-of-thought and geometric rewards. | [Paper](https://arxiv.org/abs/2505.19713) |
-| 2025-05 | **CADCoderVision** · Method · A<br>CAD-Coder: An Open-Source Vision-Language Model for Computer-Aided Design Code Generation | CAD operations | Generates CAD code from visual inputs; distinct from the other CAD-Coder paper. | [Paper](https://arxiv.org/abs/2505.14646) |
-| 2025-01 | **VisualFeedbackCAD** · Method · A<br>Text-to-CAD Generation Through Infusing Visual Feedback in Large Language Models | CAD operations | Adds rendered visual feedback to text-to-CAD generation. | [Paper](https://arxiv.org/abs/2501.19054) |
-| 2024-11 | **CADMLLM** · Method · A<br>CAD-MLLM: Unifying Multimodality-Conditioned CAD Generation With MLLM | CAD operations | Studies CAD generation conditioned on multiple modalities. | [Paper](https://arxiv.org/abs/2411.04954) |
-| 2024-09 | **Text2CAD** · Method · A<br>Text2CAD: Generating Sequential CAD Models from Beginner-to-Expert Level Text Prompts | CAD operations | Generates sequential CAD operations from text descriptions at different detail levels. | [Paper](https://arxiv.org/abs/2409.17106) |
-| 2024-06 | **Query2CAD** · Method · A<br>Query2CAD: Generating CAD models using natural language queries | CAD operations | Turns natural-language requests into executable CAD modeling operations. | [Paper](https://arxiv.org/abs/2406.00144) |
-| 2021-05-20 | **DeepCAD** · Background · A<br>DeepCAD: A Deep Generative Network for Computer-Aided Design Models | CAD operations | Represents and generates shapes as CAD operation sequences rather than only final geometry. | [Paper](https://arxiv.org/abs/2105.09492) · [Code](https://github.com/ChrisWu1997/DeepCAD) · [Project](http://www.cs.columbia.edu/cg/deepcad/) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-12 | **ReCAD** · Method<br>ReCAD: Reinforcement Learning Enhanced Parametric CAD Model Generation with Vision-Language Models | Uses reinforcement learning for parametric CAD generation with vision-language models. | [Paper](https://arxiv.org/abs/2512.06328) |
+| 2025-08 | **CADJudge** · Benchmark<br>CAD-Judge: Toward Efficient Morphological Grading and Verification for Text-to-CAD Generation | Evaluates morphological correctness in text-to-CAD generation. | [Paper](https://arxiv.org/abs/2508.04002) |
+| 2025-05 | **CADReview** · Method<br>CADReview: Automatically Reviewing CAD Programs with Error Detection and Correction | Detects and corrects errors in CAD programs. | [Paper](https://arxiv.org/abs/2505.22304) |
+| 2025-05 | **CADCoderText** · Method<br>CAD-Coder: Text-to-CAD Generation with Chain-of-Thought and Geometric Reward | Generates CAD from text with chain-of-thought and geometric rewards. | [Paper](https://arxiv.org/abs/2505.19713) |
+| 2025-05 | **CADCoderVision** · Method<br>CAD-Coder: An Open-Source Vision-Language Model for Computer-Aided Design Code Generation | Generates CAD code from visual inputs; distinct from the other CAD-Coder paper. | [Paper](https://arxiv.org/abs/2505.14646) |
+| 2025-01 | **VisualFeedbackCAD** · Method<br>Text-to-CAD Generation Through Infusing Visual Feedback in Large Language Models | Adds rendered visual feedback to text-to-CAD generation. | [Paper](https://arxiv.org/abs/2501.19054) |
+| 2024-11 | **CADMLLM** · Method<br>CAD-MLLM: Unifying Multimodality-Conditioned CAD Generation With MLLM | Studies CAD generation conditioned on multiple modalities. | [Paper](https://arxiv.org/abs/2411.04954) |
+| 2024-09 | **Text2CAD** · Method<br>Text2CAD: Generating Sequential CAD Models from Beginner-to-Expert Level Text Prompts | Generates sequential CAD operations from text descriptions at different detail levels. | [Paper](https://arxiv.org/abs/2409.17106) |
+| 2024-06 | **Query2CAD** · Method<br>Query2CAD: Generating CAD models using natural language queries | Turns natural-language requests into executable CAD modeling operations. | [Paper](https://arxiv.org/abs/2406.00144) |
+| 2021-05-20 | **DeepCAD** · Background<br>DeepCAD: A Deep Generative Network for Computer-Aided Design Models | Represents and generates shapes as CAD operation sequences rather than only final geometry. | [Paper](https://arxiv.org/abs/2105.09492) · [Code](https://github.com/ChrisWu1997/DeepCAD) · [Project](http://www.cs.columbia.edu/cg/deepcad/) |
 
 #### Procedural shape & scene editing
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-08-11 | **LL3M** · Method · A<br>LL3M: Large Language 3D Modelers | scene program | Coordinates coding agents to build and refine interpretable Blender assets from text and feedback. | [Paper](https://arxiv.org/abs/2508.08228) · [Project](https://threedle.github.io/ll3m) |
-| 2024-04-26 | **BlenderAlchemy** · Method · A<br>BlenderAlchemy: Editing 3D Graphics with Vision-Language Models | scene program | Iteratively edits Blender programs using visual feedback and multiple candidate edits. | [Paper](https://arxiv.org/abs/2404.17672) |
-| 2024-03 | **SceneCraft** · Method · A<br>SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code | scene program | Creates 3D scenes through generated Blender code. | [Paper](https://arxiv.org/abs/2403.01248) |
-| 2020-09-17 | **ShapeAssembly** · Background · A<br>ShapeAssembly: Learning to Generate Programs for 3D Shape Structure Synthesis | scene program | Generates hierarchical shape-assembly programs with editable parameters; a pre-LLM procedural representation. | [Paper](https://arxiv.org/abs/2009.08026) · [Code](https://github.com/rkjones4/shapeAssembly) · [Project](https://rkjones4.github.io/shapeAssembly.html) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-08-11 | **LL3M** · Method<br>LL3M: Large Language 3D Modelers | Coordinates coding agents to build and refine interpretable Blender assets from text and feedback. | [Paper](https://arxiv.org/abs/2508.08228) · [Project](https://threedle.github.io/ll3m) |
+| 2024-04-26 | **BlenderAlchemy** · Method<br>BlenderAlchemy: Editing 3D Graphics with Vision-Language Models | Decomposes Blender scenes into editable scripts and alternates parameter tweaks with structural changes. Rendered candidates undergo pairwise visual selection, retaining the incumbent as a rollback option. | [Paper](https://arxiv.org/abs/2404.17672) · [Analysis](docs/paper-notes.md#blenderalchemy) |
+| 2024-03 | **SceneCraft** · Method<br>SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code | Creates 3D scenes through generated Blender code. | [Paper](https://arxiv.org/abs/2403.01248) |
+| 2020-09-17 | **ShapeAssembly** · Background<br>ShapeAssembly: Learning to Generate Programs for 3D Shape Structure Synthesis | Generates hierarchical shape-assembly programs with editable parameters; a pre-LLM procedural representation. | [Paper](https://arxiv.org/abs/2009.08026) · [Code](https://github.com/rkjones4/shapeAssembly) · [Project](https://rkjones4.github.io/shapeAssembly.html) |
 
 <a id="digital"></a>
 
 ### Computer use & digital workflows
 
-Code actions, browser operations and GUI interaction solve different parts of a workflow.
+Code actions store tool results in variables and compose subsequent operations through loops, branches and functions. CodeAct compares code, JSON and text actions under the same model; OpenHands-Versa applies a code workspace to multiple non-software tasks. Browser, desktop and enterprise environments expose different interfaces, jointly constraining the action space and task outcomes.
 
 #### Executable actions & generalist frameworks
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-06 | ★ **OpenHandsVersa** · Method · K<br>Coding Agents with Multimodal Browsing are Generalist Problem Solvers | executable actions | Tests one coding-agent framework across software, assistant and enterprise tasks with multimodal browsing. | [Paper](https://arxiv.org/abs/2506.03011) |
-| 2024-11 | **MagenticOne** · Method · A<br>Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks | executable actions | Coordinates specialist agents for complex digital tasks, including code execution. | [Paper](https://arxiv.org/abs/2411.04468) |
-| 2024-07 | **OpenHands** · Method · A<br>OpenHands: An Open Platform for AI Software Developers as Generalist Agents | executable actions | Provides a coding-agent platform with tools useful beyond repository editing. | [Paper](https://arxiv.org/abs/2407.16741) · [Code](https://github.com/All-Hands-AI/OpenHands) |
-| 2024-02 | ★ **CodeAct** · Method · K<br>Executable Code Actions Elicit Better LLM Agents | executable actions | Compares executable code with text and JSON actions for composing multi-step tool use. | [Paper](https://arxiv.org/abs/2402.01030) · [Code](https://github.com/xingyaoww/code-act) |
-| 2023-11 | **TaskWeaver** · Method · A<br>TaskWeaver: A Code-First Agent Framework | executable actions | Organizes data and tool operations through a code-first agent framework. | [Paper](https://arxiv.org/abs/2311.17541) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-06 | **OpenHandsVersa** · Method<br>Coding Agents with Multimodal Browsing are Generalist Problem Solvers<br>★ A coding-agent framework is evaluated on several non-software task families. | Adds multimodal browsing to a coding-agent framework and evaluates the same framework on software, assistant and enterprise tasks. | [Paper](https://arxiv.org/abs/2506.03011) · [Analysis](docs/paper-notes.md#openhandsversa) |
+| 2024-11 | **MagenticOne** · Method<br>Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks | Coordinates specialist agents for complex digital tasks, including code execution. | [Paper](https://arxiv.org/abs/2411.04468) |
+| 2024-07 | **OpenHands** · Method<br>OpenHands: An Open Platform for AI Software Developers as Generalist Agents | Provides a coding-agent platform with tools useful beyond repository editing. | [Paper](https://arxiv.org/abs/2407.16741) · [Code](https://github.com/All-Hands-AI/OpenHands) |
+| 2024-02 | **CodeAct** · Method<br>Executable Code Actions Elicit Better LLM Agents<br>★ The action representation itself becomes an experimentally tested design choice. | Uses multi-turn Python actions with loops, multiple tool calls and persistent intermediate values; outputs and errors guide repair. Same-model text/JSON/code comparisons isolate action representation. | [Paper](https://arxiv.org/abs/2402.01030) · [Code](https://github.com/xingyaoww/code-act) · [Analysis](docs/paper-notes.md#codeact) |
+| 2023-11 | **TaskWeaver** · Method<br>TaskWeaver: A Code-First Agent Framework | Organizes data and tool operations through a code-first agent framework. | [Paper](https://arxiv.org/abs/2311.17541) |
 
 #### Browsers & desktop interaction
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2024-10 | **AgentS** · Comparison · A<br>Agent S: An Open Agentic Framework that Uses Computers Like a Human | computer interaction | Combines computer-use planning and interaction; compare GUI actions with programmatic control. | [Paper](https://arxiv.org/abs/2410.08164) |
-| 2024-03 | **Cradle** · Method · A<br>Cradle: Empowering Foundation Agents Towards General Computer Control | computer interaction | Connects perception, memory and executable actions for general computer control. | [Paper](https://arxiv.org/abs/2403.03186) |
-| 2024-01 | **WebVoyager** · Comparison · A<br>WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models | computer interaction | Navigates websites through multimodal observations and GUI actions; a complementary route. | [Paper](https://arxiv.org/abs/2401.13919) · [Code](https://github.com/MinorJerry/WebVoyager) |
-| 2023-07 | **WebAgent** · Method · A<br>A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis | computer interaction | Uses planning, long-context understanding and program synthesis for web tasks. | [Paper](https://arxiv.org/abs/2307.12856) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2024-10 | **AgentS** · Comparison<br>Agent S: An Open Agentic Framework that Uses Computers Like a Human | Combines computer-use planning and interaction; compare GUI actions with programmatic control. | [Paper](https://arxiv.org/abs/2410.08164) |
+| 2024-03 | **Cradle** · Method<br>Cradle: Empowering Foundation Agents Towards General Computer Control | Connects perception, memory and executable actions for general computer control. | [Paper](https://arxiv.org/abs/2403.03186) |
+| 2024-01 | **WebVoyager** · Comparison<br>WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models | Navigates websites through multimodal observations and GUI actions; a complementary route. | [Paper](https://arxiv.org/abs/2401.13919) · [Code](https://github.com/MinorJerry/WebVoyager) |
+| 2023-07 | **WebAgent** · Method<br>A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis | Uses planning, long-context understanding and program synthesis for web tasks. | [Paper](https://arxiv.org/abs/2307.12856) |
 
 #### Digital-task evaluation
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2024-04 | **OSWorld** · Benchmark · A<br>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments | evaluation | Evaluates open-ended tasks in real desktop environments. | [Paper](https://arxiv.org/abs/2404.07972) |
-| 2024-03 | **WorkArena** · Benchmark · A<br>WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks? | evaluation | Evaluates agents on enterprise knowledge-work interfaces. | [Paper](https://arxiv.org/abs/2403.07718) |
-| 2023-11 | **GAIA** · Benchmark · A<br>GAIA: a benchmark for General AI Assistants | evaluation | Evaluates general assistant tasks requiring information gathering and tool use. | [Paper](https://arxiv.org/abs/2311.12983) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2024-04 | **OSWorld** · Benchmark<br>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments | Evaluates open-ended tasks in real desktop environments. | [Paper](https://arxiv.org/abs/2404.07972) |
+| 2024-03 | **WorkArena** · Benchmark<br>WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks? | Evaluates agents on enterprise knowledge-work interfaces. | [Paper](https://arxiv.org/abs/2403.07718) |
+| 2023-11 | **GAIA** · Benchmark<br>GAIA: a benchmark for General AI Assistants | Evaluates general assistant tasks requiring information gathering and tool use. | [Paper](https://arxiv.org/abs/2311.12983) |
 
 <a id="robotics"></a>
 
 ### Embodied agents & robotics
 
-Separate policies, reusable skills, reward programs and training-data generation.
+Robot programs intervene at different stages of control and learning. Code as Policies composes control APIs; VoxPoser builds spatial value maps for a planner; Eureka generates rewards; GenSim2 generates demonstrations. Voyager accumulates successful programs in a skill library. API composition, reward optimization and skill reuse entail different training costs and generalization tests.
 
 #### Policies, planners & generated robot systems
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-09-25 | **RIVET** · Method · A<br>Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation | policy / planning | Generates cooperating perception and planning programs around shared object representations, then reuses them. | [Paper](https://arxiv.org/abs/2609.31337) |
-| 2026-09-16 | **M3PR1** · Method · A<br>M$^3$P-R1: Reinforcement Learning for Large Language Model Guided Multi-Modal Motion Planning via MIP Code Generation | policy / planning | Generates solver-backed Python formulations for hybrid discrete-continuous motion planning. | [Paper](https://arxiv.org/abs/2609.18669) |
-| 2026-09-14 | **AutoHSI** · Method · A<br>Auto-HSI: Personalized human control of a robot swarm on demand by using LLMs for online automatic code generation | policy / planning | Generates personalized state-machine interfaces for gesture-controlled robot swarms. | [Paper](https://arxiv.org/abs/2609.16346) |
-| 2025-10 | **EmbodiedCoder** · Method · K<br>EmbodiedCoder: Parameterized Embodied Mobile Manipulation via Modern Coding Model | policy / planning | Uses coding models for parameterized geometry and trajectories with specialized perception modules. | [Paper](https://arxiv.org/abs/2510.06207) |
-| 2025-01 | **RoboticProgrammer** · Method · K<br>Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation | policy / planning | Trains a robotic programmer from video-derived code and tests adaptation to changed APIs. | [Paper](https://arxiv.org/abs/2501.04268) |
-| 2024-02 | **RoboCodeX** · Method · A<br>RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis | policy / planning | Connects multimodal observations to code for robotic behavior synthesis. | [Paper](https://arxiv.org/abs/2402.16117) |
-| 2024-02 | **RoboScript** · Method · A<br>RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation | policy / planning | Generates manipulation programs across real and simulated task settings. | [Paper](https://arxiv.org/abs/2402.14623) |
-| 2023-07 | ★ **VoxPoser** · Method · K<br>VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models | spatial value-map code | Writes programs that construct spatial value maps; a motion planner executes the resulting constraints. | [Paper](https://arxiv.org/abs/2307.05973) · [Code](https://github.com/huangwl18/VoxPoser) · [Project](https://voxposer.github.io) |
-| 2023-05-18 | **Instruct2Act** · Method · A<br>Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model | policy / planning | Generates Python that connects multimodal instructions, SAM/CLIP perception and robot APIs. | [Paper](https://arxiv.org/abs/2305.11176) · [Code](https://github.com/OpenGVLab/Instruct2Act) |
-| 2022-09-22 | **ProgPrompt** · Method · A<br>ProgPrompt: Generating Situated Robot Task Plans using Large Language Models | policy / planning | Prompt programs describe available actions, objects and checks for situated robot planning. | [Paper](https://arxiv.org/abs/2209.11302) · [Code](https://github.com/NVlabs/progprompt-vh) · [Project](http://progprompt.github.io) |
-| 2022-09 | ★ **CodeAsPolicies** · Method · K<br>Code as Policies: Language Model Programs for Embodied Control | policy / planning | Generates hierarchical Python policies over perception and control APIs. | [Paper](https://arxiv.org/abs/2209.07753) · [Code](https://github.com/google-research/google-research/tree/master/code_as_policies) · [Project](https://code-as-policies.github.io) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-09-25 | **RIVET** · Method<br>Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation | Generates cooperating perception and planning programs around shared object representations, then reuses them. | [Paper](https://arxiv.org/abs/2609.31337) |
+| 2026-09-16 | **M3PR1** · Method<br>M$^3$P-R1: Reinforcement Learning for Large Language Model Guided Multi-Modal Motion Planning via MIP Code Generation | Generates solver-backed Python formulations for hybrid discrete-continuous motion planning. | [Paper](https://arxiv.org/abs/2609.18669) |
+| 2026-09-14 | **AutoHSI** · Method<br>Auto-HSI: Personalized human control of a robot swarm on demand by using LLMs for online automatic code generation | Generates personalized state-machine interfaces for gesture-controlled robot swarms. | [Paper](https://arxiv.org/abs/2609.16346) |
+| 2025-10 | **EmbodiedCoder** · Method<br>EmbodiedCoder: Parameterized Embodied Mobile Manipulation via Modern Coding Model | Uses coding models for parameterized geometry and trajectories with specialized perception modules. | [Paper](https://arxiv.org/abs/2510.06207) |
+| 2025-01 | **RoboticProgrammer** · Method<br>Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation | RoboPro trains on video-derived code, then generates robot policies from observations and instructions; it also tests changed APIs. | [Paper](https://arxiv.org/abs/2501.04268) · [Analysis](docs/paper-notes.md#roboticprogrammer) |
+| 2024-02 | **RoboCodeX** · Method<br>RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis | Connects multimodal observations to code for robotic behavior synthesis. | [Paper](https://arxiv.org/abs/2402.16117) |
+| 2024-02 | **RoboScript** · Method<br>RoboScript: Code Generation for Free-Form Manipulation Tasks across Real and Simulation | Generates manipulation programs across real and simulated task settings. | [Paper](https://arxiv.org/abs/2402.14623) |
+| 2023-07 | **VoxPoser** · Method<br>VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models<br>★ Generated spatial programs can guide continuous motion planners. | Writes programs that turn language and visual observations into 3D value maps, which guide motion planning. | [Paper](https://arxiv.org/abs/2307.05973) · [Code](https://github.com/huangwl18/VoxPoser) · [Project](https://voxposer.github.io) · [Analysis](docs/paper-notes.md#voxposer) |
+| 2023-05-18 | **Instruct2Act** · Method<br>Instruct2Act: Mapping Multi-modality Instructions to Robotic Actions with Large Language Model | Generates Python that connects multimodal instructions, SAM/CLIP perception and robot APIs. | [Paper](https://arxiv.org/abs/2305.11176) · [Code](https://github.com/OpenGVLab/Instruct2Act) |
+| 2022-09-22 | **ProgPrompt** · Method<br>ProgPrompt: Generating Situated Robot Task Plans using Large Language Models | Prompt programs describe available actions, objects and checks for situated robot planning. | [Paper](https://arxiv.org/abs/2209.11302) · [Code](https://github.com/NVlabs/progprompt-vh) · [Project](http://progprompt.github.io) |
+| 2022-09 | **CodeAsPolicies** · Method<br>Code as Policies: Language Model Programs for Embodied Control<br>★ A language model writes hierarchical robot policies over existing APIs. | Translates language instructions into hierarchical Python policies, generating helper functions over supplied perception and control APIs. | [Paper](https://arxiv.org/abs/2209.07753) · [Code](https://github.com/google-research/google-research/tree/master/code_as_policies) · [Project](https://code-as-policies.github.io) · [Analysis](docs/paper-notes.md#codeaspolicies) |
 
 #### Executable experience & skill reuse
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-09-17 | **ClosedLoopRobotSoftware** · Method · A<br>Learning and Transferring Closed-Loop Robot Software | reusable skill | Tests reuse of execution-improved policy software on new RoboCasa tasks; evidence is currently abstract-screened here. | [Paper](https://arxiv.org/abs/2609.19906) |
-| 2023-05 | ★ **Voyager** · Method · K<br>Voyager: An Open-Ended Embodied Agent with Large Language Models | reusable skill | Accumulates executable Minecraft skills and retrieves them for later tasks. | [Paper](https://arxiv.org/abs/2305.16291) · [Code](https://github.com/MineDojo/Voyager) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-09-17 | **ClosedLoopRobotSoftware** · Method<br>Learning and Transferring Closed-Loop Robot Software | Compares no reference, initial code and optimized code on new RoboCasa tasks to study transfer of program experience. | [Paper](https://arxiv.org/abs/2609.19906) |
+| 2023-05 | **Voyager** · Method<br>Voyager: An Open-Ended Embodied Agent with Large Language Models<br>★ Successful programs persist as skills for later embodied tasks. | An automatic curriculum proposes exploration tasks; JavaScript skills call Mineflayer APIs and refine through environment feedback, execution errors and self-verification. Verified skills are indexed by description embeddings for later composition. | [Paper](https://arxiv.org/abs/2305.16291) · [Code](https://github.com/MineDojo/Voyager) · [Analysis](docs/paper-notes.md#voyager) |
 
 #### Rewards, simulation tasks & robot data
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2024-10 | **GenSim2** · Method · K<br>GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs | simulation / data | Tests whether generated simulation demonstrations help real robot learning; synthetic and real data budgets differ. | [Paper](https://arxiv.org/abs/2410.03645) |
-| 2024-02 | **CodeAsReward** · Method · A<br>Code as Reward: Empowering Reinforcement Learning with VLMs | reward code | Uses generated code in reward design for reinforcement learning. | [Paper](https://arxiv.org/abs/2402.04764) |
-| 2023-11 | **RoboGen** · Method · A<br>RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation | simulation / data | Generates tasks, environments and training ingredients for robot learning. | [Paper](https://arxiv.org/abs/2311.01455) |
-| 2023-10 | ★ **Eureka** · Method · K<br>Eureka: Human-Level Reward Design via Coding Large Language Models | reward code | Searches reward code using reinforcement-learning outcomes; the trained policy performs the motion. | [Paper](https://arxiv.org/abs/2310.12931) · [Code](https://github.com/eureka-research/Eureka) · [Project](https://eureka-research.github.io/) |
-| 2023-10 | **GenSim** · Method · A<br>GenSim: Generating Robotic Simulation Tasks via Large Language Models | simulation / data | Generates simulation tasks and demonstrations to support robot-policy training. | [Paper](https://arxiv.org/abs/2310.01361) · [Code](https://github.com/liruiw/GenSim) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2024-10 | **GenSim2** · Method<br>GenSim2: Scaling Robot Data Generation with Multi-modal and Reasoning LLMs | Generates simulation tasks and solvers, collects demonstrations, and trains point-cloud policies with synthetic and real data. | [Paper](https://arxiv.org/abs/2410.03645) · [Analysis](docs/paper-notes.md#gensim2) |
+| 2024-02 | **CodeAsReward** · Method<br>Code as Reward: Empowering Reinforcement Learning with VLMs | Uses generated code in reward design for reinforcement learning. | [Paper](https://arxiv.org/abs/2402.04764) |
+| 2023-11 | **RoboGen** · Method<br>RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation | Generates tasks, environments and training ingredients for robot learning. | [Paper](https://arxiv.org/abs/2311.01455) |
+| 2023-10 | **Eureka** · Method<br>Eureka: Human-Level Reward Design via Coding Large Language Models<br>★ The generated program defines how another policy learns. | Generates rewards from environment source code, trains a policy per candidate, and edits rewards using task fitness and component training traces. Outer evolutionary search optimizes reward design; learned policies execute actions. | [Paper](https://arxiv.org/abs/2310.12931) · [Code](https://github.com/eureka-research/Eureka) · [Project](https://eureka-research.github.io/) · [Analysis](docs/paper-notes.md#eureka) |
+| 2023-10 | **GenSim** · Method<br>GenSim: Generating Robotic Simulation Tasks via Large Language Models | Generates simulation tasks and demonstrations to support robot-policy training. | [Paper](https://arxiv.org/abs/2310.01361) · [Code](https://github.com/liruiw/GenSim) |
 
 #### Vision-language-action comparators
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2024-06 | **OpenVLA** · Comparison · A<br>OpenVLA: An Open-Source Vision-Language-Action Model | comparison | Provides an open vision-language-action baseline; does not act through generated programs. | [Paper](https://arxiv.org/abs/2406.09246) |
-| 2023-07 | **RT2** · Comparison · A<br>RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control | comparison | Predicts robot actions through a vision-language-action model; a complementary non-code route. | [Paper](https://arxiv.org/abs/2307.15818) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2024-06 | **OpenVLA** · Comparison<br>OpenVLA: An Open-Source Vision-Language-Action Model | Provides an open vision-language-action baseline; does not act through generated programs. | [Paper](https://arxiv.org/abs/2406.09246) |
+| 2023-07 | **RT2** · Comparison<br>RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control | Predicts robot actions through a vision-language-action model; a complementary non-code route. | [Paper](https://arxiv.org/abs/2307.15818) |
 
 <a id="worlds"></a>
 
 ### World models & environment construction
 
-Transition code, next-observation code and explicit state with neural rendering are different targets.
+Programmatic world models differ in their prediction targets. WorldCoder and GIF-MCTS produce transition and reward functions for repeated planner queries; Code2World represents the next interface in HTML; other models maintain entities and persistent state. Transition accuracy, planning return and visual consistency assess dynamics, decisions and observations respectively.
 
 #### Learning executable transition models
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2024-05 | **GIFMCTS** · Method · K<br>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search | transition model | Searches code world models with Monte Carlo tree search and execution feedback. | [Paper](https://arxiv.org/abs/2405.15383) |
-| 2024-02 | ★ **WorldCoder** · Method · K<br>WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment | transition model | Learns executable transition and reward models from interaction and uses them for planning. | [Paper](https://arxiv.org/abs/2402.12275) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2024-05 | **GIFMCTS** · Method<br>Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search | Organizes model synthesis into Generate, Improve and Fix tree-search actions: extend code, rewrite from prediction counterexamples and repair execution errors. Temporarily invalid nodes retain opportunities for repair. | [Paper](https://arxiv.org/abs/2405.15383) · [Analysis](docs/paper-notes.md#gifmcts) |
+| 2024-02 | **WorldCoder** · Method<br>WorldCoder, a Model-Based LLM Agent: Building World Models by Writing Code and Interacting with the Environment<br>★ Executable dynamics and reward models support planning and interaction-based learning. | Synthesizes transition and reward programs under experience-consistency and reward-reachability constraints. Prediction counterexamples or planning failures trigger refinement; learned dynamics can persist across goals. | [Paper](https://arxiv.org/abs/2402.12275) · [Analysis](docs/paper-notes.md#worldcoder) |
 
 #### Interfaces, persistent worlds & generated environments
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-09 | **RecursiveCWM** · Method · A<br>Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs | environment program | Builds complex worlds through recursively composed scene programs. | [Paper](https://arxiv.org/abs/2609.11499) |
-| 2026-09 | **ProgrammableWorldModel** · Method · K<br>Programmable World Model | state + neural rendering | Combines explicit program state with neural rendering; assess state metrics separately from full physical realism. | [Paper](https://arxiv.org/abs/2609.10540) · [Code](https://github.com/AlayaLab/PWM) |
-| 2026-08 | **CodeWorldBrain** · Method · K<br>Code World Model: Coding Agent as World Brain | state + neural rendering | Combines code-maintained state with neural video; the 2026-09-13 release check found a closed-source upstream dependency. | [Paper](https://arxiv.org/abs/2608.25927) · [Code](https://github.com/buaacyw/code-world-model) |
-| 2026-06 | **WorldCoderBench** · Benchmark · A<br>WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis | environment program | Evaluates physically grounded 3D world synthesis. | [Paper](https://arxiv.org/abs/2606.01869) |
-| 2026-02 | **Code2World** · Method · K<br>Code2World: A GUI World Model via Renderable Code Generation | next-observation code | Generates renderable code for the next GUI observation; not a general physical simulator. | [Paper](https://arxiv.org/abs/2602.09856) · [Code](https://github.com/AMAP-ML/Code2World) |
-| 2024-03 | **EnvGen** · Method · A<br>EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents | environment program | Generates and adapts training environments for embodied agents. | [Paper](https://arxiv.org/abs/2403.12014) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-09 | **RecursiveCWM** · Method<br>Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs | Builds complex worlds through recursively composed scene programs. | [Paper](https://arxiv.org/abs/2609.11499) |
+| 2026-09 | **ProgrammableWorldModel** · Method<br>Programmable World Model | Maintains persistent entity state and rules in programs while a pretrained video model renders the resulting observations. | [Paper](https://arxiv.org/abs/2609.10540) · [Code](https://github.com/AlayaLab/PWM) · [Analysis](docs/paper-notes.md#programmableworldmodel) |
+| 2026-08 | **CodeWorldBrain** · Method<br>Code World Model: Coding Agent as World Brain | Uses code-maintained world state to condition neural video generation, separating simulation state from visual appearance. | [Paper](https://arxiv.org/abs/2608.25927) · [Code](https://github.com/buaacyw/code-world-model) |
+| 2026-06 | **WorldCoderBench** · Benchmark<br>WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis | Evaluates physically grounded 3D world synthesis. | [Paper](https://arxiv.org/abs/2606.01869) |
+| 2026-02 | **Code2World** · Method<br>Code2World: A GUI World Model via Renderable Code Generation | Predicts the next GUI observation by generating renderable HTML from a screenshot and an action, then uses the prediction for decisions. | [Paper](https://arxiv.org/abs/2602.09856) · [Code](https://github.com/AMAP-ML/Code2World) · [Analysis](docs/paper-notes.md#code2world) |
+| 2024-03 | **EnvGen** · Method<br>EnvGen: Generating and Adapting Environments via LLMs for Training Embodied Agents | Generates and adapts training environments for embodied agents. | [Paper](https://arxiv.org/abs/2403.12014) |
 
 #### Neural world-model comparators
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2024-02 | **Genie** · Comparison · A<br>Genie: Generative Interactive Environments | comparison | Learns interactive neural environments; compare with explicit program state and rules. | [Paper](https://arxiv.org/abs/2402.15391) |
-| 2023-01 | **DreamerV3** · Comparison · A<br>Mastering Diverse Domains through World Models | comparison | Learns a neural world model for control; a comparator to explicit transition programs. | [Paper](https://arxiv.org/abs/2301.04104) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2024-02 | **Genie** · Comparison<br>Genie: Generative Interactive Environments | Learns interactive neural environments; compare with explicit program state and rules. | [Paper](https://arxiv.org/abs/2402.15391) |
+| 2023-01 | **DreamerV3** · Comparison<br>Mastering Diverse Domains through World Models | Learns a neural world model for control; a comparator to explicit transition programs. | [Paper](https://arxiv.org/abs/2301.04104) |
 
 <a id="math"></a>
 
 ### Mathematics & formal proofs
 
-Computation, a checked construction and a formal proof support different conclusions.
+Computational reasoning maps problems to executable steps; formal proving maps propositions to checkable derivations. PAL delegates calculation to an interpreter; Chain of Code adds model-based simulation for semantic operations. LeanDojo supports premise retrieval and tactic execution; DeepSeek-Prover-V2 constructs training data through subgoal decomposition; AlphaProof uses formal feedback for learning and test-time adaptation.
 
 #### Program-aided reasoning & visualization
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-10 | **CodePlotCoT** · Method · A<br>CodePlot-CoT: Mathematical Visual Reasoning by Thinking with Code-Driven Images | computation | Uses code-generated visualizations as intermediate steps in mathematical reasoning. | [Paper](https://arxiv.org/abs/2510.11718) |
-| 2023-12 | **ChainOfCode** · Method · K<br>Chain of Code: Reasoning with a Language Model-Augmented Code Emulator | code + emulation | Combines program execution with a language-model emulator for steps that cannot execute directly. | [Paper](https://arxiv.org/abs/2312.04474) |
-| 2022-11 | **PoT** · Method · A<br>Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks | computation | Separates numerical reasoning from calculation through generated executable programs. | [Paper](https://arxiv.org/abs/2211.12588) |
-| 2022-11 | ★ **PAL** · Method · K<br>PAL: Program-aided Language Models | computation | Delegates numerical computation to generated programs while the model organizes the reasoning. | [Paper](https://arxiv.org/abs/2211.10435) · [Code](https://github.com/luyug/pal) · [Project](http://reasonwithpal.com/) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-10 | **CodePlotCoT** · Method<br>CodePlot-CoT: Mathematical Visual Reasoning by Thinking with Code-Driven Images | Uses code-generated visualizations as intermediate steps in mathematical reasoning. | [Paper](https://arxiv.org/abs/2510.11718) |
+| 2023-12 | **ChainOfCode** · Method<br>Chain of Code: Reasoning with a Language Model-Augmented Code Emulator | Interleaves real program execution with a language-model emulator for semantic steps that ordinary code cannot directly execute. | [Paper](https://arxiv.org/abs/2312.04474) · [Analysis](docs/paper-notes.md#chainofcode) |
+| 2022-11 | **PoT** · Method<br>Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks | Separates numerical reasoning from calculation through generated executable programs. | [Paper](https://arxiv.org/abs/2211.12588) |
+| 2022-11 | **PAL** · Method<br>PAL: Program-aided Language Models<br>★ Writing a small program becomes a way to answer a reasoning question. | Few-shot prompts decompose problems into Python steps with meaningful variable names and explanatory comments. An interpreter returns the answer; ablations separate variable semantics, decomposition and actual execution. | [Paper](https://arxiv.org/abs/2211.10435) · [Code](https://github.com/luyug/pal) · [Project](http://reasonwithpal.com/) · [Analysis](docs/paper-notes.md#pal) |
 
 #### Formalization, proof search & learning
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-03 | **GoedelCodeProver** · Method · A<br>Goedel-Code-Prover: Hierarchical Proof Search for Open State-of-the-Art Code Verification | formal proof | Uses hierarchical proof search for verification of code. | [Paper](https://arxiv.org/abs/2603.19329) |
-| 2025-11-12 | ★ **AlphaProof** · Method · K<br>Olympiad-level formal mathematical reasoning with reinforcement learning | formal proof | Combines formal proof search, reinforcement learning and test-time adaptation; problem formalization remains a distinct step. | [Paper](https://www.nature.com/articles/s41586-025-09833-y) |
-| 2025-10 | **Aristotle** · Method · A<br>Aristotle: IMO-level Automated Theorem Proving | formal proof | Combines automated reasoning components for formal theorem proving. | [Paper](https://arxiv.org/abs/2510.01346) |
-| 2025-08 | **GoedelProverV2** · Method · A<br>Goedel-Prover-V2: Scaling Formal Theorem Proving with Scaffolded Data Synthesis and Self-Correction | formal proof | Scales formal proof data and self-correction; compare evaluation and sampling budgets carefully. | [Paper](https://arxiv.org/abs/2508.03613) |
-| 2025-04 | **DeepSeekProverV2** · Method · K<br>DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition | formal proof | Decomposes proofs into subgoals and learns with formal verification feedback. | [Paper](https://arxiv.org/abs/2504.21801) |
-| 2025-02 | **GoedelProver** · Method · A<br>Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving | formal proof | Builds open formal provers through synthesized training data. | [Paper](https://arxiv.org/abs/2502.07640) |
-| 2024-08 | **DeepSeekProver15** · Method · A<br>DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search | formal proof | Uses proof-assistant feedback, reinforcement learning and tree search for formal proving. | [Paper](https://arxiv.org/abs/2408.08152) |
-| 2024-07 | **LeanSTaR** · Method · A<br>Lean-STaR: Learning to Interleave Thinking and Proving | formal proof | Interleaves informal thinking and formal proof steps. | [Paper](https://arxiv.org/abs/2407.10040) |
-| 2023-06 | ★ **LeanDojo** · Method · K<br>LeanDojo: Theorem Proving with Retrieval-Augmented Language Models | formal proof | Connects premise retrieval and tactic generation to Lean proof-state feedback. | [Paper](https://arxiv.org/abs/2306.15626) · [Code](https://github.com/lean-dojo/LeanDojo) |
-| 2022-10-21 | **DraftSketchProve** · Method · A<br>Draft, Sketch, and Prove: Guiding Formal Theorem Provers with Informal Proofs | formal proof | Translates informal proofs into formal sketches that guide an automated prover through subproblems. | [Paper](https://arxiv.org/abs/2210.12283) |
-| 2022-05-23 | **HyperTreeProofSearch** · Method · A<br>HyperTree Proof Search for Neural Theorem Proving | formal proof | Couples structured proof search with online learning from previous searches. | [Paper](https://arxiv.org/abs/2205.11491) |
-| 2021-02 | **TacticZero** · Method · A<br>TacticZero: Learning to Prove Theorems from Scratch with Deep Reinforcement Learning | formal proof | Learns theorem-proving strategies by interacting with a proof assistant. | [Paper](https://arxiv.org/abs/2102.09756) |
-| 2020-09-07 | ★ **GPTf** · Method · A<br>Generative Language Modeling for Automated Theorem Proving | formal proof | Uses language-model generation inside Metamath proof search; an early formal-code milestone. | [Paper](https://arxiv.org/abs/2009.03393) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-03 | **GoedelCodeProver** · Method<br>Goedel-Code-Prover: Hierarchical Proof Search for Open State-of-the-Art Code Verification | Uses hierarchical proof search for verification of code. | [Paper](https://arxiv.org/abs/2603.19329) |
+| 2025-11-12 | **AlphaProof** · Method<br>Olympiad-level formal mathematical reasoning with reinforcement learning<br>★ Formal feedback supports large-scale proof learning and test-time adaptation. | Combines Lean proof search, reinforcement learning and test-time adaptation to tackle difficult formalized mathematics problems. | [Paper](https://www.nature.com/articles/s41586-025-09833-y) · [Analysis](docs/paper-notes.md#alphaproof) |
+| 2025-10 | **Aristotle** · Method<br>Aristotle: IMO-level Automated Theorem Proving | Combines automated reasoning components for formal theorem proving. | [Paper](https://arxiv.org/abs/2510.01346) |
+| 2025-08 | **GoedelProverV2** · Method<br>Goedel-Prover-V2: Scaling Formal Theorem Proving with Scaffolded Data Synthesis and Self-Correction | Scales formal proof data and self-correction; compare evaluation and sampling budgets carefully. | [Paper](https://arxiv.org/abs/2508.03613) |
+| 2025-04 | **DeepSeekProverV2** · Method<br>DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition | DeepSeek-V3 sketches Lean proofs with have/sorry subgoals, recursively completed by a 7B prover. Composed proofs and informal reasoning form cold-start data; reinforcement learning uses Lean verification with early decomposition-consistency rewards. | [Paper](https://arxiv.org/abs/2504.21801) · [Analysis](docs/paper-notes.md#deepseekproverv2) |
+| 2025-02 | **GoedelProver** · Method<br>Goedel-Prover: A Frontier Model for Open-Source Automated Theorem Proving | Builds open formal provers through synthesized training data. | [Paper](https://arxiv.org/abs/2502.07640) |
+| 2024-08 | **DeepSeekProver15** · Method<br>DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search | Uses proof-assistant feedback, reinforcement learning and tree search for formal proving. | [Paper](https://arxiv.org/abs/2408.08152) |
+| 2024-07 | **LeanSTaR** · Method<br>Lean-STaR: Learning to Interleave Thinking and Proving | Interleaves informal thinking and formal proof steps. | [Paper](https://arxiv.org/abs/2407.10040) |
+| 2023-06 | **LeanDojo** · Method<br>LeanDojo: Theorem Proving with Retrieval-Augmented Language Models<br>★ Proof states, premise retrieval and execution form a reusable proving interface. | Extracts Lean states, tactics and premise dependencies and exposes an execution environment. ReProver retrieves accessible premises before best-first tactic search, using same-file hard negatives for retrieval training. | [Paper](https://arxiv.org/abs/2306.15626) · [Code](https://github.com/lean-dojo/LeanDojo) · [Analysis](docs/paper-notes.md#leandojo) |
+| 2022-10-21 | **DraftSketchProve** · Method<br>Draft, Sketch, and Prove: Guiding Formal Theorem Provers with Informal Proofs | Translates informal proofs into formal sketches that guide an automated prover through subproblems. | [Paper](https://arxiv.org/abs/2210.12283) |
+| 2022-05-23 | **HyperTreeProofSearch** · Method<br>HyperTree Proof Search for Neural Theorem Proving | Couples structured proof search with online learning from previous searches. | [Paper](https://arxiv.org/abs/2205.11491) |
+| 2021-02 | **TacticZero** · Method<br>TacticZero: Learning to Prove Theorems from Scratch with Deep Reinforcement Learning | Learns theorem-proving strategies by interacting with a proof assistant. | [Paper](https://arxiv.org/abs/2102.09756) |
+| 2020-09-07 | **GPTf** · Method<br>Generative Language Modeling for Automated Theorem Proving<br>★ Language-model generation enters machine-checked proof search. | Uses language-model generation inside Metamath proof search; an early formal-code milestone. | [Paper](https://arxiv.org/abs/2009.03393) |
 
 #### Mathematical research systems
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-07 | **MathCoPilot** · Method · A<br>MathCoPilot: An Interactive System for Human-AI Symbiotic Paradigm of Mathematical Research | mathematical research | Focuses on interactive human-AI mathematical research. | [Paper](https://arxiv.org/abs/2607.14582) |
-| 2026-02 | **Aletheia** · Method · A<br>Towards Autonomous Mathematics Research | mathematical research | Studies autonomous mathematical research beyond fixed competition benchmarks. | [Paper](https://arxiv.org/abs/2602.10177) |
-| 2025-11 | **ThetaEvolve** · Method · A<br>ThetaEvolve: Test-time Learning on Open Problems | mathematical research | Investigates test-time learning on open mathematical problems. | [Paper](https://arxiv.org/abs/2511.23473) · [Code](https://github.com/ypwang61/ThetaEvolve) |
-| 2025-11 | **MathDiscoveryScale** · Method · A<br>Mathematical exploration and discovery at scale | mathematical research | Studies mathematical exploration at scale; distinguish constructions, conjectures and proofs. | [Paper](https://arxiv.org/abs/2511.02864) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-07 | **MathCoPilot** · Method<br>MathCoPilot: An Interactive System for Human-AI Symbiotic Paradigm of Mathematical Research | Focuses on interactive human-AI mathematical research. | [Paper](https://arxiv.org/abs/2607.14582) |
+| 2026-02 | **Aletheia** · Method<br>Towards Autonomous Mathematics Research | Studies autonomous mathematical research beyond fixed competition benchmarks. | [Paper](https://arxiv.org/abs/2602.10177) |
+| 2025-11 | **ThetaEvolve** · Method<br>ThetaEvolve: Test-time Learning on Open Problems | Investigates test-time learning on open mathematical problems. | [Paper](https://arxiv.org/abs/2511.23473) · [Code](https://github.com/ypwang61/ThetaEvolve) |
+| 2025-11 | **MathDiscoveryScale** · Method<br>Mathematical exploration and discovery at scale | Studies mathematical exploration at scale; distinguish constructions, conjectures and proofs. | [Paper](https://arxiv.org/abs/2511.02864) |
 
 <a id="science"></a>
 
 ### Scientific & algorithmic discovery
 
-Search code, scientific objectives and experimental confirmation must be examined together.
+Scientific program search depends on computable candidate evaluation. FunSearch and AlphaEvolve optimize programs that generate solutions; LLM-SR separates equation structure from numerical parameter fitting. Research agents organize data, experiments and reports, while Coscientist operates a physical laboratory. ScienceAgentBench measures valid execution and scientific task success separately.
 
 #### Program search & algorithm discovery
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-02 | **Aster** · Method · A<br>Aster: Autonomous Scientific Discovery over 20x Faster Than Existing Methods | program search | Explores more efficient scientific discovery; speed claims require matched search budgets. | [Paper](https://arxiv.org/abs/2602.07040) |
-| 2025-06 | ★ **AlphaEvolve** · Method · K<br>AlphaEvolve: A coding agent for scientific and algorithmic discovery | program search | Evolves programs with automatic evaluators for algorithmic and scientific problems. | [Paper](https://arxiv.org/abs/2506.13131) |
-| 2025-03 | **ECO** · Method · A<br>ECO: An LLM-Driven Efficient Code Optimizer for Warehouse Scale Computers | program search | Optimizes code for warehouse-scale computing; distinguish objective improvements from general discovery. | [Paper](https://arxiv.org/abs/2503.15669) |
-| 2023-12-14 | ★ **FunSearch** · Method · K<br>Mathematical discoveries from program search with large language models | program search | Evolves executable functions to find mathematical constructions and practical heuristics. | [Paper](https://www.nature.com/articles/s41586-023-06924-6) |
-| 2023-06-07 | **AlphaDev** · Background · A<br>Faster sorting algorithms discovered using deep reinforcement learning | program search | Searches low-level sorting programs with reinforcement learning; an algorithm-discovery comparator. | [Paper](https://www.nature.com/articles/s41586-023-06004-9) |
-| 2022-10-05 | **AlphaTensor** · Background · A<br>Discovering faster matrix multiplication algorithms with reinforcement learning | program search | Searches matrix-multiplication decompositions with reinforcement learning; a non-LLM precursor. | [Paper](https://www.nature.com/articles/s41586-022-05172-4) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-02 | **Aster** · Method<br>Aster: Autonomous Scientific Discovery over 20x Faster Than Existing Methods | Explores more efficient scientific discovery; speed claims require matched search budgets. | [Paper](https://arxiv.org/abs/2602.07040) |
+| 2025-06 | **AlphaEvolve** · Method<br>AlphaEvolve: A coding agent for scientific and algorithmic discovery<br>★ Automatic evaluators support wider program evolution for discovery. | Combines language-model proposals, a population of programs and automatic evaluators to improve algorithms and mathematical constructions. | [Paper](https://arxiv.org/abs/2506.13131) · [Analysis](docs/paper-notes.md#alphaevolve) |
+| 2025-03 | **ECO** · Method<br>ECO: An LLM-Driven Efficient Code Optimizer for Warehouse Scale Computers | Optimizes code for warehouse-scale computing; distinguish objective improvements from general discovery. | [Paper](https://arxiv.org/abs/2503.15669) |
+| 2023-12-14 | **FunSearch** · Method<br>Mathematical discoveries from program search with large language models<br>★ Program search produces mathematical constructions and useful algorithms. | Evolves critical functions inside a supplied solver skeleton. High-scoring programs prompt a frozen code model; external evaluation updates island populations. Cap-set search evolves a greedy priority function rather than enumerating sets directly. | [Paper](https://www.nature.com/articles/s41586-023-06924-6) · [Analysis](docs/paper-notes.md#funsearch) |
+| 2023-06-07 | **AlphaDev** · Background<br>Faster sorting algorithms discovered using deep reinforcement learning | Searches low-level sorting programs with reinforcement learning; an algorithm-discovery comparator. | [Paper](https://www.nature.com/articles/s41586-023-06004-9) |
+| 2022-10-05 | **AlphaTensor** · Background<br>Discovering faster matrix multiplication algorithms with reinforcement learning | Searches matrix-multiplication decompositions with reinforcement learning; a non-LLM precursor. | [Paper](https://www.nature.com/articles/s41586-022-05172-4) |
 
 #### Equations, physics & engineering design
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-09 | **AIDSR** · Method · A<br>Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models | equation / simulation | Connects language-driven programs and physical modeling for continuum-robot design. | [Paper](https://arxiv.org/abs/2609.08220) |
-| 2025-03 | **LLMFeynman** · Method · A<br>LLM-Feynman: Leveraging Large Language Models for Universal Scientific Formula and Theory Discovery | equation / simulation | Investigates language-model-assisted discovery of scientific formulas. | [Paper](https://arxiv.org/abs/2503.06512) |
-| 2024-04 | **LLMSR** · Method · K<br>LLM-SR: Scientific Equation Discovery via Programming with Large Language Models | equation / simulation | Searches scientific equations as programs and evaluates them against data. | [Paper](https://arxiv.org/abs/2404.18400) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-09 | **AIDSR** · Method<br>Bridging Language and Physics: Automated Design of Continuum Robots with Large Language Models | Connects language-driven programs and physical modeling for continuum-robot design. | [Paper](https://arxiv.org/abs/2609.08220) |
+| 2025-03 | **LLMFeynman** · Method<br>LLM-Feynman: Leveraging Large Language Models for Universal Scientific Formula and Theory Discovery | Investigates language-model-assisted discovery of scientific formulas. | [Paper](https://arxiv.org/abs/2503.06512) |
+| 2024-04 | **LLMSR** · Method<br>LLM-SR: Scientific Equation Discovery via Programming with Large Language Models | An LLM proposes equation programs with parameter placeholders from problem and variable descriptions; BFGS or Adam fits coefficients. Multiple populations preserve scored candidates as context for further structural search. | [Paper](https://arxiv.org/abs/2404.18400) · [Analysis](docs/paper-notes.md#llmsr) |
 
 #### Data analysis & research workflows
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2025-11 | **TrustworthyScientificCode** · Method · A<br>Toward Automated and Trustworthy Scientific Analysis and Visualization with LLM-Generated Code | research workflow | Studies trustworthy analysis and visualization with generated scientific code. | [Paper](https://arxiv.org/abs/2511.21920) |
-| 2025-07 | **MLResearchAgents** · Method · A<br>AI Research Agents for Machine Learning: Search, Exploration, and Generalization in MLE-bench | research workflow | Studies search, exploration and generalization in machine-learning research agents. | [Paper](https://arxiv.org/abs/2507.02554) · [Code](https://github.com/facebookresearch/aira-dojo) |
-| 2025-04 | **AIScientistV2** · Method · K<br>The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search | research workflow | Organizes computational research with experiment-tree search; human selection and submission selection matter. | [Paper](https://arxiv.org/abs/2504.08066) |
-| 2025-02 | **AICoScientist** · Comparison · A<br>Accelerating scientific discovery with Co-Scientist | research workflow | Studies AI-assisted hypothesis generation and scientific research; a comparator for code-centered systems. | [Paper](https://arxiv.org/abs/2502.18864) |
-| 2024-08 | **AIScientist** · Method · A<br>The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery | research workflow | Automates parts of computational research from experiment code to paper preparation. | [Paper](https://arxiv.org/abs/2408.06292) |
-| 2024-02 | **DataInterpreter** · Method · A<br>Data Interpreter: An LLM Agent For Data Science | research workflow | Uses generated programs for multi-step data-science workflows. | [Paper](https://arxiv.org/abs/2402.18679) |
-| 2023-12-20 | ★ **Coscientist** · Method · K<br>Autonomous chemical research with large language models | research workflow | Combines documentation, code execution and automated chemistry experiments. | [Paper](https://www.nature.com/articles/s41586-023-06792-0) |
-| 2023-04 | **ChemCrow** · Comparison · A<br>ChemCrow: Augmenting large-language models with chemistry tools | research workflow | Connects language models to chemistry tools; inspect the role of code versus fixed tool calls. | [Paper](https://arxiv.org/abs/2304.05376) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2025-11 | **TrustworthyScientificCode** · Method<br>Toward Automated and Trustworthy Scientific Analysis and Visualization with LLM-Generated Code | Studies trustworthy analysis and visualization with generated scientific code. | [Paper](https://arxiv.org/abs/2511.21920) |
+| 2025-07 | **MLResearchAgents** · Method<br>AI Research Agents for Machine Learning: Search, Exploration, and Generalization in MLE-bench | Studies search, exploration and generalization in machine-learning research agents. | [Paper](https://arxiv.org/abs/2507.02554) · [Code](https://github.com/facebookresearch/aira-dojo) |
+| 2025-04 | **AIScientistV2** · Method<br>The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search | Uses experiment-tree search to organize machine-learning experiments, then turns the results into a paper. | [Paper](https://arxiv.org/abs/2504.08066) · [Analysis](docs/paper-notes.md#aiscientistv2) |
+| 2025-02 | **AICoScientist** · Comparison<br>Accelerating scientific discovery with Co-Scientist | Studies AI-assisted hypothesis generation and scientific research; a comparator for code-centered systems. | [Paper](https://arxiv.org/abs/2502.18864) |
+| 2024-08 | **AIScientist** · Method<br>The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery | Automates parts of computational research from experiment code to paper preparation. | [Paper](https://arxiv.org/abs/2408.06292) |
+| 2024-02 | **DataInterpreter** · Method<br>Data Interpreter: An LLM Agent For Data Science | Uses generated programs for multi-step data-science workflows. | [Paper](https://arxiv.org/abs/2402.18679) |
+| 2023-12-20 | **Coscientist** · Method<br>Autonomous chemical research with large language models<br>★ Code and tool orchestration reach an automated physical laboratory. | Connects documentation retrieval, code execution and laboratory automation to plan and carry out chemistry experiments. | [Paper](https://www.nature.com/articles/s41586-023-06792-0) · [Analysis](docs/paper-notes.md#coscientist) |
+| 2023-04 | **ChemCrow** · Comparison<br>ChemCrow: Augmenting large-language models with chemistry tools | Connects language models to chemistry tools; inspect the role of code versus fixed tool calls. | [Paper](https://arxiv.org/abs/2304.05376) |
 
 #### Scientific evaluation & reproduction
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-08 | **SWEBenchScience** · Benchmark · A<br>SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? | evaluation | Tests engineering repairs in scientific codebases, distinct from new scientific discoveries. | [Paper](https://arxiv.org/abs/2608.19799) |
-| 2026-06 | **SocialScienceAgents** · Benchmark · A<br>AI Coding Agents Can Reproduce Social Science Findings | evaluation | Tests whether coding agents can reproduce social-science findings. | [Paper](https://arxiv.org/abs/2606.11447) |
-| 2025-05 | **ScienceBoard** · Benchmark · A<br>ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows | evaluation | Evaluates multimodal agents in scientific software workflows. | [Paper](https://arxiv.org/abs/2505.19897) |
-| 2025-03 | **BixBench** · Benchmark · A<br>BixBench: a Comprehensive Benchmark for LLM-based Agents in Computational Biology | evaluation | Evaluates code-using agents on computational biology analysis tasks. | [Paper](https://arxiv.org/abs/2503.00096) |
-| 2024-10 | **MLEBench** · Benchmark · A<br>MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering | evaluation | Evaluates machine-learning engineering on competition-style tasks. | [Paper](https://arxiv.org/abs/2410.07095) |
-| 2024-10 | **ScienceAgentBench** · Benchmark · K<br>ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery | evaluation | Separates executable scientific code from successful completion of a scientific task. | [Paper](https://arxiv.org/abs/2410.05080) |
-| 2024-07-18 | **SciCode** · Benchmark · A<br>SciCode: A Research Coding Benchmark Curated by Scientists | evaluation | Scientist-curated coding tasks test domain knowledge together with executable scientific reasoning. | [Paper](https://arxiv.org/abs/2407.13168) |
-| 2024-07 | **DiscoveryBench** · Benchmark · A<br>DiscoveryBench: Towards Data-Driven Discovery with Large Language Models | evaluation | Tests data-driven discovery rather than merely producing runnable analysis scripts. | [Paper](https://arxiv.org/abs/2407.01725) · [Code](https://github.com/allenai/discoverybench) |
-| 2023-10 | **MLAgentBench** · Benchmark · A<br>MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation | evaluation | Evaluates agents conducting machine-learning experiments through code and tools. | [Paper](https://arxiv.org/abs/2310.03302) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-08 | **SWEBenchScience** · Benchmark<br>SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science? | Tests engineering repairs in scientific codebases, distinct from new scientific discoveries. | [Paper](https://arxiv.org/abs/2608.19799) |
+| 2026-06 | **SocialScienceAgents** · Benchmark<br>AI Coding Agents Can Reproduce Social Science Findings | Tests whether coding agents can reproduce social-science findings. | [Paper](https://arxiv.org/abs/2606.11447) |
+| 2025-05 | **ScienceBoard** · Benchmark<br>ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows | Evaluates multimodal agents in scientific software workflows. | [Paper](https://arxiv.org/abs/2505.19897) |
+| 2025-03 | **BixBench** · Benchmark<br>BixBench: a Comprehensive Benchmark for LLM-based Agents in Computational Biology | Evaluates code-using agents on computational biology analysis tasks. | [Paper](https://arxiv.org/abs/2503.00096) |
+| 2024-10 | **MLEBench** · Benchmark<br>MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering | Evaluates machine-learning engineering on competition-style tasks. | [Paper](https://arxiv.org/abs/2410.07095) |
+| 2024-10 | **ScienceAgentBench** · Benchmark<br>ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery | Builds 102 standalone-program tasks from 44 research papers, measuring execution, scientific task success, code similarity and cost. Compares direct generation, self-debugging and OpenHands with and without domain knowledge. | [Paper](https://arxiv.org/abs/2410.05080) · [Analysis](docs/paper-notes.md#scienceagentbench) |
+| 2024-07-18 | **SciCode** · Benchmark<br>SciCode: A Research Coding Benchmark Curated by Scientists | Scientist-curated coding tasks test domain knowledge together with executable scientific reasoning. | [Paper](https://arxiv.org/abs/2407.13168) |
+| 2024-07 | **DiscoveryBench** · Benchmark<br>DiscoveryBench: Towards Data-Driven Discovery with Large Language Models | Tests data-driven discovery rather than merely producing runnable analysis scripts. | [Paper](https://arxiv.org/abs/2407.01725) · [Code](https://github.com/allenai/discoverybench) |
+| 2023-10 | **MLAgentBench** · Benchmark<br>MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation | Evaluates agents conducting machine-learning experiments through code and tools. | [Paper](https://arxiv.org/abs/2310.03302) |
 
 <a id="foundations"></a>
 
 ### Shared foundations, tools & skills
 
-The lineage includes synthesis, execution, search and reusable libraries, not only recent LLM agents.
+Program synthesis, interaction feedback and experience representations underpin these systems. DreamCoder learns reusable subroutines from solved tasks; ReAct interleaves reasoning and actions; Reflexion compresses failure feedback into textual memory. Library functions, complete skills and textual lessons support different reuse granularities, changing search spaces, action composition and subsequent prompts.
 
 #### Program synthesis & code models
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2022-03 | **AlphaCode** · Background · A<br>Competition-Level Code Generation with AlphaCode | program synthesis | Combines code generation, large-scale sampling and filtering for competitive programming. | [Paper](https://arxiv.org/abs/2203.07814) |
-| 2021-08 | **ProgramSynthesisLLM** · Background · A<br>Program Synthesis with Large Language Models | program synthesis | Studies large language models as program synthesizers, before the modern agent loop. | [Paper](https://arxiv.org/abs/2108.07732) |
-| 2021-07 | **Codex** · Background · A<br>Evaluating Large Language Models Trained on Code | program synthesis | Establishes broad language-to-code generation, providing a backbone for later executable agents. | [Paper](https://arxiv.org/abs/2107.03374) |
-| 2020-06 | ★ **DreamCoder** · Background · A<br>DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning | program synthesis | Learns reusable program libraries through alternating synthesis and abstraction; a precursor to skill accumulation. | [Paper](https://arxiv.org/abs/2006.08381) |
-| 2019-02-17 | **SketchAdapt** · Background · A<br>Learning to Infer Program Sketches | program synthesis | Combines learned program sketches with symbolic search; a precursor to hybrid generation and search. | [Paper](https://arxiv.org/abs/1902.06349) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2022-03 | **AlphaCode** · Background<br>Competition-Level Code Generation with AlphaCode | Combines code generation, large-scale sampling and filtering for competitive programming. | [Paper](https://arxiv.org/abs/2203.07814) |
+| 2021-08 | **ProgramSynthesisLLM** · Background<br>Program Synthesis with Large Language Models | Studies large language models as program synthesizers, before the modern agent loop. | [Paper](https://arxiv.org/abs/2108.07732) |
+| 2021-07 | **Codex** · Background<br>Evaluating Large Language Models Trained on Code | Establishes broad language-to-code generation, providing a backbone for later executable agents. | [Paper](https://arxiv.org/abs/2107.03374) |
+| 2020-06 | **DreamCoder** · Background<br>DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning<br>★ Reusable abstractions can be learned and accumulated as programs. | Alternates program search, library abstraction and recognition-model training. Shared fragments become primitives; sampled programs from the expanded library train search guidance. Abstractions shorten solutions while neural guidance narrows search. | [Paper](https://arxiv.org/abs/2006.08381) · [Analysis](docs/paper-notes.md#dreamcoder) |
+| 2019-02-17 | **SketchAdapt** · Background<br>Learning to Infer Program Sketches | Combines learned program sketches with symbolic search; a precursor to hybrid generation and search. | [Paper](https://arxiv.org/abs/1902.06349) |
 
 #### Interaction, feedback & collaboration
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2023-08 | **AutoGen** · Background · A<br>AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation | execution framework | Provides multi-agent conversation and execution infrastructure; orchestration alone is not evidence of transfer. | [Paper](https://arxiv.org/abs/2308.08155) |
-| 2023-06 | **InterCode** · Benchmark · A<br>InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback | execution framework | Evaluates interactive coding with execution feedback instead of single-shot code completion. | [Paper](https://arxiv.org/abs/2306.14898) |
-| 2023-03 | **Reflexion** · Background · A<br>Reflexion: Language Agents with Verbal Reinforcement Learning | execution framework | Stores verbal feedback across attempts; useful context for execution-driven refinement. | [Paper](https://arxiv.org/abs/2303.11366) |
-| 2022-10 | **ReAct** · Background · A<br>ReAct: Synergizing Reasoning and Acting in Language Models | execution framework | Interleaves reasoning and actions; an agent foundation, not specifically a code-action method. | [Paper](https://arxiv.org/abs/2210.03629) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2023-08 | **AutoGen** · Background<br>AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation | Provides multi-agent conversation and execution infrastructure; orchestration alone is not evidence of transfer. | [Paper](https://arxiv.org/abs/2308.08155) |
+| 2023-06 | **InterCode** · Benchmark<br>InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback | Evaluates interactive coding with execution feedback instead of single-shot code completion. | [Paper](https://arxiv.org/abs/2306.14898) |
+| 2023-03 | **Reflexion** · Background<br>Reflexion: Language Agents with Verbal Reinforcement Learning | Stores language reflections on failed or completed attempts as context for later attempts. | [Paper](https://arxiv.org/abs/2303.11366) · [Analysis](docs/paper-notes.md#reflexion) |
+| 2022-10 | **ReAct** · Background<br>ReAct: Synergizing Reasoning and Acting in Language Models | Alternates reasoning text and tool actions, using new observations to update subsequent decisions. | [Paper](https://arxiv.org/abs/2210.03629) · [Analysis](docs/paper-notes.md#react) |
 
 #### Tool building & skill management
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-08 | **ProgressiveSkills** · Method · A<br>Progressive Agent Skill Generation via Reinforcement Learning | tool / skill building | Develops skills progressively through reinforcement learning. | [Paper](https://arxiv.org/abs/2608.01678) · [Code](https://github.com/ejhshen/skill-alpha) |
-| 2026-05 | **SkillLifecycle** · Method · A<br>Dynamic Skill Lifecycle Management for Agentic Reinforcement Learning | tool / skill building | Studies how agent skills are added, retained and retired during learning. | [Paper](https://arxiv.org/abs/2605.10923) · [Code](https://github.com/ejhshen/SLIM) |
-| 2026-04 | **WebXSkill** · Method · A<br>WebXSkill: Skill Learning for Autonomous Web Agents | tool / skill building | Studies learned web skills; inspect the executable representation and held-out task reuse. | [Paper](https://arxiv.org/abs/2604.13318) |
-| 2025-02 | **ToolMaker** · Method · A<br>LLM Agents Making Agent Tools | tool / skill building | Builds tools for agents; tool creation and downstream usefulness require separate evaluation. | [Paper](https://arxiv.org/abs/2502.11705) |
-| 2024-11 | **DynaSaur** · Method · A<br>DynaSaur: Large Language Agents Beyond Predefined Actions | tool / skill building | Lets agents construct new Python actions beyond a predefined action set. | [Paper](https://arxiv.org/abs/2411.01747) |
-| 2024-09 | **AgentWorkflowMemory** · Method · A<br>Agent Workflow Memory | tool / skill building | Extracts reusable workflows from experience; compare workflow reuse with reusable executable skills. | [Paper](https://arxiv.org/abs/2409.07429) |
-| 2023-05 | **LATM** · Method · A<br>Large Language Models as Tool Makers | tool / skill building | Uses language models to create reusable tools rather than only call a fixed inventory. | [Paper](https://arxiv.org/abs/2305.17126) · [Code](https://github.com/ctlllll/LLM-ToolMaker) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-08 | **ProgressiveSkills** · Method<br>Progressive Agent Skill Generation via Reinforcement Learning | Develops skills progressively through reinforcement learning. | [Paper](https://arxiv.org/abs/2608.01678) · [Code](https://github.com/ejhshen/skill-alpha) |
+| 2026-05 | **SkillLifecycle** · Method<br>Dynamic Skill Lifecycle Management for Agentic Reinforcement Learning | Studies how agent skills are added, retained and retired during learning. | [Paper](https://arxiv.org/abs/2605.10923) · [Code](https://github.com/ejhshen/SLIM) |
+| 2026-04 | **WebXSkill** · Method<br>WebXSkill: Skill Learning for Autonomous Web Agents | Studies learned web skills; inspect the executable representation and held-out task reuse. | [Paper](https://arxiv.org/abs/2604.13318) |
+| 2025-02 | **ToolMaker** · Method<br>LLM Agents Making Agent Tools | Builds tools for agents; tool creation and downstream usefulness require separate evaluation. | [Paper](https://arxiv.org/abs/2502.11705) |
+| 2024-11 | **DynaSaur** · Method<br>DynaSaur: Large Language Agents Beyond Predefined Actions | Lets agents construct new Python actions beyond a predefined action set. | [Paper](https://arxiv.org/abs/2411.01747) |
+| 2024-09 | **AgentWorkflowMemory** · Method<br>Agent Workflow Memory | Extracts reusable workflows from experience; compare workflow reuse with reusable executable skills. | [Paper](https://arxiv.org/abs/2409.07429) |
+| 2023-05 | **LATM** · Method<br>Large Language Models as Tool Makers | Uses language models to create reusable tools rather than only call a fixed inventory. | [Paper](https://arxiv.org/abs/2305.17126) · [Code](https://github.com/ctlllll/LLM-ToolMaker) |
 
 <a id="surveys"></a>
 
 ### Related surveys
 
-Compare coverage and arguments directly; breadth alone is not a claim of novelty.
+Related surveys organize the literature around training, execution and applications. Beyond NL2Code covers inputs, representations and training for multimodal code models; Code as Agent Harness covers execution interfaces, state and task acceptance. Domain surveys address scientific agents, multimodal generation and world models.
 
 #### Surveys & perspectives
 
-| Date | Paper / type | Role of code | Why it belongs | Resources |
-|---|---|---|---|---|
-| 2026-08 | **MultimodalAgentsSurvey** · Survey · K<br>A Survey on Foundations and Frontiers of Multimodal Agentic Frameworks: Techniques and Applications | survey | Surveys multimodal agent frameworks, techniques and applications. | [Paper](https://arxiv.org/abs/2608.20379) |
-| 2026-06 | **BeyondNL2Code** · Survey · K<br>Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence | survey | Surveys multimodal code intelligence and explicitly discusses cross-task transfer controls. | [Paper](https://arxiv.org/abs/2606.15932) |
-| 2026-05 | **CodeHarnessSurvey** · Survey · K<br>Code as Agent Harness | survey | Treats code as an agent harness, including formal proofs, science and verification limits. | [Paper](https://arxiv.org/abs/2605.18747) · [Code](https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers) |
-| 2025-11 | **CodeIntelligenceSurvey** · Survey · A<br>From Code Foundation Models to Agents and Applications: A Comprehensive Survey and Practical Guide to Code Intelligence | survey | Connects code foundation models, agents and applications. | [Paper](https://arxiv.org/abs/2511.18538) |
-| 2025-07 | **AI4Research** · Survey · A<br>AI4Research: A Survey of Artificial Intelligence for Scientific Research | survey | Surveys AI for scientific research across stages and disciplines. | [Paper](https://arxiv.org/abs/2507.01903) · [Code](https://github.com/LightChen233/Awesome-AI4Research) |
-| 2025-03 | **ScientificAgentsSurvey** · Survey · A<br>Towards Scientific Intelligence: A Survey of LLM-based Scientific Agents | survey | Surveys scientific agents and their research workflows. | [Paper](https://arxiv.org/abs/2503.24047) |
-| 2025-01 | **LLM4SRSurvey** · Survey · A<br>LLM4SR: A Survey on Large Language Models for Scientific Research | survey | Surveys large language models for scientific research. | [Paper](https://arxiv.org/abs/2501.04306) |
-| 2024-11 | **WorldModelSurvey** · Survey · K<br>Understanding World or Predicting Future? A Comprehensive Survey of World Models | survey | Surveys world-model definitions, predictions and applications beyond program models. | [Paper](https://arxiv.org/abs/2411.14499) |
-| 2024-05 | **MultimodalGenerationSurvey** · Survey · K<br>LLMs Meet Multimodal Generation and Editing: A Survey | survey | Surveys LLM-guided multimodal generation and editing, including non-code routes. | [Paper](https://arxiv.org/abs/2405.19334) · [Code](https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation) |
-| 2024-03 | **NeuralCodeSurvey** · Survey · A<br>A Survey of Neural Code Intelligence: Paradigms, Advances and Beyond | survey | Surveys neural code intelligence and its foundations. | [Paper](https://arxiv.org/abs/2403.14734) |
+| First public | Paper | Method and features | Resources |
+|---|---|---|---|
+| 2026-08 | **MultimodalAgentsSurvey** · Survey<br>A Survey on Foundations and Frontiers of Multimodal Agentic Frameworks: Techniques and Applications | Surveys multimodal agent frameworks, techniques and applications. | [Paper](https://arxiv.org/abs/2608.20379) |
+| 2026-06 | **BeyondNL2Code** · Survey<br>Beyond NL2Code: A Structured Survey of Multimodal Code Intelligence | Maps multimodal code intelligence across tasks and discusses how to test positive and negative transfer between them. | [Paper](https://arxiv.org/abs/2606.15932) · [Analysis](docs/paper-notes.md#beyondnl2code) |
+| 2026-05 | **CodeHarnessSurvey** · Survey<br>Code as Agent Harness | Reviews code as an execution interface for agents, covering control flow, formal proving, scientific applications and evaluation. | [Paper](https://arxiv.org/abs/2605.18747) · [Code](https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers) · [Analysis](docs/paper-notes.md#codeharnesssurvey) |
+| 2025-11 | **CodeIntelligenceSurvey** · Survey<br>From Code Foundation Models to Agents and Applications: A Comprehensive Survey and Practical Guide to Code Intelligence | Connects code foundation models, agents and applications. | [Paper](https://arxiv.org/abs/2511.18538) |
+| 2025-07 | **AI4Research** · Survey<br>AI4Research: A Survey of Artificial Intelligence for Scientific Research | Surveys AI for scientific research across stages and disciplines. | [Paper](https://arxiv.org/abs/2507.01903) · [Code](https://github.com/LightChen233/Awesome-AI4Research) |
+| 2025-03 | **ScientificAgentsSurvey** · Survey<br>Towards Scientific Intelligence: A Survey of LLM-based Scientific Agents | Surveys scientific agents and their research workflows. | [Paper](https://arxiv.org/abs/2503.24047) |
+| 2025-01 | **LLM4SRSurvey** · Survey<br>LLM4SR: A Survey on Large Language Models for Scientific Research | Surveys large language models for scientific research. | [Paper](https://arxiv.org/abs/2501.04306) |
+| 2024-11 | **WorldModelSurvey** · Survey<br>Understanding World or Predicting Future? A Comprehensive Survey of World Models | Surveys world-model definitions, predictions and applications beyond program models. | [Paper](https://arxiv.org/abs/2411.14499) |
+| 2024-05 | **MultimodalGenerationSurvey** · Survey<br>LLMs Meet Multimodal Generation and Editing: A Survey | Surveys LLM-guided multimodal generation and editing, including non-code routes. | [Paper](https://arxiv.org/abs/2405.19334) · [Code](https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation) |
+| 2024-03 | **NeuralCodeSurvey** · Survey<br>A Survey of Neural Code Intelligence: Paradigms, Advances and Beyond | Surveys neural code intelligence and its foundations. | [Paper](https://arxiv.org/abs/2403.14734) |
 
-## Citation & reuse
+## Citations and contributions
 
-The survey working title is *Code to Everything: How Coding Agents Are Expanding Beyond Software*. No public manuscript citation is available yet. Please cite the original papers; a survey citation will be added after release. The exports contain the actual literature, not an invented survey citation.
+References: [BibTeX](references.bib) · [RIS](references.ris). Paper submissions, analysis and corrections: [contribution guide](CONTRIBUTING.md).
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md). Explain what the model generates or edits, what executes it, how it is checked, and whether you examined the abstract or full text. Corrections and missing historical work are especially welcome.
-
-## Acknowledgments
-
-The collection format is informed by [MLLM-Token-Compression](https://github.com/yaolinli/MLLM-Token-Compression). This repository develops its own domain taxonomy, annotations and evidence comparisons. Papers and linked software remain the work of their respective authors.
+[Curation log](docs/curation-log.md) · [Taxonomy](docs/taxonomy.md) · [Maintenance](docs/maintenance.md)

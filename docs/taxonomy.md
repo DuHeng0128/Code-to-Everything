@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [中文目录](../README.zh-CN.md) · [Evidence](evidence.md)
 
-The central question is concrete: **what becomes possible when a model can write, edit and execute programs beyond ordinary software development?** Domains are the main navigation because a reader looking for robot policies should not first need to learn a new conceptual vocabulary. Within each domain, the subsections separate different tasks and different responsibilities of code.
+The collection covers model-generated, edited and executed programs beyond ordinary software development. The primary hierarchy is domain → task; subsections distinguish the responsibilities of code within each domain.
 
 ## One primary home, several connections
 
@@ -27,19 +27,25 @@ A method belongs when a model generates, edits, selects or executes a program th
 
 Code merely being present in the implementation is insufficient. A VLA that directly predicts actions is a useful **Comparison**, not a code-generating policy. A benchmark belongs because it measures a relevant capability, not because it is itself an agent. Structured function calls and fixed compilation pipelines can illuminate the boundary; their notes must identify who actually produces the executable program.
 
-## Two distinct labels: contribution and reading depth
+## Record fields
 
 | Field | Values | Interpretation |
 |---|---|---|
 | `kind` | method, benchmark, background, comparison, survey | Why the entry is included |
 | `reading_depth` | abstract, sections | How deeply its original source has been examined for this collection |
-| `program_role` | Plain-language descriptor | The task that code performs; not a claim that the whole system is autonomous |
+| `program_role` / `program_role_zh` | Plain-language descriptor | The task that code performs in the system |
 | `milestone` | true/false, with a written reason | An editorial anchor that explains a turning point |
-| `checked_on` | Date | When the recorded source/claim was checked, not a claim that every link was re-tested |
+| `checked_on` | Date | When the recorded source and claim were checked |
 
-**K** means selected full-text methods, experiments or limitations were examined. It does not mean every appendix was read or the system was reproduced. **A** entries are useful pointers whose detailed experimental claims still require reading. A historical milestone can be A: its conceptual role is clear, while this collection has not audited all of its experiments.
+Source-reading fields are internal curation records. Public annotations cite the relevant version, section or table directly.
 
-Milestone selection should reflect a concrete shift: a new role for programs, a revealing controlled comparison, a reusable interface, or a result that changes the scope of credible application. A recent release, high score or catchy title alone is insufficient. This is why recent world-model and robot-system preprints are included without automatically being labeled milestones.
+Milestone selection should reflect a concrete shift: a new role for programs, a revealing controlled comparison, a reusable interface, or a result that changes the scope of credible application. Each selection has a reason in both languages; recent preprints enter the same review process.
+
+## Reader-facing annotations
+
+The index gives a short `summary` for each paper. Expanded analyses use bilingual `io`, `feedback` and `takeaway` fields, with `compare_with` linking related records. Detailed analyses add `mechanism`, `experiment` and their translations, an `analysis_source` URL and bilingual `analysis_location`. These fields generate the [English](paper-notes.md) and [Chinese](paper-notes.zh-CN.md) analysis pages.
+
+Each domain stores a bilingual `overview` and a `focus_papers` list selecting entries for expanded analysis. Milestone contributions appear inside the chronological paper table, beside the relevant method.
 
 ## Preserve differences that matter
 
@@ -49,7 +55,7 @@ Milestone selection should reflect a concrete shift: a new role for programs, a 
 - **Coverage versus transfer.** Evaluating the same framework on several tasks differs from carrying learned parameters or useful programs from one task to another.
 - **Execution versus correctness.** Rendering, passing tests, proving a formal statement, and reproducing a physical experiment answer different questions.
 
-These distinctions are developed with sources in [evidence comparisons](evidence.md). They are also the reason this index is organized by tasks first, rather than forcing every paper into one identical agent loop.
+Sources and experimental comparisons are collected in [cross-method comparisons](evidence.md).
 
 ## Dates and publication claims
 

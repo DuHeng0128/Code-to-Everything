@@ -10,7 +10,7 @@ AU  - Wang, Xin Eric
 PY  - 2024
 UR  - https://arxiv.org/abs/2410.08164
 AB  - Combines computer-use planning and interaction; compare GUI actions with programmatic control.
-N1  - Key: AgentS; digital/interfaces; comparison; reading: abstract; checked: 2026-09-12; first public: 2024-10. 作为GUI中心路线与代码中心路线的比较对象。 code_link_status: not recorded
+N1  - Key: AgentS; digital/interfaces; comparison; first public: 2024-10. 作为GUI中心路线与代码中心路线的比较对象。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2410.08164
 JO  - arXiv
 N1  - arXiv: 2410.08164
@@ -30,7 +30,7 @@ AU  - Neubig, Graham
 PY  - 2024
 UR  - https://arxiv.org/abs/2409.07429
 AB  - Extracts reusable workflows from experience; compare workflow reuse with reusable executable skills.
-N1  - Key: AgentWorkflowMemory; foundations/tools; method; reading: abstract; checked: 2026-09-12; first public: 2024-09. 工作流迁移需要与简单检索既有答案区分。 code_link_status: not recorded
+N1  - Key: AgentWorkflowMemory; foundations/tools; method; first public: 2024-09. 工作流迁移需要与简单检索既有答案区分。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2409.07429
 JO  - arXiv
 N1  - arXiv: 2409.07429
@@ -62,7 +62,7 @@ AU  - Che, Wanxiang
 PY  - 2025
 UR  - https://arxiv.org/abs/2507.01903
 AB  - Surveys AI for scientific research across stages and disciplines.
-N1  - Key: AI4Research; surveys/surveys; survey; reading: abstract; checked: 2026-09-12; first public: 2025-07. 为定位更广泛科学发现提供背景。 code_url: https://github.com/LightChen233/Awesome-AI4Research code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: AI4Research; surveys/surveys; survey; first public: 2025-07. 为定位更广泛科学发现提供背景。 code_url: https://github.com/LightChen233/Awesome-AI4Research code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2507.01903
 JO  - arXiv
 N1  - arXiv: 2507.01903
@@ -129,7 +129,7 @@ AU  - Natarajan, Vivek
 PY  - 2025
 UR  - https://arxiv.org/abs/2502.18864
 AB  - Studies AI-assisted hypothesis generation and scientific research; a comparator for code-centered systems.
-N1  - Key: AICoScientist; science/agents; comparison; reading: abstract; checked: 2026-09-12; first public: 2025-02. 重要相邻路线；假说讨论与实际代码执行贡献应分开。 code_link_status: not recorded
+N1  - Key: AICoScientist; science/agents; comparison; first public: 2025-02. 重要相邻路线；假说讨论与实际代码执行贡献应分开。 code_link_status: not recorded
 DO  - 10.1038/s41586-026-10644-y
 JO  - arXiv
 N1  - arXiv: 2502.18864
@@ -153,7 +153,7 @@ AU  - Chen, Tianlong
 PY  - 2026
 UR  - https://arxiv.org/abs/2609.08220
 AB  - Connects language-driven programs and physical modeling for continuum-robot design.
-N1  - Key: AIDSR; science/equations; method; reading: abstract; checked: 2026-09-12; first public: 2026-09. 仿真可行率、任务成功率和少量实体制作验证应分列。 code_link_status: not recorded
+N1  - Key: AIDSR; science/equations; method; first public: 2026-09. 仿真可行率、任务成功率和少量实体制作验证应分列。 code_link_status: not recorded
 DO  - 10.15607/RSS.2026.XXII.194
 JO  - Proceedings of Robotics: Science and Systems XXII, 2026
 N1  - arXiv: 2609.08220
@@ -175,7 +175,7 @@ AU  - Ha, David
 PY  - 2024
 UR  - https://arxiv.org/abs/2408.06292
 AB  - Automates parts of computational research from experiment code to paper preparation.
-N1  - Key: AIScientist; science/agents; method; reading: abstract; checked: 2026-09-12; first public: 2024-08. 初版依赖研究模板；论文生成不等于发现经独立确认。 code_link_status: not recorded
+N1  - Key: AIScientist; science/agents; method; first public: 2024-08. 初版依赖研究模板；论文生成不等于发现经独立确认。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2408.06292
 JO  - arXiv
 N1  - arXiv: 2408.06292
@@ -198,8 +198,8 @@ AU  - Clune, Jeff
 AU  - Ha, David
 PY  - 2025
 UR  - https://arxiv.org/abs/2504.08066
-AB  - Organizes computational research with experiment-tree search; human selection and submission selection matter.
-N1  - Key: AIScientistV2; science/agents; method; reading: sections; checked: 2026-09-13; first public: 2025-04. 人工筛选初始想法和多种子完整稿件；三篇送审中一篇达workshop门槛，不是独立运行成功率。 evaluation_protocol: 约40个初始想法、多种子完整运行后选三篇送审，其中一篇达到workshop门槛。 budget_notes: 送审前有筛选，1/3不能作为任意一次独立运行的录用概率。 human_role: §4.2明确人工选研究方向；自主范围受初始问题与评价流程限定。 code_link_status: not recorded
+AB  - Uses experiment-tree search to organize machine-learning experiments, then turns the results into a paper.
+N1  - Key: AIScientistV2; science/agents; method; first public: 2025-04. 人工筛选初始想法和多种子完整稿件；三篇送审中一篇达workshop门槛，不是独立运行成功率。 evaluation_protocol: 约40个初始想法、多种子完整运行后选三篇送审，其中一篇达到workshop门槛。 budget_notes: 送审前有筛选，1/3不能作为任意一次独立运行的录用概率。 human_role: §4.2明确人工选研究方向；自主范围受初始问题与评价流程限定。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2504.08066
 JO  - arXiv
 N1  - arXiv: 2504.08066
@@ -243,7 +243,7 @@ AU  - Luong, Thang
 PY  - 2026
 UR  - https://arxiv.org/abs/2602.10177
 AB  - Studies autonomous mathematical research beyond fixed competition benchmarks.
-N1  - Key: Aletheia; math/research; method; reading: abstract; checked: 2026-09-12; first public: 2026-02. 非形式推理是重要组成，不能将系统全部归结为代码执行。 code_link_status: not recorded
+N1  - Key: Aletheia; math/research; method; first public: 2026-02. 非形式推理是重要组成，不能将系统全部归结为代码执行。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2602.10177
 JO  - arXiv
 N1  - arXiv: 2602.10177
@@ -285,7 +285,7 @@ AU  - Vinyals, Oriol
 PY  - 2022
 UR  - https://arxiv.org/abs/2203.07814
 AB  - Combines code generation, large-scale sampling and filtering for competitive programming.
-N1  - Key: AlphaCode; foundations/synthesis; background; reading: abstract; checked: 2026-09-12; first public: 2022-03. 计算量与候选筛选是性能来源，任务仍是软件。 code_link_status: not recorded
+N1  - Key: AlphaCode; foundations/synthesis; background; first public: 2022-03. 计算量与候选筛选是性能来源，任务仍是软件。 code_link_status: not recorded
 DO  - 10.1126/science.abq1158
 JO  - arXiv
 N1  - arXiv: 2203.07814
@@ -331,7 +331,7 @@ AU  - Silver, David
 PY  - 2023
 UR  - https://www.nature.com/articles/s41586-023-06004-9
 AB  - Searches low-level sorting programs with reinforcement learning; an algorithm-discovery comparator.
-N1  - Key: AlphaDev; science/algorithms; background; reading: abstract; checked: 2026-09-12; first public: 2023-06-07. 算法发现前史；不是基于LLM的通用coding agent。 code_link_status: not recorded
+N1  - Key: AlphaDev; science/algorithms; background; first public: 2023-06-07. 算法发现前史；不是基于LLM的通用coding agent。 code_link_status: not recorded
 DO  - 10.1038/s41586-023-06004-9
 JO  - Nature
 KW  - science
@@ -363,8 +363,8 @@ AU  - Kohli, Pushmeet
 AU  - Balog, Matej
 PY  - 2025
 UR  - https://arxiv.org/abs/2506.13131
-AB  - Evolves programs with automatic evaluators for algorithmic and scientific problems.
-N1  - Key: AlphaEvolve; science/algorithms; method; reading: sections; checked: 2026-09-13; first public: 2025-06. 适用于可设计可靠自动评价器的任务，不等于自主定义科学问题。 evaluation_protocol: 4×4复数矩阵乘法张量分解48次标量乘法；组件消融用3次独立运行统计。 budget_notes: 乘法操作数不是硬件实测速度；候选搜索与评价消耗计算。 human_role: 人指定评价函数、合法性条件与搜索任务。 code_link_status: not recorded
+AB  - Combines language-model proposals, a population of programs and automatic evaluators to improve algorithms and mathematical constructions.
+N1  - Key: AlphaEvolve; science/algorithms; method; first public: 2025-06. 适用于可设计可靠自动评价器的任务，不等于自主定义科学问题。 evaluation_protocol: 4×4复数矩阵乘法张量分解48次标量乘法；组件消融用3次独立运行统计。 budget_notes: 乘法操作数不是硬件实测速度；候选搜索与评价消耗计算。 human_role: 人指定评价函数、合法性条件与搜索任务。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2506.13131
 JO  - arXiv
 N1  - arXiv: 2506.13131
@@ -418,8 +418,8 @@ AU  - Kohli, Pushmeet
 AU  - Silver, David
 PY  - 2026
 UR  - https://www.nature.com/articles/s41586-025-09833-y
-AB  - Combines formal proof search, reinforcement learning and test-time adaptation; problem formalization remains a distinct step.
-N1  - Key: AlphaProof; math/proofs; method; reading: sections; checked: 2026-09-13; first public: 2025-11-12. 已核查原始期刊正文；结论须按各实验条件解释。 evaluation_protocol: IMO 2024：AlphaProof完成三题，合并AlphaGeometry 2结果达银牌水平。 budget_notes: 人工形式化；难题可花多日测试时学习，不是比赛时限内完全自主读题。 human_role: 人将题目翻译为形式语言；几何由独立系统完成。 code_link_status: not recorded
+AB  - Combines Lean proof search, reinforcement learning and test-time adaptation to tackle difficult formalized mathematics problems.
+N1  - Key: AlphaProof; math/proofs; method; first public: 2025-11-12. 已核查原始期刊正文；结论须按各实验条件解释。 evaluation_protocol: IMO 2024：AlphaProof完成三题，合并AlphaGeometry 2结果达银牌水平。 budget_notes: 人工形式化；难题可花多日测试时学习，不是比赛时限内完全自主读题。 human_role: 人将题目翻译为形式语言；几何由独立系统完成。 code_link_status: not recorded
 DO  - 10.1038/s41586-025-09833-y
 JO  - Nature
 KW  - math
@@ -447,7 +447,7 @@ AU  - Kohli, Pushmeet
 PY  - 2022
 UR  - https://www.nature.com/articles/s41586-022-05172-4
 AB  - Searches matrix-multiplication decompositions with reinforcement learning; a non-LLM precursor.
-N1  - Key: AlphaTensor; science/algorithms; background; reading: abstract; checked: 2026-09-12; first public: 2022-10-05. 算法发现前史；不是基于LLM的通用coding agent。 code_link_status: not recorded
+N1  - Key: AlphaTensor; science/algorithms; background; first public: 2022-10-05. 算法发现前史；不是基于LLM的通用coding agent。 code_link_status: not recorded
 DO  - 10.1038/s41586-022-05172-4
 JO  - Nature
 KW  - science
@@ -485,7 +485,7 @@ AU  - Wu, Lawrence
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.01346
 AB  - Combines automated reasoning components for formal theorem proving.
-N1  - Key: Aristotle; math/proofs; method; reading: abstract; checked: 2026-09-12; first public: 2025-10. IMO级是特定评价结论，形式化和人类参与仍需查具体协议。 code_link_status: not recorded
+N1  - Key: Aristotle; math/proofs; method; first public: 2025-10. IMO级是特定评价结论，形式化和人类参与仍需查具体协议。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2510.01346
 JO  - arXiv
 N1  - arXiv: 2510.01346
@@ -521,7 +521,7 @@ AU  - Lian, Fengzong
 PY  - 2025
 UR  - https://arxiv.org/abs/2507.04952
 AB  - Evaluates interactive visual artifacts beyond static screenshot similarity.
-N1  - Key: ArtifactsBench; vision/models; benchmark; reading: abstract; checked: 2026-09-12; first public: 2025-07. 可运行或美观不能代替交互功能检查。 code_link_status: not recorded
+N1  - Key: ArtifactsBench; vision/models; benchmark; first public: 2025-07. 可运行或美观不能代替交互功能检查。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2507.04952
 JO  - arXiv
 N1  - arXiv: 2507.04952
@@ -538,7 +538,7 @@ AU  - Bicker, Emmett
 PY  - 2026
 UR  - https://arxiv.org/abs/2602.07040
 AB  - Explores more efficient scientific discovery; speed claims require matched search budgets.
-N1  - Key: Aster; science/algorithms; method; reading: abstract; checked: 2026-09-12; first public: 2026-02. 标题速度倍数需对齐任务和计算预算，本文不据摘要采用该倍数。 code_link_status: not recorded
+N1  - Key: Aster; science/algorithms; method; first public: 2026-02. 摘要中的速度比较需要结合具体任务和计算预算，完整协议尚待核查。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2602.07040
 JO  - arXiv
 N1  - arXiv: 2602.07040
@@ -557,7 +557,7 @@ AU  - Tai, Yu-Wing
 PY  - 2024
 UR  - https://arxiv.org/abs/2410.03335
 AB  - Uses JSON audio-event calls and a neural video-to-audio branch; not unrestricted program generation.
-N1  - Key: AudioAgent; media/audio; comparison; reading: sections; checked: 2026-09-13; first public: 2024-10. 结构化工具编排与神经模态连接的边界参照，不作为通用程序生成的核心证据。 budget_notes: 原文§3.6与§4.4的LoRA rank文字64/60不一致；不采用此值做模型比较。 human_role: 人定义JSON调用接口、波形混合规则与外部音频模型。 code_link_status: not recorded
+N1  - Key: AudioAgent; media/audio; comparison; first public: 2024-10. 结构化工具编排与神经模态连接的边界参照，不作为通用程序生成的核心证据。 budget_notes: 原文§3.6与§4.4的LoRA rank文字64/60不一致；不采用此值做模型比较。 human_role: 人定义JSON调用接口、波形混合规则与外部音频模型。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2410.03335
 JO  - arXiv
 N1  - arXiv: 2410.03335
@@ -587,7 +587,7 @@ AU  - Wang, Chi
 PY  - 2023
 UR  - https://arxiv.org/abs/2308.08155
 AB  - Provides multi-agent conversation and execution infrastructure; orchestration alone is not evidence of transfer.
-N1  - Key: AutoGen; foundations/feedback; background; reading: abstract; checked: 2026-09-12; first public: 2023-08. 多角色并不自动意味着能力迁移或更高效率。 code_link_status: not recorded
+N1  - Key: AutoGen; foundations/feedback; background; first public: 2023-08. 多角色并不自动意味着能力迁移或更高效率。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2308.08155
 JO  - arXiv
 N1  - arXiv: 2308.08155
@@ -611,7 +611,7 @@ AU  - Heinrich, Mary Katherine
 PY  - 2026
 UR  - https://arxiv.org/abs/2609.16346
 AB  - Generates personalized state-machine interfaces for gesture-controlled robot swarms.
-N1  - Key: AutoHSI; robotics/policies; method; reading: abstract; checked: 2026-09-28; first public: 2026-09-14. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Mary Katherine Heinrich [ view email ] [v1] Mon, 14 Sep 2026 21:09:00 UTC (5,084 KB) code_link_status: not recorded
+N1  - Key: AutoHSI; robotics/policies; method; first public: 2026-09-14. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Mary Katherine Heinrich [ view email ] [v1] Mon, 14 Sep 2026 21:09:00 UTC (5,084 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2609.16346
 KW  - robotics
@@ -629,7 +629,7 @@ AU  - Eger, Steffen
 PY  - 2023
 UR  - https://arxiv.org/abs/2310.00367
 AB  - Generates editable scientific vector graphics as TikZ programs.
-N1  - Key: AutomaTikZ; vision/graphics; method; reading: abstract; checked: 2026-09-12; first public: 2023-10. 渲染成功、视觉相似与科学语义正确需分别检查。 code_url: https://github.com/potamides/AutomaTikZ code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: AutomaTikZ; vision/graphics; method; first public: 2023-10. 渲染成功、视觉相似与科学语义正确需分别检查。 code_url: https://github.com/potamides/AutomaTikZ code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2310.00367
 JO  - The Twelfth International Conference on Learning Representations, 2024
 N1  - arXiv: 2310.00367
@@ -663,8 +663,8 @@ AU  - Hu, Jian
 AU  - Zeng, Zhixiong
 PY  - 2026
 UR  - https://arxiv.org/abs/2606.15932
-AB  - Surveys multimodal code intelligence and explicitly discusses cross-task transfer controls.
-N1  - Key: BeyondNL2Code; surveys/surveys; survey; reading: sections; checked: 2026-09-13; first public: 2026-06. 已明确提出等规模数据对照、正负跨任务迁移与可验证agent轨迹；本文进一步比较原始实验，而非首次提出这些问题。 checked_version: arXiv:2606.15932v3，2026-08-30；v1为2026-06-14 code_link_status: not recorded
+AB  - Maps multimodal code intelligence across tasks and discusses how to test positive and negative transfer between them.
+N1  - Key: BeyondNL2Code; surveys/surveys; survey; first public: 2026-06. 讨论等规模数据对照、正负跨任务迁移，以及可验证的智能体轨迹。 checked_version: arXiv:2606.15932v3，2026-08-30；v1为2026-06-14 code_link_status: not recorded
 DO  - 10.48550/arXiv.2606.15932
 JO  - TMLR 2026
 N1  - arXiv: 2606.15932
@@ -723,7 +723,7 @@ AU  - Rajeswar, Sai
 PY  - 2024
 UR  - https://arxiv.org/abs/2412.04626
 AB  - Provides multimodal document and code data for training and evaluation.
-N1  - Key: BigDocs; media/documents; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-12. 文档域覆盖扩展的训练基础，而非通用agent的直接证据。 code_link_status: not recorded
+N1  - Key: BigDocs; media/documents; benchmark; first public: 2024-12. 文档域覆盖扩展的训练基础，而非通用agent的直接证据。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2412.04626
 JO  - ICLR 2025 https://openreview.net/forum?id=UTgNFcpk0j
 N1  - arXiv: 2412.04626
@@ -748,7 +748,7 @@ AU  - Rodriques, Samuel G
 PY  - 2025
 UR  - https://arxiv.org/abs/2503.00096
 AB  - Evaluates code-using agents on computational biology analysis tasks.
-N1  - Key: BixBench; science/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2025-03. 专门领域知识可能限制通用代码能力的收益。 code_link_status: not recorded
+N1  - Key: BixBench; science/evaluation; benchmark; first public: 2025-03. 专门领域知识可能限制通用代码能力的收益。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2503.00096
 JO  - arXiv
 N1  - arXiv: 2503.00096
@@ -766,8 +766,8 @@ AU  - Yang, Guandao
 AU  - Guibas, Leonidas
 PY  - 2024
 UR  - https://arxiv.org/abs/2404.17672
-AB  - Iteratively edits Blender programs using visual feedback and multiple candidate edits.
-N1  - Key: BlenderAlchemy; spatial/scenes; method; reading: abstract; checked: 2026-09-28; first public: 2024-04-26. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Ian Huang [ view email ] [v1] Fri, 26 Apr 2024 19:37:13 UTC (40,287 KB) [v2] Wed, 22 May 2024 04:21:02 UTC (40,287 KB) [v3] Fri, 2 Aug 2024 21:33:21 UTC (49,078 KB) code_link_status: not recorded
+AB  - Decomposes Blender scenes into editable scripts and alternates parameter tweaks with structural changes. Rendered candidates undergo pairwise visual selection, retaining the incumbent as a rollback option.
+N1  - Key: BlenderAlchemy; spatial/scenes; method; first public: 2024-04-26. Abstract-screened; no full protocol audit or reproduction. checked_version: https://arxiv.org/html/2404.17672v3 code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2404.17672
 KW  - spatial
@@ -786,7 +786,7 @@ AU  - Hoi, Steven
 PY  - 2023
 UR  - https://arxiv.org/abs/2301.12597
 AB  - Bridges visual encoders and language models; context for perception supplied to code agents.
-N1  - Key: BLIP2; vision/context; comparison; reading: abstract; checked: 2026-09-12; first public: 2023-01. 是多个代码编排系统的外部能力来源。 code_link_status: not recorded
+N1  - Key: BLIP2; vision/context; comparison; first public: 2023-01. 是多个代码编排系统的外部能力来源。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2301.12597
 JO  - arXiv
 N1  - arXiv: 2301.12597
@@ -808,7 +808,7 @@ AU  - Yu, Qian
 PY  - 2025
 UR  - https://arxiv.org/abs/2505.19713
 AB  - Generates CAD from text with chain-of-thought and geometric rewards.
-N1  - Key: CADCoderText; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2025-05. 与视觉版CAD-Coder分开记录；奖励目标影响设计质量。 code_link_status: not recorded
+N1  - Key: CADCoderText; spatial/cad; method; first public: 2025-05. 与视觉版CAD-Coder分开记录；奖励目标影响设计质量。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2505.19713
 JO  - Advances in Neural Information Processing Systems 38 (NeurIPS 2025), pp. 59765-59789
 N1  - arXiv: 2505.19713
@@ -828,7 +828,7 @@ AU  - Ahmed, Faez
 PY  - 2025
 UR  - https://arxiv.org/abs/2505.14646
 AB  - Generates CAD code from visual inputs; distinct from the other CAD-Coder paper.
-N1  - Key: CADCoderVision; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2025-05. 与另一个同名CAD-Coder并非同一论文。 code_link_status: not recorded
+N1  - Key: CADCoderVision; spatial/cad; method; first public: 2025-05. 与另一个同名CAD-Coder并非同一论文。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2505.14646
 JO  - arXiv
 N1  - arXiv: 2505.14646
@@ -850,7 +850,7 @@ AU  - Zhang, Shuyou
 PY  - 2025
 UR  - https://arxiv.org/abs/2508.04002
 AB  - Evaluates morphological correctness in text-to-CAD generation.
-N1  - Key: CADJudge; spatial/cad; benchmark; reading: abstract; checked: 2026-09-12; first public: 2025-08. 形态匹配不是制造可行性证明。 code_link_status: not recorded
+N1  - Key: CADJudge; spatial/cad; benchmark; first public: 2025-08. 形态匹配不是制造可行性证明。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2508.04002
 JO  - arXiv
 N1  - arXiv: 2508.04002
@@ -872,7 +872,7 @@ AU  - Gao, Shenghua
 PY  - 2024
 UR  - https://arxiv.org/abs/2411.04954
 AB  - Studies CAD generation conditioned on multiple modalities.
-N1  - Key: CADMLLM; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2024-11. 需要按代码、CAD序列和几何表示具体区分。 code_link_status: not recorded
+N1  - Key: CADMLLM; spatial/cad; method; first public: 2024-11. 需要按代码、CAD序列和几何表示具体区分。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2411.04954
 JO  - arXiv
 N1  - arXiv: 2411.04954
@@ -893,8 +893,8 @@ AU  - Kacem, Anis
 AU  - Aouada, Djamila
 PY  - 2024
 UR  - https://arxiv.org/abs/2412.14042
-AB  - Reconstructs editable CadQuery programs from point clouds.
-N1  - Key: CADRecode; spatial/reconstruction; method; reading: sections; checked: 2026-09-12; first public: 2024-12. 大量合成程序与几何编码器是关键条件；重建不唯一。 code_link_status: not recorded
+AB  - Projects 256 sampled points through Fourier features into Qwen2-1.5B to generate CadQuery sketch-and-extrude code. Training uses a million synthetic CAD programs; inference selects among ten executed candidates by Chamfer distance.
+N1  - Key: CADRecode; spatial/reconstruction; method; first public: 2024-12. 大量合成程序与几何编码器是关键条件；重建不唯一。 checked_version: https://arxiv.org/html/2412.14042v2 code_link_status: not recorded
 DO  - 10.48550/arXiv.2412.14042
 JO  - arXiv
 N1  - arXiv: 2412.14042
@@ -918,7 +918,7 @@ AU  - Qing, Li
 PY  - 2025
 UR  - https://arxiv.org/abs/2505.22304
 AB  - Detects and corrects errors in CAD programs.
-N1  - Key: CADReview; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2025-05. 将程序检查从语法扩展到建模语义。 code_link_status: not recorded
+N1  - Key: CADReview; spatial/cad; method; first public: 2025-05. 将程序检查从语法扩展到建模语义。 code_link_status: not recorded
 DO  - 10.18653/v1/2025.acl-long.489
 JO  - ACL 2025
 N1  - arXiv: 2505.22304
@@ -943,8 +943,8 @@ AU  - Xia, Fei
 AU  - Ichter, Brian
 PY  - 2023
 UR  - https://arxiv.org/abs/2312.04474
-AB  - Combines program execution with a language-model emulator for steps that cannot execute directly.
-N1  - Key: ChainOfCode; math/computation; method; reading: sections; checked: 2026-09-12; first public: 2023-12. 被LM模拟的步骤不享有解释器的确定性保证。 code_link_status: not recorded
+AB  - Interleaves real program execution with a language-model emulator for semantic steps that ordinary code cannot directly execute.
+N1  - Key: ChainOfCode; math/computation; method; first public: 2023-12. 被LM模拟的步骤不享有解释器的确定性保证。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2312.04474
 JO  - ICML 2024
 N1  - arXiv: 2312.04474
@@ -967,7 +967,7 @@ AU  - Sun, Maosong
 PY  - 2025
 UR  - https://arxiv.org/abs/2501.06598
 AB  - Trains multimodal models specifically for chart-to-code generation.
-N1  - Key: ChartCoder; vision/graphics; method; reading: abstract; checked: 2026-09-12; first public: 2025-01. 是专门模型路线，与通用agent需要配对比较。 code_link_status: not recorded
+N1  - Key: ChartCoder; vision/graphics; method; first public: 2025-01. 是专门模型路线，与通用agent需要配对比较。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2501.06598
 JO  - ACL 2025
 N1  - arXiv: 2501.06598
@@ -989,7 +989,7 @@ AU  - He, Xiaodong
 PY  - 2025
 UR  - https://arxiv.org/abs/2508.17608
 AB  - Uses real-world charts and similarity-based reinforcement learning for chart code generation.
-N1  - Key: ChartMaster; vision/graphics; method; reading: abstract; checked: 2026-09-12; first public: 2025-08. 奖励偏好可能偏向外观而遗漏数据含义。 code_link_status: not recorded
+N1  - Key: ChartMaster; vision/graphics; method; first public: 2025-08. 奖励偏好可能偏向外观而遗漏数据含义。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2508.17608
 JO  - arXiv
 N1  - arXiv: 2508.17608
@@ -1019,7 +1019,7 @@ AU  - Yang, Yujiu
 PY  - 2024
 UR  - https://arxiv.org/abs/2406.09961
 AB  - Tests chart-image reconstruction as executable plotting code.
-N1  - Key: ChartMimic; vision/models; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-06. 视觉相似与数据保真需要分别检查。 code_url: https://github.com/ChartMimic/ChartMimic code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: ChartMimic; vision/models; benchmark; first public: 2024-06. 视觉相似与数据保真需要分别检查。 code_url: https://github.com/ChartMimic/ChartMimic code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2406.09961
 JO  - ICLR 2025
 N1  - arXiv: 2406.09961
@@ -1042,7 +1042,7 @@ AU  - Zhu, Junnan
 PY  - 2025
 UR  - https://arxiv.org/abs/2506.10116
 AB  - Uses code to bridge chart perception and multi-step reasoning.
-N1  - Key: ChartReasoner; vision/reasoning; method; reading: abstract; checked: 2026-09-12; first public: 2025-06. 代码能检验部分计算，前端读图误差仍保留。 code_link_status: not recorded
+N1  - Key: ChartReasoner; vision/reasoning; method; first public: 2025-06. 代码能检验部分计算，前端读图误差仍保留。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2506.10116
 JO  - arXiv
 N1  - arXiv: 2506.10116
@@ -1064,7 +1064,7 @@ AU  - Schwaller, Philippe
 PY  - 2023
 UR  - https://arxiv.org/abs/2304.05376
 AB  - Connects language models to chemistry tools; inspect the role of code versus fixed tool calls.
-N1  - Key: ChemCrow; science/agents; comparison; reading: abstract; checked: 2026-09-12; first public: 2023-04. 专用工具和人工接口是主要前提；并非每一步都是代码生成。 code_link_status: not recorded
+N1  - Key: ChemCrow; science/agents; comparison; first public: 2023-04. 专用工具和人工接口是主要前提；并非每一步都是代码生成。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2304.05376
 JO  - arXiv
 N1  - arXiv: 2304.05376
@@ -1081,8 +1081,8 @@ AU  - Kuroki, So
 AU  - Tang, Yujin
 PY  - 2026
 UR  - https://arxiv.org/abs/2609.19906
-AB  - Tests reuse of execution-improved policy software on new RoboCasa tasks; evidence is currently abstract-screened here.
-N1  - Key: ClosedLoopRobotSoftware; robotics/skills; method; reading: abstract; checked: 2026-09-28; first public: 2026-09-17. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: So Kuroki [ view email ] [v1] Thu, 17 Sep 2026 08:51:12 UTC (1,237 KB) code_link_status: not recorded
+AB  - Compares no reference, initial code and optimized code on new RoboCasa tasks to study transfer of program experience.
+N1  - Key: ClosedLoopRobotSoftware; robotics/skills; method; first public: 2026-09-17. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: So Kuroki [ view email ] [v1] Thu, 17 Sep 2026 08:51:12 UTC (1,237 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2609.19906
 KW  - robotics
@@ -1099,8 +1099,8 @@ AU  - Lin, Kevin Qinghong
 AU  - Shou, Mike Zheng
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.01174
-AB  - Generates and refines Manim programs for educational videos.
-N1  - Key: Code2Video; media/video; method; reading: sections; checked: 2026-09-12; first public: 2025-10. 适用于可程序表达的教学动画，不覆盖全部自然视频生成。 code_link_status: not recorded
+AB  - Plans an educational video as a storyboard, generates Manim scenes, and revises the animation through visual critique.
+N1  - Key: Code2Video; media/video; method; first public: 2025-10. 适用于可程序表达的教学动画，不覆盖全部自然视频生成。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2510.01174
 JO  - arXiv
 N1  - arXiv: 2510.01174
@@ -1124,8 +1124,8 @@ AU  - Torr, Philip
 AU  - Lin, Kevin Qinghong
 PY  - 2026
 UR  - https://arxiv.org/abs/2602.09856
-AB  - Generates renderable code for the next GUI observation; not a general physical simulator.
-N1  - Key: Code2World; worlds/generation; method; reading: sections; checked: 2026-09-13; first public: 2026-02. 输出下一帧界面不等于实现真实应用完整状态机。 evaluation_protocol: Gemini-2.5-Flash，AndroidWorld 41.4→50.9，增加9.5个百分点。 budget_notes: 增加世界模型推演；不是零额外计算或完整现实世界模拟。 code_url: https://github.com/AMAP-ML/Code2World code_link_status: link recorded; availability not uniformly rechecked
+AB  - Predicts the next GUI observation by generating renderable HTML from a screenshot and an action, then uses the prediction for decisions.
+N1  - Key: Code2World; worlds/generation; method; first public: 2026-02. 输出下一帧界面不等于实现真实应用完整状态机。 evaluation_protocol: Gemini-2.5-Flash，AndroidWorld 41.4→50.9，增加9.5个百分点。 budget_notes: 增加世界模型推演；不是零额外计算或完整现实世界模拟。 code_url: https://github.com/AMAP-ML/Code2World code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2602.09856
 JO  - arXiv
 N1  - arXiv: 2602.09856
@@ -1147,8 +1147,8 @@ AU  - Peng, Hao
 AU  - Ji, Heng
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.01030
-AB  - Compares executable code with text and JSON actions for composing multi-step tool use.
-N1  - Key: CodeAct; digital/actions; method; reading: sections; checked: 2026-09-13; first public: 2024-02. 受控实验支持复杂工具组合优势，但并非所有模型和任务都优于JSON。 evaluation_protocol: GPT-4-1106，M3ToolEval代码74.4%、JSON52.4%、文本53.7%；同模型动作空间对照。 budget_notes: 跨任务总token、墙钟与重复数未在本轮全部核齐；优势并非所有任务一致。 code_url: https://github.com/xingyaoww/code-act code_link_status: link recorded; availability not uniformly rechecked
+AB  - Uses multi-turn Python actions with loops, multiple tool calls and persistent intermediate values; outputs and errors guide repair. Same-model text/JSON/code comparisons isolate action representation.
+N1  - Key: CodeAct; digital/actions; method; first public: 2024-02. 受控实验支持复杂工具组合优势，但并非所有模型和任务都优于JSON。 evaluation_protocol: GPT-4-1106，M3ToolEval代码74.4%、JSON52.4%、文本53.7%；同模型动作空间对照。 budget_notes: 跨任务的总 token 用量、运行时间和重复次数尚未核全；各模型和任务上的收益有差异。 checked_version: https://arxiv.org/html/2402.01030v4 code_url: https://github.com/xingyaoww/code-act code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2402.01030
 JO  - ICML 2024
 N1  - arXiv: 2402.01030
@@ -1171,8 +1171,8 @@ AU  - Florence, Pete
 AU  - Zeng, Andy
 PY  - 2022
 UR  - https://arxiv.org/abs/2209.07753
-AB  - Generates hierarchical Python policies over perception and control APIs.
-N1  - Key: CodeAsPolicies; robotics/policies; method; reading: sections; checked: 2026-09-12; first public: 2022-09. 真实机器人演示与受控仿真评估需要分开看。 code_url: https://github.com/google-research/google-research/tree/master/code_as_policies code_link_status: linked by original project page, checked 2026-09-28; not independently run
+AB  - Translates language instructions into hierarchical Python policies, generating helper functions over supplied perception and control APIs.
+N1  - Key: CodeAsPolicies; robotics/policies; method; first public: 2022-09. 真实机器人演示与受控仿真评估需要分开看。 code_url: https://github.com/google-research/google-research/tree/master/code_as_policies code_link_status: linked by original project page, checked 2026-09-28; not independently run
 DO  - 10.48550/arXiv.2209.07753
 JO  - arXiv
 N1  - arXiv: 2209.07753
@@ -1194,7 +1194,7 @@ AU  - Anand, Ankit
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.04764
 AB  - Uses generated code in reward design for reinforcement learning.
-N1  - Key: CodeAsReward; robotics/training; method; reading: abstract; checked: 2026-09-12; first public: 2024-02. 视觉评价与奖励设计误差可能共同影响策略学习。 code_link_status: not recorded
+N1  - Key: CodeAsReward; robotics/training; method; first public: 2024-02. 视觉评价与奖励设计误差可能共同影响策略学习。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.04764
 JO  - arXiv
 N1  - arXiv: 2402.04764
@@ -1251,8 +1251,8 @@ AU  - Tong, Hanghang
 AU  - He, Jingrui
 PY  - 2026
 UR  - https://arxiv.org/abs/2605.18747
-AB  - Treats code as an agent harness, including formal proofs, science and verification limits.
-N1  - Key: CodeHarnessSurvey; surveys/surveys; survey; reading: sections; checked: 2026-09-13; first public: 2026-05. 已覆盖形式证明、科学应用和oracle充分性；本文贡献不能建立在声称该综述未涉及这些范围上。 checked_version: arXiv:2605.18747v1，2026-05-18 code_url: https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers code_link_status: link recorded; availability not uniformly rechecked
+AB  - Reviews code as an execution interface for agents, covering control flow, formal proving, scientific applications and evaluation.
+N1  - Key: CodeHarnessSurvey; surveys/surveys; survey; first public: 2026-05. 覆盖形式证明、科学应用，以及评价器能否充分判断任务成功的问题。 checked_version: arXiv:2605.18747v1，2026-05-18 code_url: https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2605.18747
 JO  - arXiv
 N1  - arXiv: 2605.18747
@@ -1339,7 +1339,7 @@ AU  - Zheng, Bo
 PY  - 2025
 UR  - https://arxiv.org/abs/2511.18538
 AB  - Connects code foundation models, agents and applications.
-N1  - Key: CodeIntelligenceSurvey; surveys/surveys; survey; reading: abstract; checked: 2026-09-12; first public: 2025-11. 为与既有代码综述比较提供更接近的参照。 code_link_status: not recorded
+N1  - Key: CodeIntelligenceSurvey; surveys/surveys; survey; first public: 2025-11. 为与既有代码综述比较提供更接近的参照。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2511.18538
 JO  - arXiv
 N1  - arXiv: 2511.18538
@@ -1368,7 +1368,7 @@ AU  - Liu, Xihui
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.11718
 AB  - Uses code-generated visualizations as intermediate steps in mathematical reasoning.
-N1  - Key: CodePlotCoT; math/computation; method; reading: abstract; checked: 2026-09-12; first public: 2025-10. 图像与数值探索可启发推理，但不是形式证明。 code_link_status: not recorded
+N1  - Key: CodePlotCoT; math/computation; method; first public: 2025-10. 图像与数值探索可启发推理，但不是形式证明。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2510.11718
 JO  - arXiv
 N1  - arXiv: 2510.11718
@@ -1391,7 +1391,7 @@ AU  - Wang, Bryan
 PY  - 2025
 UR  - https://arxiv.org/abs/2511.19661
 AB  - Studies whether code-based visual reasoning remains faithful to available tools.
-N1  - Key: CodeV; vision/reasoning; method; reading: abstract; checked: 2026-09-12; first public: 2025-11. 需核查工具感知和代码动作各自的增益。 code_link_status: not recorded
+N1  - Key: CodeV; vision/reasoning; method; first public: 2025-11. 需核查工具感知和代码动作各自的增益。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2511.19661
 JO  - arXiv
 N1  - arXiv: 2511.19661
@@ -1412,7 +1412,7 @@ AU  - Jin, Tao
 PY  - 2025
 UR  - https://arxiv.org/abs/2512.03746
 AB  - Proposes programming-based visual thinking; a method paper rather than a survey.
-N1  - Key: CodeVision; vision/reasoning; method; reading: abstract; checked: 2026-09-12; first public: 2025-12. 标题带有统一视角，但原文是方法论文，不能误列为综述。 code_link_status: not recorded
+N1  - Key: CodeVision; vision/reasoning; method; first public: 2025-12. 标题带有统一视角，但原文是方法论文，不能误列为综述。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2512.03746
 JO  - arXiv
 N1  - arXiv: 2512.03746
@@ -1430,8 +1430,8 @@ AU  - Lin, Guosheng
 AU  - Zhang, Chi
 PY  - 2026
 UR  - https://arxiv.org/abs/2608.25927
-AB  - Combines code-maintained state with neural video; the 2026-09-13 release check found a closed-source upstream dependency.
-N1  - Key: CodeWorldBrain; worlds/generation; method; reading: sections; checked: 2026-09-13; first public: 2026-08. 代码状态与神经视频结合的初步证据；部分推理可复查，但上游依赖闭源游戏基础，完整开放流程仍缺失。 evaluation_protocol: 早期定性评价；已公开视频推理文档、LoRA与40个条件示例。 budget_notes: 文档报告单H800 80GB测试环境；本轮未运行GPU。上游游戏代码闭源、代理输入生成工具不公开，不能完整复现coding agent构建流程。 human_role: 作者采用现成闭源游戏代码基础支撑碰撞/驾驶等模拟；神经视频模型负责生成观察。 checked_version: arXiv:2608.25927v1，2026-08-26；仓库17fa82ba2fb8168aa0d30fc51a1d1d0ebbc9180b，2026-08-27 code_url: https://github.com/buaacyw/code-world-model code_link_status: link recorded; availability not uniformly rechecked
+AB  - Uses code-maintained world state to condition neural video generation, separating simulation state from visual appearance.
+N1  - Key: CodeWorldBrain; worlds/generation; method; first public: 2026-08. 代码状态与神经视频结合的初步证据；部分推理可复查，但上游依赖闭源游戏基础，完整开放流程仍缺失。 evaluation_protocol: 早期定性评价；已公开视频推理文档、LoRA与40个条件示例。 budget_notes: 文档报告单 H800 80GB 测试环境。上游游戏代码闭源，代理输入生成工具未公开，完整构建流程的复现依赖这些组件。 human_role: 作者采用现成闭源游戏代码基础支撑碰撞/驾驶等模拟；神经视频模型负责生成观察。 checked_version: arXiv:2608.25927v1，2026-08-26；仓库17fa82ba2fb8168aa0d30fc51a1d1d0ebbc9180b，2026-08-27 code_url: https://github.com/buaacyw/code-world-model code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2608.25927
 JO  - arXiv
 N1  - arXiv: 2608.25927
@@ -1505,7 +1505,7 @@ AU  - Zaremba, Wojciech
 PY  - 2021
 UR  - https://arxiv.org/abs/2107.03374
 AB  - Establishes broad language-to-code generation, providing a backbone for later executable agents.
-N1  - Key: Codex; foundations/synthesis; background; reading: abstract; checked: 2026-09-12; first public: 2021-07. 代码能力的起点，HumanEval不是跨领域任务评测。 code_link_status: not recorded
+N1  - Key: Codex; foundations/synthesis; background; first public: 2021-07. 代码能力的起点，HumanEval不是跨领域任务评测。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2107.03374
 JO  - arXiv
 N1  - arXiv: 2107.03374
@@ -1524,8 +1524,8 @@ AU  - Kline, Ben
 AU  - Gomes, Gabe
 PY  - 2023
 UR  - https://www.nature.com/articles/s41586-023-06792-0
-AB  - Combines documentation, code execution and automated chemistry experiments.
-N1  - Key: Coscientist; science/agents; method; reading: sections; checked: 2026-09-12; first public: 2023-12-20. 已核查原始期刊正文；结论须按各实验条件解释。 code_link_status: not recorded
+AB  - Connects documentation retrieval, code execution and laboratory automation to plan and carry out chemistry experiments.
+N1  - Key: Coscientist; science/agents; method; first public: 2023-12-20. 已核查原始期刊正文；结论须按各实验条件解释。 code_link_status: not recorded
 DO  - 10.1038/s41586-023-06792-0
 JO  - Nature
 KW  - science
@@ -1568,7 +1568,7 @@ AU  - Lu, Zongqing
 PY  - 2024
 UR  - https://arxiv.org/abs/2403.03186
 AB  - Connects perception, memory and executable actions for general computer control.
-N1  - Key: Cradle; digital/interfaces; method; reading: abstract; checked: 2026-09-12; first public: 2024-03. 屏幕动作程序面临延迟、定位和长期状态管理问题。 code_link_status: not recorded
+N1  - Key: Cradle; digital/interfaces; method; first public: 2024-03. 屏幕动作程序面临延迟、定位和长期状态管理问题。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2403.03186
 JO  - arXiv
 N1  - arXiv: 2403.03186
@@ -1611,7 +1611,7 @@ AU  - Wu, Chenglin
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.18679
 AB  - Uses generated programs for multi-step data-science workflows.
-N1  - Key: DataInterpreter; science/agents; method; reading: abstract; checked: 2026-09-12; first public: 2024-02. 适合观察代码如何跨数据清洗、建模和分析步骤。 code_link_status: not recorded
+N1  - Key: DataInterpreter; science/agents; method; first public: 2024-02. 适合观察代码如何跨数据清洗、建模和分析步骤。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.18679
 JO  - arXiv
 N1  - arXiv: 2402.18679
@@ -1630,7 +1630,7 @@ AU  - Zheng, Changxi
 PY  - 2021
 UR  - https://arxiv.org/abs/2105.09492
 AB  - Represents and generates shapes as CAD operation sequences rather than only final geometry.
-N1  - Key: DeepCAD; spatial/cad; background; reading: abstract; checked: 2026-09-28; first public: 2021-05-20. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Rundi Wu [ view email ] [v1] Thu, 20 May 2021 03:29:18 UTC (10,727 KB) [v2] Mon, 16 Aug 2021 03:47:17 UTC (11,741 KB) code_url: https://github.com/ChrisWu1997/DeepCAD code_link_status: linked by original project page, checked 2026-09-28; not independently run
+N1  - Key: DeepCAD; spatial/cad; background; first public: 2021-05-20. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Rundi Wu [ view email ] [v1] Thu, 20 May 2021 03:29:18 UTC (10,727 KB) [v2] Mon, 16 Aug 2021 03:47:17 UTC (11,741 KB) code_url: https://github.com/ChrisWu1997/DeepCAD code_link_status: linked by original project page, checked 2026-09-28; not independently run
 JO  - arXiv
 N1  - arXiv: 2105.09492
 KW  - spatial
@@ -1662,7 +1662,7 @@ AU  - Ruan, Chong
 PY  - 2024
 UR  - https://arxiv.org/abs/2408.08152
 AB  - Uses proof-assistant feedback, reinforcement learning and tree search for formal proving.
-N1  - Key: DeepSeekProver15; math/proofs; method; reading: abstract; checked: 2026-09-12; first public: 2024-08. 证明搜索效率与采样预算是理解成绩的关键。 code_link_status: not recorded
+N1  - Key: DeepSeekProver15; math/proofs; method; first public: 2024-08. 证明搜索效率与采样预算是理解成绩的关键。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2408.08152
 JO  - arXiv
 N1  - arXiv: 2408.08152
@@ -1695,8 +1695,8 @@ AU  - Guo, Daya
 AU  - Ruan, Chong
 PY  - 2025
 UR  - https://arxiv.org/abs/2504.21801
-AB  - Decomposes proofs into subgoals and learns with formal verification feedback.
-N1  - Key: DeepSeekProverV2; math/proofs; method; reading: sections; checked: 2026-09-13; first public: 2025-04. 较高通过率依赖多次采样，不能当作单次通用证明能力。 evaluation_protocol: 671B CoT，244道MiniF2F-test；82.4% pass@32，88.9% pass@8192。 budget_notes: 采样预算相差256倍；最终以Lean检查，不可当作pass@1或等成本结果。 code_link_status: not recorded
+AB  - DeepSeek-V3 sketches Lean proofs with have/sorry subgoals, recursively completed by a 7B prover. Composed proofs and informal reasoning form cold-start data; reinforcement learning uses Lean verification with early decomposition-consistency rewards.
+N1  - Key: DeepSeekProverV2; math/proofs; method; first public: 2025-04. 较高通过率依赖多次采样，不能当作单次通用证明能力。 evaluation_protocol: 671B CoT，244道MiniF2F-test；82.4% pass@32，88.9% pass@8192。 budget_notes: 采样预算相差256倍；最终以Lean检查，不可当作pass@1或等成本结果。 checked_version: https://arxiv.org/html/2504.21801v1 code_link_status: not recorded
 DO  - 10.48550/arXiv.2504.21801
 JO  - arXiv
 N1  - arXiv: 2504.21801
@@ -1722,7 +1722,7 @@ AU  - Clark, Peter
 PY  - 2024
 UR  - https://arxiv.org/abs/2407.01725
 AB  - Tests data-driven discovery rather than merely producing runnable analysis scripts.
-N1  - Key: DiscoveryBench; science/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-07. 结果表达与证据链评价补充纯代码测试。 code_url: https://github.com/allenai/discoverybench code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: DiscoveryBench; science/evaluation; benchmark; first public: 2024-07. 结果表达与证据链评价补充纯代码测试。 code_url: https://github.com/allenai/discoverybench code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2407.01725
 JO  - arXiv
 N1  - arXiv: 2407.01725
@@ -1747,7 +1747,7 @@ AU  - Lample, Guillaume
 PY  - 2022
 UR  - https://arxiv.org/abs/2210.12283
 AB  - Translates informal proofs into formal sketches that guide an automated prover through subproblems.
-N1  - Key: DraftSketchProve; math/proofs; method; reading: abstract; checked: 2026-09-28; first public: 2022-10-21. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Albert Qiaochu Jiang [ view email ] [v1] Fri, 21 Oct 2022 22:37:22 UTC (5,137 KB) [v2] Mon, 7 Nov 2022 16:41:45 UTC (5,137 KB) [v3] Mon, 20 Feb 2023 16:10:20 UTC (5,136 KB) code_link_status: not recorded
+N1  - Key: DraftSketchProve; math/proofs; method; first public: 2022-10-21. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Albert Qiaochu Jiang [ view email ] [v1] Fri, 21 Oct 2022 22:37:22 UTC (5,137 KB) [v2] Mon, 7 Nov 2022 16:41:45 UTC (5,137 KB) [v3] Mon, 20 Feb 2023 16:10:20 UTC (5,136 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2210.12283
 KW  - math
@@ -1770,8 +1770,8 @@ AU  - Solar-Lezama, Armando
 AU  - Tenenbaum, Joshua B.
 PY  - 2020
 UR  - https://arxiv.org/abs/2006.08381
-AB  - Learns reusable program libraries through alternating synthesis and abstraction; a precursor to skill accumulation.
-N1  - Key: DreamCoder; foundations/synthesis; background; reading: abstract; checked: 2026-09-12; first public: 2020-06. 受领域语言与任务分布约束，不是现代通用LLM agent。 code_link_status: not recorded
+AB  - Alternates program search, library abstraction and recognition-model training. Shared fragments become primitives; sampled programs from the expanded library train search guidance. Abstractions shorten solutions while neural guidance narrows search.
+N1  - Key: DreamCoder; foundations/synthesis; background; first public: 2020-06. 受领域语言与任务分布约束，不是现代通用LLM agent。 checked_version: https://arxiv.org/pdf/2006.08381v1 code_link_status: not recorded
 DO  - 10.48550/arXiv.2006.08381
 JO  - arXiv
 N1  - arXiv: 2006.08381
@@ -1791,7 +1791,7 @@ AU  - Lillicrap, Timothy
 PY  - 2023
 UR  - https://arxiv.org/abs/2301.04104
 AB  - Learns a neural world model for control; a comparator to explicit transition programs.
-N1  - Key: DreamerV3; worlds/context; comparison; reading: abstract; checked: 2026-09-12; first public: 2023-01. 用于比较非代码世界模型路线，不计作核心coding agent。 code_link_status: not recorded
+N1  - Key: DreamerV3; worlds/context; comparison; first public: 2023-01. 用于比较非代码世界模型路线，不计作核心coding agent。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2301.04104
 JO  - arXiv
 N1  - arXiv: 2301.04104
@@ -1819,7 +1819,7 @@ AU  - Zhou, Tianyi
 PY  - 2024
 UR  - https://arxiv.org/abs/2411.01747
 AB  - Lets agents construct new Python actions beyond a predefined action set.
-N1  - Key: DynaSaur; foundations/tools; method; reading: abstract; checked: 2026-09-12; first public: 2024-11. 扩展动作空间仍受运行环境和可用库约束。 code_link_status: not recorded
+N1  - Key: DynaSaur; foundations/tools; method; first public: 2024-11. 扩展动作空间仍受运行环境和可用库约束。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2411.01747
 JO  - COLM 2025
 N1  - arXiv: 2411.01747
@@ -1852,7 +1852,7 @@ AU  - Ranganathan, Parthasarathy
 PY  - 2025
 UR  - https://arxiv.org/abs/2503.15669
 AB  - Optimizes code for warehouse-scale computing; distinguish objective improvements from general discovery.
-N1  - Key: ECO; science/algorithms; method; reading: abstract; checked: 2026-09-12; first public: 2025-03. 工程优化能获得明确反馈，但硬件与工作负载影响结论。 code_link_status: not recorded
+N1  - Key: ECO; science/algorithms; method; first public: 2025-03. 工程优化能获得明确反馈，但硬件与工作负载影响结论。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2503.15669
 JO  - OSDI 2026, 589-625
 N1  - arXiv: 2503.15669
@@ -1879,7 +1879,7 @@ AU  - Zhang, Zhaoxiang
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.06207
 AB  - Uses coding models for parameterized geometry and trajectories with specialized perception modules.
-N1  - Key: EmbodiedCoder; robotics/policies; method; reading: sections; checked: 2026-09-13; first public: 2025-10. 单一AgileX平台；程序可运行率与有效完成率不同，未进行跨硬件迁移测试。 evaluation_protocol: AgileX Cobot S Kit与D455；抓取20次试验；模型消融区分可运行和有效完成。 budget_notes: 模型能力与执行延迟存在权衡；本轮未核齐全系统跨任务成本。 human_role: 人提供平台、任务与接口；Qwen2.5-VL、SAM、VGGT负责任务/感知/重建组件。 code_link_status: not recorded
+N1  - Key: EmbodiedCoder; robotics/policies; method; first public: 2025-10. 单一AgileX平台；程序可运行率与有效完成率不同，未进行跨硬件迁移测试。 evaluation_protocol: AgileX Cobot S Kit与D455；抓取20次试验；模型消融区分可运行和有效完成。 budget_notes: 模型能力与执行延迟存在权衡；完整系统的跨任务成本尚待核实。 human_role: 人提供平台、任务与接口；Qwen2.5-VL、SAM、VGGT负责任务/感知/重建组件。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2510.06207
 JO  - arXiv
 N1  - arXiv: 2510.06207
@@ -1900,7 +1900,7 @@ AU  - Bansal, Mohit
 PY  - 2024
 UR  - https://arxiv.org/abs/2403.12014
 AB  - Generates and adapts training environments for embodied agents.
-N1  - Key: EnvGen; worlds/generation; method; reading: abstract; checked: 2026-09-12; first public: 2024-03. 环境用于训练的价值需由下游表现验证。 code_link_status: not recorded
+N1  - Key: EnvGen; worlds/generation; method; first public: 2024-03. 环境用于训练的价值需由下游表现验证。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2403.12014
 JO  - COLM 2024
 N1  - arXiv: 2403.12014
@@ -1924,8 +1924,8 @@ AU  - Fan, Linxi
 AU  - Anandkumar, Anima
 PY  - 2023
 UR  - https://arxiv.org/abs/2310.12931
-AB  - Searches reward code using reinforcement-learning outcomes; the trained policy performs the motion.
-N1  - Key: Eureka; robotics/training; method; reading: sections; checked: 2026-09-12; first public: 2023-10. 代码生成的是奖励而非直接运动策略，训练成本不可忽略。 code_url: https://github.com/eureka-research/Eureka code_link_status: linked by original project page, checked 2026-09-28; not independently run
+AB  - Generates rewards from environment source code, trains a policy per candidate, and edits rewards using task fitness and component training traces. Outer evolutionary search optimizes reward design; learned policies execute actions.
+N1  - Key: Eureka; robotics/training; method; first public: 2023-10. 代码生成的是奖励而非直接运动策略，训练成本不可忽略。 checked_version: https://arxiv.org/html/2310.12931v1 code_url: https://github.com/eureka-research/Eureka code_link_status: linked by original project page, checked 2026-09-28; not independently run
 DO  - 10.48550/arXiv.2310.12931
 JO  - ICLR 2024
 N1  - arXiv: 2310.12931
@@ -1952,8 +1952,8 @@ AU  - Kohli, Pushmeet
 AU  - Fawzi, Alhussein
 PY  - 2024
 UR  - https://www.nature.com/articles/s41586-023-06924-6
-AB  - Evolves executable functions to find mathematical constructions and practical heuristics.
-N1  - Key: FunSearch; science/algorithms; method; reading: sections; checked: 2026-09-12; first public: 2023-12-14. 已核查原始期刊正文；结论须按各实验条件解释。 code_link_status: not recorded
+AB  - Evolves critical functions inside a supplied solver skeleton. High-scoring programs prompt a frozen code model; external evaluation updates island populations. Cap-set search evolves a greedy priority function rather than enumerating sets directly.
+N1  - Key: FunSearch; science/algorithms; method; first public: 2023-12-14. 已核查原始期刊正文；结论须按各实验条件解释。 checked_version: https://www.nature.com/articles/s41586-023-06924-6 code_link_status: not recorded
 DO  - 10.1038/s41586-023-06924-6
 JO  - Nature
 KW  - science
@@ -1974,7 +1974,7 @@ AU  - Scialom, Thomas
 PY  - 2023
 UR  - https://arxiv.org/abs/2311.12983
 AB  - Evaluates general assistant tasks requiring information gathering and tool use.
-N1  - Key: GAIA; digital/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2023-11. 对通用coding agent扩展有用，但并非专门隔离代码贡献。 code_link_status: not recorded
+N1  - Key: GAIA; digital/evaluation; benchmark; first public: 2023-11. 对通用coding agent扩展有用，但并非专门隔离代码贡献。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2311.12983
 JO  - arXiv
 N1  - arXiv: 2311.12983
@@ -2015,7 +2015,7 @@ AU  - Rocktäschel, Tim
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.15391
 AB  - Learns interactive neural environments; compare with explicit program state and rules.
-N1  - Key: Genie; worlds/context; comparison; reading: abstract; checked: 2026-09-12; first public: 2024-02. 提供与显式代码规则不同的环境表示路线。 code_link_status: not recorded
+N1  - Key: Genie; worlds/context; comparison; first public: 2024-02. 提供与显式代码规则不同的环境表示路线。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.15391
 JO  - arXiv
 N1  - arXiv: 2402.15391
@@ -2040,7 +2040,7 @@ AU  - Wang, Xiaolong
 PY  - 2023
 UR  - https://arxiv.org/abs/2310.01361
 AB  - Generates simulation tasks and demonstrations to support robot-policy training.
-N1  - Key: GenSim; robotics/training; method; reading: abstract; checked: 2026-09-12; first public: 2023-10. 任务扩展仍依赖仿真引擎、物体资产和技能接口。 code_url: https://github.com/liruiw/GenSim code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: GenSim; robotics/training; method; first public: 2023-10. 任务扩展仍依赖仿真引擎、物体资产和技能接口。 code_url: https://github.com/liruiw/GenSim code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2310.01361
 JO  - International Conference on Learning Representations (ICLR), 2024
 N1  - arXiv: 2310.01361
@@ -2062,8 +2062,8 @@ AU  - Xu, Huazhe
 AU  - Wang, Lirui
 PY  - 2024
 UR  - https://arxiv.org/abs/2410.03645
-AB  - Tests whether generated simulation demonstrations help real robot learning; synthetic and real data budgets differ.
-N1  - Key: GenSim2; robotics/training; method; reading: sections; checked: 2026-09-13; first public: 2024-10. 具有直接sim-to-real及合成数据收益证据；下游执行者是训练的策略，真实/仿真示范数量不同。 evaluation_protocol: Franka Research 3，8任务×10次真实测试；real-only/sim-only/combined均值36.3/42.5/57.5%。 budget_notes: 每任务10条真实遥操作示范或100条仿真示范；combined同时使用；不是等量数据比较。 human_role: 人指定每资产1–3个关键点，筛选任务求解器，设计点云预处理；真实示范由遥操作提供。 code_link_status: not recorded
+AB  - Generates simulation tasks and solvers, collects demonstrations, and trains point-cloud policies with synthetic and real data.
+N1  - Key: GenSim2; robotics/training; method; first public: 2024-10. 具有直接sim-to-real及合成数据收益证据；下游执行者是训练的策略，真实/仿真示范数量不同。 evaluation_protocol: Franka Research 3，8任务×10次真实测试；real-only/sim-only/combined均值36.3/42.5/57.5%。 budget_notes: 每任务10条真实遥操作示范或100条仿真示范；combined同时使用；不是等量数据比较。 human_role: 人指定每资产1–3个关键点，筛选任务求解器，设计点云预处理；真实示范由遥操作提供。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2410.03645
 JO  - CoRL 2024
 N1  - arXiv: 2410.03645
@@ -2082,8 +2082,8 @@ AU  - Alakuijala, Minttu
 AU  - Marttinen, Pekka
 PY  - 2024
 UR  - https://arxiv.org/abs/2405.15383
-AB  - Searches code world models with Monte Carlo tree search and execution feedback.
-N1  - Key: GIFMCTS; worlds/transition; method; reading: sections; checked: 2026-09-12; first public: 2024-05. 模型预测准确率与规划收益并不一致。 code_link_status: not recorded
+AB  - Organizes model synthesis into Generate, Improve and Fix tree-search actions: extend code, rewrite from prediction counterexamples and repair execution errors. Temporarily invalid nodes retain opportunities for repair.
+N1  - Key: GIFMCTS; worlds/transition; method; first public: 2024-05. 模型预测准确率与规划收益并不一致。 checked_version: https://arxiv.org/html/2405.15383v2 code_link_status: not recorded
 DO  - 10.48550/arXiv.2405.15383
 JO  - NeurIPS 2024
 N1  - arXiv: 2405.15383
@@ -2109,7 +2109,7 @@ AU  - Jin, Chi
 PY  - 2026
 UR  - https://arxiv.org/abs/2603.19329
 AB  - Uses hierarchical proof search for verification of code.
-N1  - Key: GoedelCodeProver; math/proofs; method; reading: abstract; checked: 2026-09-12; first public: 2026-03. 连接数学证明与软件正确性，作为边界补充。 code_link_status: not recorded
+N1  - Key: GoedelCodeProver; math/proofs; method; first public: 2026-03. 连接数学证明与软件正确性，作为边界补充。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2603.19329
 JO  - arXiv
 N1  - arXiv: 2603.19329
@@ -2136,7 +2136,7 @@ AU  - Jin, Chi
 PY  - 2025
 UR  - https://arxiv.org/abs/2502.07640
 AB  - Builds open formal provers through synthesized training data.
-N1  - Key: GoedelProver; math/proofs; method; reading: abstract; checked: 2026-09-12; first public: 2025-02. 与通用coding模型的关系需要看训练数据与验证器。 code_link_status: not recorded
+N1  - Key: GoedelProver; math/proofs; method; first public: 2025-02. 与通用coding模型的关系需要看训练数据与验证器。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2502.07640
 JO  - arXiv
 N1  - arXiv: 2502.07640
@@ -2172,7 +2172,7 @@ AU  - Jin, Chi
 PY  - 2025
 UR  - https://arxiv.org/abs/2508.03613
 AB  - Scales formal proof data and self-correction; compare evaluation and sampling budgets carefully.
-N1  - Key: GoedelProverV2; math/proofs; method; reading: abstract; checked: 2026-09-12; first public: 2025-08. 训练数据与搜索配置影响横向比较。 code_link_status: not recorded
+N1  - Key: GoedelProverV2; math/proofs; method; first public: 2025-08. 训练数据与搜索配置影响横向比较。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2508.03613
 JO  - arXiv
 N1  - arXiv: 2508.03613
@@ -2190,7 +2190,7 @@ AU  - Sutskever, Ilya
 PY  - 2020
 UR  - https://arxiv.org/abs/2009.03393
 AB  - Uses language-model generation inside Metamath proof search; an early formal-code milestone.
-N1  - Key: GPTf; math/proofs; method; reading: abstract; checked: 2026-09-28; first public: 2020-09-07. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Stanislas Polu [ view email ] [v1] Mon, 7 Sep 2020 19:50:10 UTC (264 KB) code_link_status: not recorded
+N1  - Key: GPTf; math/proofs; method; first public: 2020-09-07. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Stanislas Polu [ view email ] [v1] Mon, 7 Sep 2020 19:50:10 UTC (264 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2009.03393
 KW  - math
@@ -2211,7 +2211,7 @@ AU  - Zhuang, Yueting
 PY  - 2023
 UR  - https://arxiv.org/abs/2303.17580
 AB  - Coordinates specialized models through structured task planning; a boundary case for code-based agency.
-N1  - Key: HuggingGPT; vision/context; comparison; reading: abstract; checked: 2026-09-12; first public: 2023-03. 与代码编排相邻，但工具调度本身不必生成通用程序。 code_link_status: not recorded
+N1  - Key: HuggingGPT; vision/context; comparison; first public: 2023-03. 与代码编排相邻，但工具调度本身不必生成通用程序。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2303.17580
 JO  - arXiv
 N1  - arXiv: 2303.17580
@@ -2235,7 +2235,7 @@ AU  - Lacroix, Timothée
 PY  - 2022
 UR  - https://arxiv.org/abs/2205.11491
 AB  - Couples structured proof search with online learning from previous searches.
-N1  - Key: HyperTreeProofSearch; math/proofs; method; reading: abstract; checked: 2026-09-28; first public: 2022-05-23. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Guillaume Lample [ view email ] [v1] Mon, 23 May 2022 17:49:55 UTC (733 KB) code_link_status: not recorded
+N1  - Key: HyperTreeProofSearch; math/proofs; method; first public: 2022-05-23. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Guillaume Lample [ view email ] [v1] Mon, 23 May 2022 17:49:55 UTC (733 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2205.11491
 KW  - math
@@ -2256,7 +2256,7 @@ AU  - Li, Hongsheng
 PY  - 2023
 UR  - https://arxiv.org/abs/2305.11176
 AB  - Generates Python that connects multimodal instructions, SAM/CLIP perception and robot APIs.
-N1  - Key: Instruct2Act; robotics/policies; method; reading: abstract; checked: 2026-09-28; first public: 2023-05-18. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Siyuan Huang [ view email ] [v1] Thu, 18 May 2023 17:59:49 UTC (5,832 KB) [v2] Tue, 23 May 2023 15:24:17 UTC (5,540 KB) [v3] Wed, 24 May 2023 04:17:34 UTC (5,540 KB) code_url: https://github.com/OpenGVLab/Instruct2Act code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: Instruct2Act; robotics/policies; method; first public: 2023-05-18. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Siyuan Huang [ view email ] [v1] Thu, 18 May 2023 17:59:49 UTC (5,832 KB) [v2] Tue, 23 May 2023 15:24:17 UTC (5,540 KB) [v3] Wed, 24 May 2023 04:17:34 UTC (5,540 KB) code_url: https://github.com/OpenGVLab/Instruct2Act code_link_status: link recorded; availability not uniformly rechecked
 JO  - arXiv
 N1  - arXiv: 2305.11176
 KW  - robotics
@@ -2278,7 +2278,7 @@ AU  - Yuan, Fei
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.09724
 AB  - Evaluates code for interactive scientific demonstrations using programmatic and visual checks.
-N1  - Key: InteractScience; vision/models; benchmark; reading: abstract; checked: 2026-09-12; first public: 2025-10. 是检验好看但不能正确交互的重要基准。 code_link_status: not recorded
+N1  - Key: InteractScience; vision/models; benchmark; first public: 2025-10. 是检验好看但不能正确交互的重要基准。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2510.09724
 JO  - arXiv
 N1  - arXiv: 2510.09724
@@ -2298,7 +2298,7 @@ AU  - Yao, Shunyu
 PY  - 2023
 UR  - https://arxiv.org/abs/2306.14898
 AB  - Evaluates interactive coding with execution feedback instead of single-shot code completion.
-N1  - Key: InterCode; foundations/feedback; benchmark; reading: abstract; checked: 2026-09-12; first public: 2023-06. 连接一次性代码生成与闭环agent评估。 code_link_status: not recorded
+N1  - Key: InterCode; foundations/feedback; benchmark; first public: 2023-06. 连接一次性代码生成与闭环agent评估。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2306.14898
 JO  - arXiv
 N1  - arXiv: 2306.14898
@@ -2322,8 +2322,8 @@ AU  - Kao, Ben
 AU  - Yuan, Fei
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.23538
-AB  - Trains across visual and textual program tasks; data ablations show both gains and interference.
-N1  - Key: JanusCoder; vision/models; method; reading: sections; checked: 2026-09-13; first public: 2025-10. 有直接数据组成消融与正/负迁移观察；公开协议不足以完全分离样本组成和训练预算。 evaluation_protocol: JanusCoderV表5：完整ChartMimic/InteractScience/WebCode2M为68.74/17.73/75.78；去Text为60.73/12.93/71.82；去Algorithm为70.16/18.13/72.18。 budget_notes: 各设置3 epochs，总batch 128，学习率1e-5；数据移除后是否重采样或等量补齐未明确，无法完全排除更新次数混杂。 checked_version: arXiv:2510.23538v3，2026-05-20；v1为2025-10-27 code_url: https://github.com/InternLM/JanusCoder code_link_status: linked by original arXiv page, checked 2026-09-28; not independently run
+AB  - Trains one code model on textual and visual program tasks; data-removal experiments expose both cross-task gains and interference.
+N1  - Key: JanusCoder; vision/models; method; first public: 2025-10. 有直接数据组成消融与正/负迁移观察；公开协议不足以完全分离样本组成和训练预算。 evaluation_protocol: JanusCoderV表5：完整ChartMimic/InteractScience/WebCode2M为68.74/17.73/75.78；去Text为60.73/12.93/71.82；去Algorithm为70.16/18.13/72.18。 budget_notes: 各设置3 epochs，总batch 128，学习率1e-5；数据移除后是否重采样或等量补齐未明确，无法完全排除更新次数混杂。 checked_version: arXiv:2510.23538v3，2026-05-20；v1为2025-10-27 code_url: https://github.com/InternLM/JanusCoder code_link_status: linked by original arXiv page, checked 2026-09-28; not independently run
 DO  - 10.48550/arXiv.2510.23538
 JO  - ICLR 2026
 N1  - arXiv: 2510.23538
@@ -2344,7 +2344,7 @@ AU  - Zhou, Denny
 PY  - 2023
 UR  - https://arxiv.org/abs/2305.17126
 AB  - Uses language models to create reusable tools rather than only call a fixed inventory.
-N1  - Key: LATM; foundations/tools; method; reading: abstract; checked: 2026-09-12; first public: 2023-05. 把临时程序沉淀为可重复调用能力。 code_url: https://github.com/ctlllll/LLM-ToolMaker code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: LATM; foundations/tools; method; first public: 2023-05. 把临时程序沉淀为可重复调用能力。 code_url: https://github.com/ctlllll/LLM-ToolMaker code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2305.17126
 JO  - arXiv
 N1  - arXiv: 2305.17126
@@ -2366,7 +2366,7 @@ AU  - Sodhi, Raj
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.10294
 AB  - Assists video editing through language-driven agent workflows.
-N1  - Key: LAVE; media/video; method; reading: abstract; checked: 2026-09-12; first public: 2024-02. 人机协作界面案例，不等同于自主生成所有视频像素。 code_link_status: not recorded
+N1  - Key: LAVE; media/video; method; first public: 2024-02. 人机协作界面案例，不等同于自主生成所有视频像素。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.10294
 JO  - arXiv
 N1  - arXiv: 2402.10294
@@ -2390,8 +2390,8 @@ AU  - Prenger, Ryan
 AU  - Anandkumar, Anima
 PY  - 2023
 UR  - https://arxiv.org/abs/2306.15626
-AB  - Connects premise retrieval and tactic generation to Lean proof-state feedback.
-N1  - Key: LeanDojo; math/proofs; method; reading: sections; checked: 2026-09-12; first public: 2023-06. 依赖形式化库；项目外泛化与可用前提约束是重要问题。 code_url: https://github.com/lean-dojo/LeanDojo code_link_status: link recorded; availability not uniformly rechecked
+AB  - Extracts Lean states, tactics and premise dependencies and exposes an execution environment. ReProver retrieves accessible premises before best-first tactic search, using same-file hard negatives for retrieval training.
+N1  - Key: LeanDojo; math/proofs; method; first public: 2023-06. 依赖形式化库；项目外泛化与可用前提约束是重要问题。 checked_version: https://arxiv.org/pdf/2306.15626 code_url: https://github.com/lean-dojo/LeanDojo code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2306.15626
 JO  - NeurIPS 2023
 N1  - arXiv: 2306.15626
@@ -2411,7 +2411,7 @@ AU  - Yang, Yiming
 PY  - 2024
 UR  - https://arxiv.org/abs/2407.10040
 AB  - Interleaves informal thinking and formal proof steps.
-N1  - Key: LeanSTaR; math/proofs; method; reading: abstract; checked: 2026-09-12; first public: 2024-07. 把自然语言搜索与可检查证明连接起来。 code_link_status: not recorded
+N1  - Key: LeanSTaR; math/proofs; method; first public: 2024-07. 把自然语言搜索与可检查证明连接起来。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2407.10040
 JO  - arXiv
 N1  - arXiv: 2407.10040
@@ -2433,7 +2433,7 @@ AU  - Hanocka, Rana
 PY  - 2025
 UR  - https://arxiv.org/abs/2508.08228
 AB  - Coordinates coding agents to build and refine interpretable Blender assets from text and feedback.
-N1  - Key: LL3M; spatial/scenes; method; reading: abstract; checked: 2026-09-28; first public: 2025-08-11. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Nam Anh Dinh [ view email ] [v1] Mon, 11 Aug 2025 17:48:02 UTC (9,493 KB) code_link_status: not recorded
+N1  - Key: LL3M; spatial/scenes; method; first public: 2025-08-11. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Nam Anh Dinh [ view email ] [v1] Mon, 11 Aug 2025 17:48:02 UTC (9,493 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2508.08228
 KW  - spatial
@@ -2453,7 +2453,7 @@ AU  - Du, Xinya
 PY  - 2025
 UR  - https://arxiv.org/abs/2501.04306
 AB  - Surveys large language models for scientific research.
-N1  - Key: LLM4SRSurvey; surveys/surveys; survey; reading: abstract; checked: 2026-09-12; first public: 2025-01. 广泛科学工作流并非都以代码为核心。 code_link_status: not recorded
+N1  - Key: LLM4SRSurvey; surveys/surveys; survey; first public: 2025-01. 广泛科学工作流并非都以代码为核心。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2501.04306
 JO  - arXiv
 N1  - arXiv: 2501.04306
@@ -2475,7 +2475,7 @@ AU  - Wang, Jinlan
 PY  - 2025
 UR  - https://arxiv.org/abs/2503.06512
 AB  - Investigates language-model-assisted discovery of scientific formulas.
-N1  - Key: LLMFeynman; science/equations; method; reading: abstract; checked: 2026-09-12; first public: 2025-03. 作者标题中的普适性需要进一步按实验范围核查。 code_link_status: not recorded
+N1  - Key: LLMFeynman; science/equations; method; first public: 2025-03. 作者标题中的普适性需要进一步按实验范围核查。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2503.06512
 JO  - arXiv
 N1  - arXiv: 2503.06512
@@ -2495,8 +2495,8 @@ AU  - Farimani, Amir Barati
 AU  - Reddy, Chandan K
 PY  - 2024
 UR  - https://arxiv.org/abs/2404.18400
-AB  - Searches scientific equations as programs and evaluates them against data.
-N1  - Key: LLMSR; science/equations; method; reading: sections; checked: 2026-09-12; first public: 2024-04. 数值拟合和外推表现不构成物理定律证明。 code_link_status: not recorded
+AB  - An LLM proposes equation programs with parameter placeholders from problem and variable descriptions; BFGS or Adam fits coefficients. Multiple populations preserve scored candidates as context for further structural search.
+N1  - Key: LLMSR; science/equations; method; first public: 2024-04. 数值拟合和外推表现不构成物理定律证明。 checked_version: https://arxiv.org/html/2404.18400v2 code_link_status: not recorded
 DO  - 10.48550/arXiv.2404.18400
 JO  - ICLR 2025
 N1  - arXiv: 2404.18400
@@ -2518,7 +2518,7 @@ AU  - Bera, Aniket
 PY  - 2026
 UR  - https://arxiv.org/abs/2609.18669
 AB  - Generates solver-backed Python formulations for hybrid discrete-continuous motion planning.
-N1  - Key: M3PR1; robotics/policies; method; reading: abstract; checked: 2026-09-28; first public: 2026-09-16. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Xingpeng Sun [ view email ] [v1] Wed, 16 Sep 2026 13:47:13 UTC (13,806 KB) code_link_status: not recorded
+N1  - Key: M3PR1; robotics/policies; method; first public: 2026-09-16. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Xingpeng Sun [ view email ] [v1] Wed, 16 Sep 2026 13:47:13 UTC (13,806 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2609.18669
 KW  - robotics
@@ -2553,7 +2553,7 @@ AU  - Amershi, Saleema
 PY  - 2024
 UR  - https://arxiv.org/abs/2411.04468
 AB  - Coordinates specialist agents for complex digital tasks, including code execution.
-N1  - Key: MagenticOne; digital/actions; method; reading: abstract; checked: 2026-09-12; first public: 2024-11. 同一系统覆盖多任务不等于跨任务学习迁移。 code_link_status: not recorded
+N1  - Key: MagenticOne; digital/actions; method; first public: 2024-11. 同一系统覆盖多任务不等于跨任务学习迁移。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2411.04468
 JO  - arXiv
 N1  - arXiv: 2411.04468
@@ -2583,7 +2583,7 @@ AU  - Ye, Xiangdong
 PY  - 2026
 UR  - https://arxiv.org/abs/2607.14582
 AB  - Focuses on interactive human-AI mathematical research.
-N1  - Key: MathCoPilot; math/research; method; reading: abstract; checked: 2026-09-12; first public: 2026-07. 人机协作不是自主性的不足项，应作为独立研究路线。 code_link_status: not recorded
+N1  - Key: MathCoPilot; math/research; method; first public: 2026-07. 人机协作不是自主性的不足项，应作为独立研究路线。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2607.14582
 JO  - arXiv
 N1  - arXiv: 2607.14582
@@ -2603,7 +2603,7 @@ AU  - Wagner, Adam Zsolt
 PY  - 2025
 UR  - https://arxiv.org/abs/2511.02864
 AB  - Studies mathematical exploration at scale; distinguish constructions, conjectures and proofs.
-N1  - Key: MathDiscoveryScale; math/research; method; reading: abstract; checked: 2026-09-12; first public: 2025-11. 找到更好构造与证明最优值需要严格区分。 code_link_status: not recorded
+N1  - Key: MathDiscoveryScale; math/research; method; first public: 2025-11. 找到更好构造与证明最优值需要严格区分。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2511.02864
 JO  - arXiv
 N1  - arXiv: 2511.02864
@@ -2631,8 +2631,8 @@ AU  - Shi, Xiaodong
 AU  - Sun, Maosong
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.11453
-AB  - Refines scientific plotting code using execution errors and visual feedback.
-N1  - Key: MatPlotAgent; vision/graphics; method; reading: sections; checked: 2026-09-13; first public: 2024-02. 视觉反馈能补足运行检查，但VLM评分不是科学正确性证明。 evaluation_protocol: MatPlotBench 100个人工核验任务；GPT-4V 0–100评分48.86→61.16，不是成功率。 budget_notes: 温度0；代码自调试最多3次；视觉评分是代理评价。 human_role: 人编制和核验任务与参考图；评价器不是完整科学语义检验。 code_link_status: not recorded
+AB  - Expands plotting requests, generates and debugs code, then critiques rendered drafts visually. Runtime and visual feedback are separate; the 100-task MatPlotBench evaluates final figures against references.
+N1  - Key: MatPlotAgent; vision/graphics; method; first public: 2024-02. 视觉反馈能补足运行检查，但VLM评分不是科学正确性证明。 evaluation_protocol: MatPlotBench 100个人工核验任务；GPT-4V 0–100评分48.86→61.16，不是成功率。 budget_notes: 温度0；代码自调试最多3次；视觉评分是代理评价。 human_role: 人编制和核验任务与参考图；评价器不是完整科学语义检验。 checked_version: https://arxiv.org/html/2402.11453v1 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.11453
 JO  - arXiv
 N1  - arXiv: 2402.11453
@@ -2660,7 +2660,7 @@ AU  - Pang, Jiangmiao
 PY  - 2025
 UR  - https://arxiv.org/abs/2508.14879
 AB  - Reconstructs structured mesh-generation code from point clouds.
-N1  - Key: MeshCoder; spatial/reconstruction; method; reading: abstract; checked: 2026-09-12; first public: 2025-08. 程序输出提供编辑路径，但不能自动消除重建歧义。 code_link_status: not recorded
+N1  - Key: MeshCoder; spatial/reconstruction; method; first public: 2025-08. 程序输出提供编辑路径，但不能自动消除重建歧义。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2508.14879
 JO  - arXiv
 N1  - arXiv: 2508.14879
@@ -2680,7 +2680,7 @@ AU  - Leskovec, Jure
 PY  - 2023
 UR  - https://arxiv.org/abs/2310.03302
 AB  - Evaluates agents conducting machine-learning experiments through code and tools.
-N1  - Key: MLAgentBench; science/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2023-10. 研究过程与最终指标需要同时评价。 code_link_status: not recorded
+N1  - Key: MLAgentBench; science/evaluation; benchmark; first public: 2023-10. 研究过程与最终指标需要同时评价。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2310.03302
 JO  - arXiv
 N1  - arXiv: 2310.03302
@@ -2708,7 +2708,7 @@ AU  - Mądry, Aleksander
 PY  - 2024
 UR  - https://arxiv.org/abs/2410.07095
 AB  - Evaluates machine-learning engineering on competition-style tasks.
-N1  - Key: MLEBench; science/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-10. 排行榜结果受数据访问、运行预算和既有解法影响。 code_link_status: not recorded
+N1  - Key: MLEBench; science/evaluation; benchmark; first public: 2024-10. 排行榜结果受数据访问、运行预算和既有解法影响。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2410.07095
 JO  - arXiv
 N1  - arXiv: 2410.07095
@@ -2749,7 +2749,7 @@ AU  - Bachrach, Yoram
 PY  - 2025
 UR  - https://arxiv.org/abs/2507.02554
 AB  - Studies search, exploration and generalization in machine-learning research agents.
-N1  - Key: MLResearchAgents; science/agents; method; reading: abstract; checked: 2026-09-12; first public: 2025-07. 需要对齐实验预算才能判断多路径搜索收益。 code_url: https://github.com/facebookresearch/aira-dojo code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: MLResearchAgents; science/agents; method; first public: 2025-07. 需要对齐实验预算才能判断多路径搜索收益。 code_url: https://github.com/facebookresearch/aira-dojo code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2507.02554
 JO  - arXiv
 N1  - arXiv: 2507.02554
@@ -2771,7 +2771,7 @@ AU  - Ma, Jing
 PY  - 2024
 UR  - https://arxiv.org/abs/2404.09486
 AB  - Evaluates code generation from visually rich programming problems.
-N1  - Key: MMCode; vision/models; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-04. 视觉输入的编程任务与域外任务需分开。 code_link_status: not recorded
+N1  - Key: MMCode; vision/models; benchmark; first public: 2024-04. 视觉输入的编程任务与域外任务需分开。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2404.09486
 JO  - EMNLP 2024
 N1  - arXiv: 2404.09486
@@ -2803,7 +2803,7 @@ AU  - Manocha, Dinesh
 PY  - 2026
 UR  - https://arxiv.org/abs/2608.20379
 AB  - Surveys multimodal agent frameworks, techniques and applications.
-N1  - Key: MultimodalAgentsSurvey; surveys/surveys; survey; reading: sections; checked: 2026-09-12; first public: 2026-08. 记录原始版本信息；不同来源的发表日期与渠道仍有待核对。 code_link_status: not recorded
+N1  - Key: MultimodalAgentsSurvey; surveys/surveys; survey; first public: 2026-08. 记录原始版本信息；不同来源的发表日期与渠道仍有待核对。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2608.20379
 JO  - arXiv
 N1  - arXiv: 2608.20379
@@ -2835,7 +2835,7 @@ AU  - Chen, Qifeng
 PY  - 2024
 UR  - https://arxiv.org/abs/2405.19334
 AB  - Surveys LLM-guided multimodal generation and editing, including non-code routes.
-N1  - Key: MultimodalGenerationSurvey; surveys/surveys; survey; reading: sections; checked: 2026-09-12; first public: 2024-05. 覆盖广，但程序在任务中承担的责任不是唯一主线。 code_url: https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: MultimodalGenerationSurvey; surveys/surveys; survey; first public: 2024-05. 覆盖广，但程序在任务中承担的责任不是唯一主线。 code_url: https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2405.19334
 JO  - arXiv
 N1  - arXiv: 2405.19334
@@ -2869,7 +2869,7 @@ AU  - Wu, Zhiyong
 PY  - 2024
 UR  - https://arxiv.org/abs/2403.14734
 AB  - Surveys neural code intelligence and its foundations.
-N1  - Key: NeuralCodeSurvey; surveys/surveys; survey; reading: abstract; checked: 2026-09-12; first public: 2024-03. 用于定位代码能力基础，不足以覆盖全部域外任务。 code_link_status: not recorded
+N1  - Key: NeuralCodeSurvey; surveys/surveys; survey; first public: 2024-03. 用于定位代码能力基础，不足以覆盖全部域外任务。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2403.14734
 JO  - arXiv
 N1  - arXiv: 2403.14734
@@ -2891,7 +2891,7 @@ AU  - Tenenbaum, Joshua B.
 PY  - 2018
 UR  - https://arxiv.org/abs/1810.02338
 AB  - Separates perception from symbolic program execution for visual question answering; a pre-LLM milestone.
-N1  - Key: NSVQA; vision/reasoning; background; reading: abstract; checked: 2026-09-28; first public: 2018-10-04. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Kexin Yi [ view email ] [v1] Thu, 4 Oct 2018 17:38:50 UTC (1,465 KB) [v2] Mon, 14 Jan 2019 23:07:12 UTC (5,781 KB) code_url: https://github.com/kexinyi/ns-vqa code_link_status: linked by original project page, checked 2026-09-28; not independently run
+N1  - Key: NSVQA; vision/reasoning; background; first public: 2018-10-04. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Kexin Yi [ view email ] [v1] Thu, 4 Oct 2018 17:38:50 UTC (1,465 KB) [v2] Mon, 14 Jan 2019 23:07:12 UTC (5,781 KB) code_url: https://github.com/kexinyi/ns-vqa code_link_status: linked by original project page, checked 2026-09-28; not independently run
 JO  - arXiv
 N1  - arXiv: 1810.02338
 KW  - vision
@@ -2911,7 +2911,7 @@ AU  - Zhu, Yao
 PY  - 2026
 UR  - https://arxiv.org/abs/2604.05514
 AB  - Generates diagram code using visual interrogation rewards.
-N1  - Key: OmniDiagram; vision/graphics; method; reading: abstract; checked: 2026-09-12; first public: 2026-04. 评价需要防止只满足视觉裁判而遗漏真实图示关系。 code_link_status: not recorded
+N1  - Key: OmniDiagram; vision/graphics; method; first public: 2026-04. 评价需要防止只满足视觉裁判而遗漏真实图示关系。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2604.05514
 JO  - ACL 2026
 N1  - arXiv: 2604.05514
@@ -2951,7 +2951,7 @@ AU  - Neubig, Graham
 PY  - 2024
 UR  - https://arxiv.org/abs/2407.16741
 AB  - Provides a coding-agent platform with tools useful beyond repository editing.
-N1  - Key: OpenHands; digital/actions; method; reading: abstract; checked: 2026-09-12; first public: 2024-07. 为扩展至非软件任务提供执行底座。 code_url: https://github.com/All-Hands-AI/OpenHands code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: OpenHands; digital/actions; method; first public: 2024-07. 为扩展至非软件任务提供执行底座。 code_url: https://github.com/All-Hands-AI/OpenHands code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2407.16741
 JO  - ICLR 2025
 N1  - arXiv: 2407.16741
@@ -2971,8 +2971,8 @@ AU  - Chen, Valerie
 AU  - Neubig, Graham
 PY  - 2025
 UR  - https://arxiv.org/abs/2506.03011
-AB  - Tests one coding-agent framework across software, assistant and enterprise tasks with multimodal browsing.
-N1  - Key: OpenHandsVersa; digital/actions; method; reading: sections; checked: 2026-09-13; first public: 2025-06. 同骨干的跨任务收益较有说服力，但未证明训练迁移。 evaluation_protocol: Claude 3.7，同骨干框架比较；三项为test split pass@1。GAIA 37.21→51.16；AgentCompany 26.29→30.86；SWE-bench M 31.72→31.33。 budget_notes: 温度0；GAIA最多60步，SWE与AgentCompany最多100步；GAIA末答另用LLM提取/格式化。 human_role: 框架工具、任务环境与评价器预设；未测OSWorld桌面GUI。 code_link_status: not recorded
+AB  - Adds multimodal browsing to a coding-agent framework and evaluates the same framework on software, assistant and enterprise tasks.
+N1  - Key: OpenHandsVersa; digital/actions; method; first public: 2025-06. 同骨干的跨任务收益较有说服力，但未证明训练迁移。 evaluation_protocol: Claude 3.7，同骨干框架比较；三项为test split pass@1。GAIA 37.21→51.16；AgentCompany 26.29→30.86；SWE-bench M 31.72→31.33。 budget_notes: 温度0；GAIA最多60步，SWE与AgentCompany最多100步；GAIA末答另用LLM提取/格式化。 human_role: 框架工具、任务环境与评价器预设；未测OSWorld桌面GUI。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2506.03011
 JO  - arXiv
 N1  - arXiv: 2506.03011
@@ -3006,7 +3006,7 @@ AU  - Finn, Chelsea
 PY  - 2024
 UR  - https://arxiv.org/abs/2406.09246
 AB  - Provides an open vision-language-action baseline; does not act through generated programs.
-N1  - Key: OpenVLA; robotics/context; comparison; reading: abstract; checked: 2026-09-12; first public: 2024-06. 可与代码式高层规划结合，而非必然被其替代。 code_link_status: not recorded
+N1  - Key: OpenVLA; robotics/context; comparison; first public: 2024-06. 可与代码式高层规划结合，而非必然被其替代。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2406.09246
 JO  - arXiv
 N1  - arXiv: 2406.09246
@@ -3039,7 +3039,7 @@ AU  - Yu, Tao
 PY  - 2024
 UR  - https://arxiv.org/abs/2404.07972
 AB  - Evaluates open-ended tasks in real desktop environments.
-N1  - Key: OSWorld; digital/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-04. 环境结果检查比截屏外观更接近任务成功。 code_link_status: not recorded
+N1  - Key: OSWorld; digital/evaluation; benchmark; first public: 2024-04. 环境结果检查比截屏外观更接近任务成功。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2404.07972
 JO  - arXiv
 N1  - arXiv: 2404.07972
@@ -3062,8 +3062,8 @@ AU  - Callan, Jamie
 AU  - Neubig, Graham
 PY  - 2022
 UR  - https://arxiv.org/abs/2211.10435
-AB  - Delegates numerical computation to generated programs while the model organizes the reasoning.
-N1  - Key: PAL; math/computation; method; reading: sections; checked: 2026-09-12; first public: 2022-11. 精确执行降低算术错误，不保证题意建模正确。 code_url: https://github.com/luyug/pal code_link_status: linked by original project page, checked 2026-09-28; not independently run
+AB  - Few-shot prompts decompose problems into Python steps with meaningful variable names and explanatory comments. An interpreter returns the answer; ablations separate variable semantics, decomposition and actual execution.
+N1  - Key: PAL; math/computation; method; first public: 2022-11. 精确执行降低算术错误，不保证题意建模正确。 checked_version: https://arxiv.org/pdf/2211.10435 code_url: https://github.com/luyug/pal code_link_status: linked by original project page, checked 2026-09-28; not independently run
 DO  - 10.48550/arXiv.2211.10435
 JO  - arXiv
 N1  - arXiv: 2211.10435
@@ -3083,8 +3083,8 @@ AU  - He, Xi
 AU  - Torr, Philip
 PY  - 2025
 UR  - https://arxiv.org/abs/2505.21497
-AB  - Plans paper content and layout; a deterministic generator produces the presentation code.
-N1  - Key: Paper2Poster; media/documents; method; reading: sections; checked: 2026-09-13; first public: 2025-05. 并非模型自由编写全部Python；PaperQuiz主要由模型充当读者，不是人类理解效果实验。 evaluation_protocol: PaperQuiz模型读者问答；并行面板时间实验10篇随机论文，281.48→166.80秒。 budget_notes: §5.4与附录E.1.1报告已实施并行；附录A仍写并行为未来工作，文本存在不同步。 human_role: 固定代码生成器与面板规则；部分基线涉及人工候选选择；VLM评论器检查版面。 code_url: https://github.com/Paper2Poster/Paper2Poster code_link_status: link recorded; availability not uniformly rechecked
+AB  - Extracts text and figures, matches them semantically and allocates panels through a binary-tree layout. Models compress content; a deterministic python-pptx generator renders panels for zoomed visual critique.
+N1  - Key: Paper2Poster; media/documents; method; first public: 2025-05. 并非模型自由编写全部Python；PaperQuiz主要由模型充当读者，不是人类理解效果实验。 evaluation_protocol: PaperQuiz模型读者问答；并行面板时间实验10篇随机论文，281.48→166.80秒。 budget_notes: §5.4与附录E.1.1报告已实施并行；附录A仍写并行为未来工作，文本存在不同步。 human_role: 固定代码生成器与面板规则；部分基线涉及人工候选选择；VLM评论器检查版面。 checked_version: https://arxiv.org/html/2505.21497v1 code_url: https://github.com/Paper2Poster/Paper2Poster code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2505.21497
 JO  - arXiv
 N1  - arXiv: 2505.21497
@@ -3103,7 +3103,7 @@ AU  - Shou, Mike Zheng
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.05096
 AB  - Generates Beamer slides while specialized models supply speech and talking-head video.
-N1  - Key: Paper2Video; media/video; method; reading: sections; checked: 2026-09-13; first public: 2025-10. 程序生成主要承担幻灯片与组织工作；PresentQuiz/PresentArena是模型代理评价，不能直接推出真实教学收益。 evaluation_protocol: PresentQuiz/PresentArena模型代理评价；cursor消融为VLM定位问答，非真实学习实验。 budget_notes: GPT-4.1视觉模型、Gemini 2.5 Flash视频模型；论文报告使用8张RTX A6000，不能据此推算单例成本。 human_role: 规则布局候选、Beamer编译器、F5-TTS、Hallo2/FantasyTalking、UI-TARS与WhisperX共同支撑。 code_link_status: not recorded
+N1  - Key: Paper2Video; media/video; method; first public: 2025-10. 程序生成主要承担幻灯片与组织工作；PresentQuiz/PresentArena是模型代理评价，不能直接推出真实教学收益。 evaluation_protocol: PresentQuiz/PresentArena模型代理评价；cursor消融为VLM定位问答，非真实学习实验。 budget_notes: GPT-4.1视觉模型、Gemini 2.5 Flash视频模型；论文报告使用8张RTX A6000，不能据此推算单例成本。 human_role: 规则布局候选、Beamer编译器、F5-TTS、Hallo2/FantasyTalking、UI-TARS与WhisperX共同支撑。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2510.05096
 JO  - arXiv
 N1  - arXiv: 2510.05096
@@ -3123,7 +3123,7 @@ AU  - Cohen, William W.
 PY  - 2022
 UR  - https://arxiv.org/abs/2211.12588
 AB  - Separates numerical reasoning from calculation through generated executable programs.
-N1  - Key: PoT; math/computation; method; reading: abstract; checked: 2026-09-12; first public: 2022-11. 程序辅助算题与开放数学发现相距很远。 code_link_status: not recorded
+N1  - Key: PoT; math/computation; method; first public: 2022-11. 程序辅助算题与开放数学发现相距很远。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2211.12588
 JO  - TMLR 2023
 N1  - arXiv: 2211.12588
@@ -3148,7 +3148,7 @@ AU  - Garg, Animesh
 PY  - 2022
 UR  - https://arxiv.org/abs/2209.11302
 AB  - Prompt programs describe available actions, objects and checks for situated robot planning.
-N1  - Key: ProgPrompt; robotics/policies; method; reading: abstract; checked: 2026-09-28; first public: 2022-09-22. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Ishika Singh [ view email ] [v1] Thu, 22 Sep 2022 20:29:49 UTC (20,105 KB) code_url: https://github.com/NVlabs/progprompt-vh code_link_status: linked by original project page, checked 2026-09-28; not independently run
+N1  - Key: ProgPrompt; robotics/policies; method; first public: 2022-09-22. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Ishika Singh [ view email ] [v1] Thu, 22 Sep 2022 20:29:49 UTC (20,105 KB) code_url: https://github.com/NVlabs/progprompt-vh code_link_status: linked by original project page, checked 2026-09-28; not independently run
 JO  - arXiv
 N1  - arXiv: 2209.11302
 KW  - robotics
@@ -3173,8 +3173,8 @@ AU  - Zhang, Kaipeng
 AU  - Wang, Zhixiang
 PY  - 2026
 UR  - https://arxiv.org/abs/2609.10540
-AB  - Combines explicit program state with neural rendering; assess state metrics separately from full physical realism.
-N1  - Key: ProgrammableWorldModel; worlds/generation; method; reading: sections; checked: 2026-09-13; first public: 2026-09. 结构状态由程序执行，画面由神经模型生成；近期结果待独立复现。 evaluation_protocol: CombatStateBench 50片段；可见存活数94%、死亡状态98%，不是全部物理/身份指标。 budget_notes: 2026-09-13检查README，推理代码和预训练权重仍待发布；本轮未复现。 checked_version: arXiv:2609.10540v1，2026-09-09；仓库f1f1ece42e4df8ba7400da0af37d4f0f538fe442，2026-09-10 code_url: https://github.com/AlayaLab/PWM code_link_status: link recorded; availability not uniformly rechecked
+AB  - Maintains persistent entity state and rules in programs while a pretrained video model renders the resulting observations.
+N1  - Key: ProgrammableWorldModel; worlds/generation; method; first public: 2026-09. 结构状态由程序执行，画面由神经模型生成；近期结果待独立复现。 evaluation_protocol: CombatStateBench 50片段；可见存活数94%、死亡状态98%，不是全部物理/身份指标。 budget_notes: 2026-09-13 的仓库快照中，推理代码和预训练权重仍列为待发布。 checked_version: arXiv:2609.10540v1，2026-09-09；仓库f1f1ece42e4df8ba7400da0af37d4f0f538fe442，2026-09-10 code_url: https://github.com/AlayaLab/PWM code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2609.10540
 JO  - arXiv
 N1  - arXiv: 2609.10540
@@ -3201,7 +3201,7 @@ AU  - Sutton, Charles
 PY  - 2021
 UR  - https://arxiv.org/abs/2108.07732
 AB  - Studies large language models as program synthesizers, before the modern agent loop.
-N1  - Key: ProgramSynthesisLLM; foundations/synthesis; background; reading: abstract; checked: 2026-09-12; first public: 2021-08. 提供生成程序的基础能力证据。 code_link_status: not recorded
+N1  - Key: ProgramSynthesisLLM; foundations/synthesis; background; first public: 2021-08. 提供生成程序的基础能力证据。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2108.07732
 JO  - arXiv
 N1  - arXiv: 2108.07732
@@ -3221,7 +3221,7 @@ AU  - Cheng, Hong
 PY  - 2026
 UR  - https://arxiv.org/abs/2608.01678
 AB  - Develops skills progressively through reinforcement learning.
-N1  - Key: ProgressiveSkills; foundations/tools; method; reading: abstract; checked: 2026-09-12; first public: 2026-08. 技能复用是否跨领域仍待深入核查。 code_url: https://github.com/ejhshen/skill-alpha code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: ProgressiveSkills; foundations/tools; method; first public: 2026-08. 技能复用是否跨领域仍待深入核查。 code_url: https://github.com/ejhshen/skill-alpha code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2608.01678
 JO  - arXiv
 N1  - arXiv: 2608.01678
@@ -3243,8 +3243,8 @@ AU  - Zhang, Kaipeng
 AU  - Wei, Chen
 PY  - 2025
 UR  - https://arxiv.org/abs/2507.07998
-AB  - Builds task-specific visual tools dynamically through Python execution.
-N1  - Key: PyVision; vision/reasoning; method; reading: sections; checked: 2026-09-12; first public: 2025-07. 不同骨干和任务的增益差异很大，动态工具不是稳定万能增益。 code_link_status: not recorded
+AB  - Writes Python tools during multi-turn visual reasoning, using general libraries for crops, enhancement, geometry and annotations. Text and processed images return to context, with state preserved across turns.
+N1  - Key: PyVision; vision/reasoning; method; first public: 2025-07. 不同骨干和任务的增益差异很大，动态工具不是稳定万能增益。 checked_version: https://arxiv.org/html/2507.07998v1 code_link_status: not recorded
 DO  - 10.48550/arXiv.2507.07998
 JO  - arXiv
 N1  - arXiv: 2507.07998
@@ -3263,7 +3263,7 @@ AU  - Farimani, Amir Barati
 PY  - 2024
 UR  - https://arxiv.org/abs/2406.00144
 AB  - Turns natural-language requests into executable CAD modeling operations.
-N1  - Key: Query2CAD; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2024-06. 需要区分模型可运行、几何符合和工程可用。 code_link_status: not recorded
+N1  - Key: Query2CAD; spatial/cad; method; first public: 2024-06. 需要区分模型可运行、几何符合和工程可用。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2406.00144
 JO  - arXiv
 N1  - arXiv: 2406.00144
@@ -3285,8 +3285,8 @@ AU  - Narasimhan, Karthik
 AU  - Cao, Yuan
 PY  - 2022
 UR  - https://arxiv.org/abs/2210.03629
-AB  - Interleaves reasoning and actions; an agent foundation, not specifically a code-action method.
-N1  - Key: ReAct; foundations/feedback; background; reading: abstract; checked: 2026-09-12; first public: 2022-10. agent循环基础；动作不必是程序。 code_link_status: not recorded
+AB  - Alternates reasoning text and tool actions, using new observations to update subsequent decisions.
+N1  - Key: ReAct; foundations/feedback; background; first public: 2022-10. agent循环基础；动作不必是程序。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2210.03629
 JO  - arXiv
 N1  - arXiv: 2210.03629
@@ -3305,8 +3305,8 @@ AU  - Bauer, Dominik
 AU  - Song, Shuran
 PY  - 2024
 UR  - https://arxiv.org/abs/2406.08474
-AB  - Recovers articulated object structure as code using perception and geometry front ends.
-N1  - Key: Real2Code; spatial/reconstruction; method; reading: sections; checked: 2026-09-12; first public: 2024-06. 真实结果主要为定性展示；感知误差会传播到结构代码。 code_url: https://github.com/MandiZhao/real2code code_link_status: link recorded; availability not uniformly rechecked
+AB  - Segments and completes part geometry, then feeds oriented bounding boxes to fine-tuned CodeLlama. Joint axes and positions become box-axis and edge selections, replacing continuous regression with discrete choices for MuJoCo reconstruction.
+N1  - Key: Real2Code; spatial/reconstruction; method; first public: 2024-06. 真实结果主要为定性展示；感知误差会传播到结构代码。 checked_version: https://arxiv.org/html/2406.08474v2 code_url: https://github.com/MandiZhao/real2code code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2406.08474
 JO  - arXiv
 N1  - arXiv: 2406.08474
@@ -3326,7 +3326,7 @@ AU  - Zhou, Xiangdong
 PY  - 2025
 UR  - https://arxiv.org/abs/2512.06328
 AB  - Uses reinforcement learning for parametric CAD generation with vision-language models.
-N1  - Key: ReCAD; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2025-12. 奖励对几何有效性和设计意图的覆盖需要核查。 code_link_status: not recorded
+N1  - Key: ReCAD; spatial/cad; method; first public: 2025-12. 奖励对几何有效性和设计意图的覆盖需要核查。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2512.06328
 JO  - AAAI 2026
 N1  - arXiv: 2512.06328
@@ -3345,7 +3345,7 @@ AU  - Zhu, Bo
 PY  - 2026
 UR  - https://arxiv.org/abs/2609.11499
 AB  - Builds complex worlds through recursively composed scene programs.
-N1  - Key: RecursiveCWM; worlds/generation; method; reading: abstract; checked: 2026-09-12; first public: 2026-09. 近期预印本，仍需核查长期动态与物理真实性。 code_link_status: not recorded
+N1  - Key: RecursiveCWM; worlds/generation; method; first public: 2026-09. 近期预印本，仍需核查长期动态与物理真实性。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2609.11499
 JO  - arXiv
 N1  - arXiv: 2609.11499
@@ -3366,8 +3366,8 @@ AU  - Narasimhan, Karthik
 AU  - Yao, Shunyu
 PY  - 2023
 UR  - https://arxiv.org/abs/2303.11366
-AB  - Stores verbal feedback across attempts; useful context for execution-driven refinement.
-N1  - Key: Reflexion; foundations/feedback; background; reading: abstract; checked: 2026-09-12; first public: 2023-03. 反思是文本反馈，不等同于模型权重强化学习。 code_link_status: not recorded
+AB  - Stores language reflections on failed or completed attempts as context for later attempts.
+N1  - Key: Reflexion; foundations/feedback; background; first public: 2023-03. 反思是文本反馈，不等同于模型权重强化学习。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2303.11366
 JO  - arXiv
 N1  - arXiv: 2303.11366
@@ -3386,7 +3386,7 @@ AU  - Fan, Chuchu
 PY  - 2026
 UR  - https://arxiv.org/abs/2609.31337
 AB  - Generates cooperating perception and planning programs around shared object representations, then reuses them.
-N1  - Key: RIVET; robotics/policies; method; reading: abstract; checked: 2026-09-28; first public: 2026-09-25. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Ruixiao Yang [ view email ] [v1] Fri, 25 Sep 2026 14:41:24 UTC (5,485 KB) code_link_status: not recorded
+N1  - Key: RIVET; robotics/policies; method; first public: 2026-09-25. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Ruixiao Yang [ view email ] [v1] Fri, 25 Sep 2026 14:41:24 UTC (5,485 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2609.31337
 KW  - robotics
@@ -3420,7 +3420,7 @@ AU  - Luo, Ping
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.16117
 AB  - Connects multimodal observations to code for robotic behavior synthesis.
-N1  - Key: RoboCodeX; robotics/policies; method; reading: abstract; checked: 2026-09-12; first public: 2024-02. 感知、控制接口与程序推理各自贡献需要拆分。 code_link_status: not recorded
+N1  - Key: RoboCodeX; robotics/policies; method; first public: 2024-02. 感知、控制接口与程序推理各自贡献需要拆分。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.16117
 JO  - arXiv
 N1  - arXiv: 2402.16117
@@ -3445,7 +3445,7 @@ AU  - Gan, Chuang
 PY  - 2023
 UR  - https://arxiv.org/abs/2311.01455
 AB  - Generates tasks, environments and training ingredients for robot learning.
-N1  - Key: RoboGen; robotics/training; method; reading: abstract; checked: 2026-09-12; first public: 2023-11. 自动环境生成不等于从真实世界学到正确动力学。 code_link_status: not recorded
+N1  - Key: RoboGen; robotics/training; method; first public: 2023-11. 自动环境生成不等于从真实世界学到正确动力学。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2311.01455
 JO  - ICML 2024
 N1  - arXiv: 2311.01455
@@ -3475,7 +3475,7 @@ AU  - Luo, Ping
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.14623
 AB  - Generates manipulation programs across real and simulated task settings.
-N1  - Key: RoboScript; robotics/policies; method; reading: abstract; checked: 2026-09-12; first public: 2024-02. 需进一步比较跨环境共享接口与真实迁移成本。 code_link_status: not recorded
+N1  - Key: RoboScript; robotics/policies; method; first public: 2024-02. 需进一步比较跨环境共享接口与真实迁移成本。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.14623
 JO  - arXiv
 N1  - arXiv: 2402.14623
@@ -3495,8 +3495,8 @@ AU  - Wang, Ruiping
 AU  - Chen, Xilin
 PY  - 2025
 UR  - https://arxiv.org/abs/2501.04268
-AB  - Trains a robotic programmer from video-derived code and tests adaptation to changed APIs.
-N1  - Key: RoboticProgrammer; robotics/policies; method; reading: sections; checked: 2026-09-13; first public: 2025-01. 直接证据包括API改名/重构适应和环境泛化；真实实验为单一Franka平台，不能推为跨硬件零适配。 evaluation_protocol: RLBench 9任务×25次；原API/改名/重构平均42.7/42.7/40.4%。LIBERO 8任务×30次。真实Franka 8任务×10次，72.5%。 budget_notes: 预先用约115k Video2Code样本训练；真实阶段无额外微调，不等于此前没有领域训练。 human_role: 人提供感知/控制API、任务定义；新技能API也由任务设置提供。 code_link_status: not recorded
+AB  - RoboPro trains on video-derived code, then generates robot policies from observations and instructions; it also tests changed APIs.
+N1  - Key: RoboticProgrammer; robotics/policies; method; first public: 2025-01. 直接证据包括API改名/重构适应和环境泛化；真实实验为单一Franka平台，不能推为跨硬件零适配。 evaluation_protocol: RLBench 9任务×25次；原API/改名/重构平均42.7/42.7/40.4%。LIBERO 8任务×30次。真实Franka 8任务×10次，72.5%。 budget_notes: 预先用约115k Video2Code样本训练；真实阶段无额外微调，不等于此前没有领域训练。 human_role: 人提供感知/控制API、任务定义；新技能API也由任务设置提供。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2501.04268
 JO  - arXiv
 N1  - arXiv: 2501.04268
@@ -3566,7 +3566,7 @@ AU  - Zitkovich, Brianna
 PY  - 2023
 UR  - https://arxiv.org/abs/2307.15818
 AB  - Predicts robot actions through a vision-language-action model; a complementary non-code route.
-N1  - Key: RT2; robotics/context; comparison; reading: abstract; checked: 2026-09-12; first public: 2023-07. 是重要替代与互补路线，动作token不等于源代码。 code_link_status: not recorded
+N1  - Key: RT2; robotics/context; comparison; first public: 2023-07. 是重要替代与互补路线，动作token不等于源代码。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2307.15818
 JO  - arXiv
 N1  - arXiv: 2307.15818
@@ -3590,7 +3590,7 @@ AU  - Fathi, Alireza
 PY  - 2024
 UR  - https://arxiv.org/abs/2403.01248
 AB  - Creates 3D scenes through generated Blender code.
-N1  - Key: SceneCraft; spatial/scenes; method; reading: abstract; checked: 2026-09-12; first public: 2024-03. 可编辑场景结构与几何真实度是不同目标。 code_link_status: not recorded
+N1  - Key: SceneCraft; spatial/scenes; method; first public: 2024-03. 可编辑场景结构与几何真实度是不同目标。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2403.01248
 JO  - arXiv
 N1  - arXiv: 2403.01248
@@ -3636,7 +3636,7 @@ AU  - Peng, Hao
 PY  - 2024
 UR  - https://arxiv.org/abs/2407.13168
 AB  - Scientist-curated coding tasks test domain knowledge together with executable scientific reasoning.
-N1  - Key: SciCode; science/evaluation; benchmark; reading: abstract; checked: 2026-09-28; first public: 2024-07-18. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Minyang Tian [ view email ] [v1] Thu, 18 Jul 2024 05:15:24 UTC (828 KB) code_link_status: not recorded
+N1  - Key: SciCode; science/evaluation; benchmark; first public: 2024-07-18. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Minyang Tian [ view email ] [v1] Thu, 18 Jul 2024 05:15:24 UTC (828 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 2407.13168
 KW  - science
@@ -3670,8 +3670,8 @@ AU  - Su, Yu
 AU  - Sun, Huan
 PY  - 2024
 UR  - https://arxiv.org/abs/2410.05080
-AB  - Separates executable scientific code from successful completion of a scientific task.
-N1  - Key: ScienceAgentBench; science/evaluation; benchmark; reading: sections; checked: 2026-09-13; first public: 2024-10. 代码有效运行率明显高于科学任务成功率。 evaluation_protocol: 102任务；Claude 3.5加领域知识自调试，执行有效率86.3%、任务成功率34.3%。 budget_notes: 三次尝试选优；不是单次科学正确率。 human_role: 任务从已有科学流程构建，成功由领域要求和测试判定。 code_link_status: not recorded
+AB  - Builds 102 standalone-program tasks from 44 research papers, measuring execution, scientific task success, code similarity and cost. Compares direct generation, self-debugging and OpenHands with and without domain knowledge.
+N1  - Key: ScienceAgentBench; science/evaluation; benchmark; first public: 2024-10. 代码有效运行率明显高于科学任务成功率。 evaluation_protocol: 102任务；Claude 3.5加领域知识自调试，执行有效率86.3%、任务成功率34.3%。 budget_notes: 三次尝试选优；不是单次科学正确率。 human_role: 任务从已有科学流程构建，成功由领域要求和测试判定。 checked_version: https://arxiv.org/html/2410.05080v1 code_link_status: not recorded
 DO  - 10.48550/arXiv.2410.05080
 JO  - ICLR 2025
 N1  - arXiv: 2410.05080
@@ -3708,7 +3708,7 @@ AU  - Wu, Zhiyong
 PY  - 2025
 UR  - https://arxiv.org/abs/2505.19897
 AB  - Evaluates multimodal agents in scientific software workflows.
-N1  - Key: ScienceBoard; science/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2025-05. 跨软件科学任务对感知与代码执行提出联合要求。 code_link_status: not recorded
+N1  - Key: ScienceBoard; science/evaluation; benchmark; first public: 2025-05. 跨软件科学任务对感知与代码执行提出联合要求。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2505.19897
 JO  - ICLR 2026
 N1  - arXiv: 2505.19897
@@ -3730,7 +3730,7 @@ AU  - Zhang, Jiajun
 PY  - 2025
 UR  - https://arxiv.org/abs/2503.24047
 AB  - Surveys scientific agents and their research workflows.
-N1  - Key: ScientificAgentsSurvey; surveys/surveys; survey; reading: abstract; checked: 2026-09-12; first public: 2025-03. 有助于比较研究过程覆盖和人工参与方式。 code_link_status: not recorded
+N1  - Key: ScientificAgentsSurvey; surveys/surveys; survey; first public: 2025-03. 有助于比较研究过程覆盖和人工参与方式。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2503.24047
 JO  - arXiv
 N1  - arXiv: 2503.24047
@@ -3754,7 +3754,7 @@ AU  - Ritchie, Daniel
 PY  - 2020
 UR  - https://arxiv.org/abs/2009.08026
 AB  - Generates hierarchical shape-assembly programs with editable parameters; a pre-LLM procedural representation.
-N1  - Key: ShapeAssembly; spatial/scenes; background; reading: abstract; checked: 2026-09-28; first public: 2020-09-17. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: R. Kenny Jones [ view email ] [v1] Thu, 17 Sep 2020 02:26:45 UTC (44,452 KB) code_url: https://github.com/rkjones4/shapeAssembly code_link_status: linked by original project page, checked 2026-09-28; not independently run
+N1  - Key: ShapeAssembly; spatial/scenes; background; first public: 2020-09-17. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: R. Kenny Jones [ view email ] [v1] Thu, 17 Sep 2020 02:26:45 UTC (44,452 KB) code_url: https://github.com/rkjones4/shapeAssembly code_link_status: linked by original project page, checked 2026-09-28; not independently run
 DO  - 10.1145/3414685.3417812
 JO  - arXiv
 N1  - arXiv: 2009.08026
@@ -3774,7 +3774,7 @@ AU  - Solar-Lezama, Armando
 PY  - 2019
 UR  - https://arxiv.org/abs/1902.06349
 AB  - Combines learned program sketches with symbolic search; a precursor to hybrid generation and search.
-N1  - Key: SketchAdapt; foundations/synthesis; background; reading: abstract; checked: 2026-09-28; first public: 2019-02-17. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Maxwell Nye [ view email ] [v1] Sun, 17 Feb 2019 23:21:34 UTC (430 KB) [v2] Tue, 4 Jun 2019 21:36:48 UTC (4,151 KB) code_link_status: not recorded
+N1  - Key: SketchAdapt; foundations/synthesis; background; first public: 2019-02-17. Abstract-screened; no full protocol audit or reproduction. checked_version: Submission history From: Maxwell Nye [ view email ] [v1] Sun, 17 Feb 2019 23:21:34 UTC (430 KB) [v2] Tue, 4 Jun 2019 21:36:48 UTC (4,151 KB) code_link_status: not recorded
 JO  - arXiv
 N1  - arXiv: 1902.06349
 KW  - foundations
@@ -3793,7 +3793,7 @@ AU  - Cheng, Hong
 PY  - 2026
 UR  - https://arxiv.org/abs/2605.10923
 AB  - Studies how agent skills are added, retained and retired during learning.
-N1  - Key: SkillLifecycle; foundations/tools; method; reading: abstract; checked: 2026-09-12; first public: 2026-05. 技能积累的长期收益不能仅由库大小说明。 code_url: https://github.com/ejhshen/SLIM code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: SkillLifecycle; foundations/tools; method; first public: 2026-05. 技能积累的长期收益不能仅由库大小说明。 code_url: https://github.com/ejhshen/SLIM code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2605.10923
 JO  - arXiv
 N1  - arXiv: 2605.10923
@@ -3819,8 +3819,8 @@ AU  - Tang, Shisong
 AU  - Lyu, Michael R.
 PY  - 2025
 UR  - https://arxiv.org/abs/2506.07964
-AB  - Generates editable single-slide code from a design and separately provided picture assets.
-N1  - Key: SlideCoder; media/documents; method; reading: sections; checked: 2026-09-13; first public: 2025-06. 单页而非完整幻灯片集；消融移除CGSeg时还移除布局提示，不能完全隔离单组件。 evaluation_protocol: 单页设计；CLIP/SSIM、内容/位置和执行评价；消融99例，每难度33例。 budget_notes: GPT-4o-2024-11-20；另测Gemini 2.0 Flash（2025年5月访问）；温度0，最多4096输出token；Coder/Assembler各最多3次修正，取首个可执行结果。 human_role: 参考设计图与分离图片资产、python-pptx文档检索库和分割/布局流程由人预设。 code_link_status: not recorded
+AB  - Recursively segments a reference slide by color gradients, generates code per block and assembles the layout. Hierarchical retrieval selects shape types then API operations; inputs include the design and separate image assets.
+N1  - Key: SlideCoder; media/documents; method; first public: 2025-06. 单页而非完整幻灯片集；消融移除CGSeg时还移除布局提示，不能完全隔离单组件。 evaluation_protocol: 单页设计；CLIP/SSIM、内容/位置和执行评价；消融99例，每难度33例。 budget_notes: GPT-4o-2024-11-20；另测Gemini 2.0 Flash（2025年5月访问）；温度0，最多4096输出token；Coder/Assembler各最多3次修正，取首个可执行结果。 human_role: 参考设计图与分离图片资产、python-pptx文档检索库和分割/布局流程由人预设。 checked_version: https://arxiv.org/html/2506.07964v1 code_link_status: not recorded
 DO  - 10.48550/arXiv.2506.07964
 JO  - arXiv
 N1  - arXiv: 2506.07964
@@ -3841,7 +3841,7 @@ AU  - Tucker, Joshua
 PY  - 2026
 UR  - https://arxiv.org/abs/2606.11447
 AB  - Tests whether coding agents can reproduce social-science findings.
-N1  - Key: SocialScienceAgents; science/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2026-06. 复现既有分析与产生新因果结论是不同目标。 code_link_status: not recorded
+N1  - Key: SocialScienceAgents; science/evaluation; benchmark; first public: 2026-06. 复现既有分析与产生新因果结论是不同目标。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2606.11447
 JO  - arXiv
 N1  - arXiv: 2606.11447
@@ -3862,7 +3862,7 @@ AU  - Qiu, Xipeng
 PY  - 2026
 UR  - https://arxiv.org/abs/2608.19799
 AB  - Tests engineering repairs in scientific codebases, distinct from new scientific discoveries.
-N1  - Key: SWEBenchScience; science/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2026-08. 与科学发现不同，但直接检验领域知识是否仍是瓶颈。 code_link_status: not recorded
+N1  - Key: SWEBenchScience; science/evaluation; benchmark; first public: 2026-08. 与科学发现不同，但直接检验领域知识是否仍是瓶颈。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2608.19799
 JO  - arXiv
 N1  - arXiv: 2608.19799
@@ -3888,7 +3888,7 @@ AU  - Schölkopf, Bernhard
 PY  - 2024
 UR  - https://arxiv.org/abs/2408.08313
 AB  - Tests whether models understand programs describing graphics, not just their rendered appearance.
-N1  - Key: SymbolicGraphics; vision/graphics; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-08. 执行或生成图形不保证理解程序所表达的视觉关系。 code_link_status: not recorded
+N1  - Key: SymbolicGraphics; vision/graphics; benchmark; first public: 2024-08. 执行或生成图形不保证理解程序所表达的视觉关系。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2408.08313
 JO  - ICLR 2025
 N1  - arXiv: 2408.08313
@@ -3914,8 +3914,8 @@ AU  - Shen, Heng Tao
 AU  - Wang, Peng
 PY  - 2025
 UR  - https://arxiv.org/abs/2509.17589
-AB  - Optimizes LaTeX table generation through compilation, structural and visual rewards.
-N1  - Key: Table2LaTeXRL; media/documents; method; reading: sections; checked: 2026-09-13; first public: 2025-09. 编译和结构检查提供可执行反馈，但视觉偏好不等于逐单元格语义正确；PDF渲染增加训练成本。 evaluation_protocol: 测试1211表（2024年1–11月）；人工偏好200表。奖励为编译渲染CW-SSIM与TEDS结构，编译失败计0。 budget_notes: RL 5936复杂表；Qwen2.5-VL-3B每输入4候选，InternVL2-1B为8；测试温度0、最多8192token。 human_role: 人设计合成/抽取数据流程、渲染容器、结构转换及奖励阈值；偏好评价不等于逐项内容审计。 code_link_status: not recorded
+AB  - Trains image-to-LaTeX table generation with rewards from compilation, rendered similarity and table structure.
+N1  - Key: Table2LaTeXRL; media/documents; method; first public: 2025-09. 编译和结构检查提供可执行反馈，但视觉偏好不等于逐单元格语义正确；PDF渲染增加训练成本。 evaluation_protocol: 测试1211表（2024年1–11月）；人工偏好200表。奖励为编译渲染CW-SSIM与TEDS结构，编译失败计0。 budget_notes: RL 5936复杂表；Qwen2.5-VL-3B每输入4候选，InternVL2-1B为8；测试温度0、最多8192token。 human_role: 人设计合成/抽取数据流程、渲染容器、结构转换及奖励阈值；偏好评价不等于逐项内容审计。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2509.17589
 JO  - NeurIPS 2025
 N1  - arXiv: 2509.17589
@@ -3935,7 +3935,7 @@ AU  - Dezfouli, Amir
 PY  - 2021
 UR  - https://arxiv.org/abs/2102.09756
 AB  - Learns theorem-proving strategies by interacting with a proof assistant.
-N1  - Key: TacticZero; math/proofs; method; reading: abstract; checked: 2026-09-12; first public: 2021-02. 证明反馈路线的前史，不应将成果全部归因于大语言模型。 code_link_status: not recorded
+N1  - Key: TacticZero; math/proofs; method; first public: 2021-02. 证明反馈路线的前史，不应将成果全部归因于大语言模型。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2102.09756
 JO  - arXiv
 N1  - arXiv: 2102.09756
@@ -3970,7 +3970,7 @@ AU  - Zhang, Dongmei
 PY  - 2023
 UR  - https://arxiv.org/abs/2311.17541
 AB  - Organizes data and tool operations through a code-first agent framework.
-N1  - Key: TaskWeaver; digital/actions; method; reading: abstract; checked: 2026-09-12; first public: 2023-11. 工具模式与数据接口由框架提供。 code_link_status: not recorded
+N1  - Key: TaskWeaver; digital/actions; method; first public: 2023-11. 工具模式与数据接口由框架提供。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2311.17541
 JO  - arXiv
 N1  - arXiv: 2311.17541
@@ -3992,7 +3992,7 @@ AU  - Afzal, Muhammad Zeshan
 PY  - 2024
 UR  - https://arxiv.org/abs/2409.17106
 AB  - Generates sequential CAD operations from text descriptions at different detail levels.
-N1  - Key: Text2CAD; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2024-09. 结构化CAD操作序列属于程序化表示，未必是通用Python。 code_link_status: not recorded
+N1  - Key: Text2CAD; spatial/cad; method; first public: 2024-09. 结构化CAD操作序列属于程序化表示，未必是通用Python。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2409.17106
 JO  - NeurIPS 2024
 N1  - arXiv: 2409.17106
@@ -4024,7 +4024,7 @@ AU  - Shen, Yelong
 PY  - 2025
 UR  - https://arxiv.org/abs/2511.23473
 AB  - Investigates test-time learning on open mathematical problems.
-N1  - Key: ThetaEvolve; math/research; method; reading: abstract; checked: 2026-09-12; first public: 2025-11. 需按每个结果的构造、证明和独立确认状态判断。 code_url: https://github.com/ypwang61/ThetaEvolve code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: ThetaEvolve; math/research; method; first public: 2025-11. 需按每个结果的构造、证明和独立确认状态判断。 code_url: https://github.com/ypwang61/ThetaEvolve code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2511.23473
 JO  - arXiv
 N1  - arXiv: 2511.23473
@@ -4045,7 +4045,7 @@ AU  - Kather, Jakob Nikolas
 PY  - 2025
 UR  - https://arxiv.org/abs/2502.11705
 AB  - Builds tools for agents; tool creation and downstream usefulness require separate evaluation.
-N1  - Key: ToolMaker; foundations/tools; method; reading: abstract; checked: 2026-09-12; first public: 2025-02. 工具创建、测试和后续复用是应分别评价的阶段。 code_link_status: not recorded
+N1  - Key: ToolMaker; foundations/tools; method; first public: 2025-02. 工具创建、测试和后续复用是应分别评价的阶段。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2502.11705
 JO  - ACL 2025
 N1  - arXiv: 2502.11705
@@ -4064,7 +4064,7 @@ AU  - Wan, Lipeng
 PY  - 2025
 UR  - https://arxiv.org/abs/2511.21920
 AB  - Studies trustworthy analysis and visualization with generated scientific code.
-N1  - Key: TrustworthyScientificCode; science/agents; method; reading: abstract; checked: 2026-09-12; first public: 2025-11. 可补充科学任务的错误分类与检查标准。 code_link_status: not recorded
+N1  - Key: TrustworthyScientificCode; science/agents; method; first public: 2025-11. 可补充科学任务的错误分类与检查标准。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2511.21920
 JO  - arXiv
 N1  - arXiv: 2511.21920
@@ -4088,7 +4088,7 @@ AU  - Wang, Alex Jinpeng
 PY  - 2025
 UR  - https://arxiv.org/abs/2511.02778
 AB  - Uses SVG programs as a symbolic visual representation for multimodal coding evaluation.
-N1  - Key: VCode; vision/models; benchmark; reading: abstract; checked: 2026-09-12; first public: 2025-11. 适合比较程序结构与视觉理解的联系。 code_url: https://github.com/CSU-JPG/VCode code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: VCode; vision/models; benchmark; first public: 2025-11. 适合比较程序结构与视觉理解的联系。 code_url: https://github.com/CSU-JPG/VCode code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2511.02778
 JO  - arXiv
 N1  - arXiv: 2511.02778
@@ -4115,7 +4115,7 @@ AU  - Ma, Lin
 PY  - 2025
 UR  - https://arxiv.org/abs/2511.00391
 AB  - Uses staged visual reinforcement learning for multimodal code generation.
-N1  - Key: VinciCoder; vision/models; method; reading: abstract; checked: 2026-09-12; first public: 2025-11. 统一训练任务不自动构成跨领域迁移证据。 code_link_status: not recorded
+N1  - Key: VinciCoder; vision/models; method; first public: 2025-11. 统一训练任务不自动构成跨领域迁移证据。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2511.00391
 JO  - EMNLP 2026
 N1  - arXiv: 2511.00391
@@ -4133,8 +4133,8 @@ AU  - Menon, Sachit
 AU  - Vondrick, Carl
 PY  - 2023
 UR  - https://arxiv.org/abs/2303.08128
-AB  - Generates Python that composes visual APIs and ordinary computation for visual reasoning.
-N1  - Key: ViperGPT; vision/reasoning; method; reading: sections; checked: 2026-09-12; first public: 2023-03. 算术和排序可精确执行，感知输出仍会出错。 code_url: https://github.com/cvlab-columbia/viper code_link_status: linked by original project page, checked 2026-09-28; not independently run
+AB  - Generates Python that delegates detection and attribute checks to visual APIs while executing filtering, sorting, counting and branches in the interpreter; API signatures and documentation support composition without task-specific training.
+N1  - Key: ViperGPT; vision/reasoning; method; first public: 2023-03. 算术和排序可精确执行，感知输出仍会出错。 checked_version: https://arxiv.org/html/2303.08128v1 code_url: https://github.com/cvlab-columbia/viper code_link_status: linked by original project page, checked 2026-09-28; not independently run
 DO  - 10.48550/arXiv.2303.08128
 JO  - arXiv
 N1  - arXiv: 2303.08128
@@ -4161,7 +4161,7 @@ AU  - Chen, Wenhu
 PY  - 2025
 UR  - https://arxiv.org/abs/2510.23642
 AB  - Studies visualization agents that generate programs in multiple languages.
-N1  - Key: VisCoder2; vision/models; method; reading: abstract; checked: 2026-09-12; first public: 2025-10. 需结合执行与视觉评价理解能力范围。 code_link_status: not recorded
+N1  - Key: VisCoder2; vision/models; method; first public: 2025-10. 需结合执行与视觉评价理解能力范围。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2510.23642
 JO  - arXiv
 N1  - arXiv: 2510.23642
@@ -4183,7 +4183,7 @@ AU  - Wei, Furu
 PY  - 2025
 UR  - https://arxiv.org/abs/2508.09945
 AB  - Combines vision and coding models for multimodal program generation.
-N1  - Key: VisCodex; vision/models; method; reading: abstract; checked: 2026-09-12; first public: 2025-08. 需要区分模型合并收益和下游任务覆盖。 code_link_status: not recorded
+N1  - Key: VisCodex; vision/models; method; first public: 2025-08. 需要区分模型合并收益和下游任务覆盖。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2508.09945
 JO  - arXiv
 N1  - arXiv: 2508.09945
@@ -4200,8 +4200,8 @@ AU  - Gupta, Tanmay
 AU  - Kembhavi, Aniruddha
 PY  - 2022
 UR  - https://arxiv.org/abs/2211.11559
-AB  - Composes visual modules into executable programs without training a new end-to-end reasoning model.
-N1  - Key: VisProg; vision/reasoning; method; reading: sections; checked: 2026-09-12; first public: 2022-11. 程序组织能力与专用感知模型能力不可混同。 code_link_status: not recorded
+AB  - Turns a visual request into a sequence of predefined modules for tasks such as reasoning, recognition and image editing.
+N1  - Key: VisProg; vision/reasoning; method; first public: 2022-11. 程序组织能力与专用感知模型能力不可混同。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2211.11559
 JO  - arXiv
 N1  - arXiv: 2211.11559
@@ -4221,7 +4221,7 @@ AU  - Bian, Jiang
 PY  - 2025
 UR  - https://arxiv.org/abs/2501.19054
 AB  - Adds rendered visual feedback to text-to-CAD generation.
-N1  - Key: VisualFeedbackCAD; spatial/cad; method; reading: abstract; checked: 2026-09-12; first public: 2025-01. 反馈能改外观，但工程约束仍需额外检查。 code_link_status: not recorded
+N1  - Key: VisualFeedbackCAD; spatial/cad; method; first public: 2025-01. 反馈能改外观，但工程约束仍需额外检查。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2501.19054
 JO  - ICML 2025
 N1  - arXiv: 2501.19054
@@ -4242,8 +4242,8 @@ AU  - Wu, Jiajun
 AU  - Fei-Fei, Li
 PY  - 2023
 UR  - https://arxiv.org/abs/2307.05973
-AB  - Writes programs that construct spatial value maps; a motion planner executes the resulting constraints.
-N1  - Key: VoxPoser; robotics/policies; method; reading: sections; checked: 2026-09-12; first public: 2023-07. 感知、规划和动作执行由专用组件承担。 code_url: https://github.com/huangwl18/VoxPoser code_link_status: linked by original project page, checked 2026-09-28; not independently run
+AB  - Writes programs that turn language and visual observations into 3D value maps, which guide motion planning.
+N1  - Key: VoxPoser; robotics/policies; method; first public: 2023-07. 感知、规划和动作执行由专用组件承担。 code_url: https://github.com/huangwl18/VoxPoser code_link_status: linked by original project page, checked 2026-09-28; not independently run
 DO  - 10.48550/arXiv.2307.05973
 JO  - arXiv
 N1  - arXiv: 2307.05973
@@ -4266,8 +4266,8 @@ AU  - Fan, Linxi
 AU  - Anandkumar, Anima
 PY  - 2023
 UR  - https://arxiv.org/abs/2305.16291
-AB  - Accumulates executable Minecraft skills and retrieves them for later tasks.
-N1  - Key: Voyager; robotics/skills; method; reading: sections; checked: 2026-09-12; first public: 2023-05. 存在环境内技能复用证据，不能直接推出跨机器人迁移。 code_url: https://github.com/MineDojo/Voyager code_link_status: link recorded; availability not uniformly rechecked
+AB  - An automatic curriculum proposes exploration tasks; JavaScript skills call Mineflayer APIs and refine through environment feedback, execution errors and self-verification. Verified skills are indexed by description embeddings for later composition.
+N1  - Key: Voyager; robotics/skills; method; first public: 2023-05. 存在环境内技能复用证据，不能直接推出跨机器人迁移。 checked_version: https://arxiv.org/html/2305.16291v2 code_url: https://github.com/MineDojo/Voyager code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2305.16291
 JO  - arXiv
 N1  - arXiv: 2305.16291
@@ -4286,7 +4286,7 @@ AU  - Bansal, Mohit
 PY  - 2023
 UR  - https://arxiv.org/abs/2305.15328
 AB  - Uses visual programs to organize text-to-image generation and evaluation.
-N1  - Key: VPGen; vision/graphics; method; reading: abstract; checked: 2026-09-12; first public: 2023-05. 适合追踪结构控制与生成模型结合的早期路线。 code_link_status: not recorded
+N1  - Key: VPGen; vision/graphics; method; first public: 2023-05. 适合追踪结构控制与生成模型结合的早期路线。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2305.15328
 JO  - NeurIPS 2023
 N1  - arXiv: 2305.15328
@@ -4311,8 +4311,8 @@ AU  - Phan, Huy
 AU  - Benetos, Emmanouil
 PY  - 2024
 UR  - https://arxiv.org/abs/2403.09527
-AB  - Generates programs to analyze, edit and compose audio using expert tools.
-N1  - Key: WavCraft; media/audio; method; reading: sections; checked: 2026-09-12; first public: 2024-03. 比固定脚本编译更灵活，但受音频分析质量和工具延迟限制。 code_link_status: not recorded
+AB  - Describes input recordings, then writes programs that combine expert tools for local audio edits and new compositions.
+N1  - Key: WavCraft; media/audio; method; first public: 2024-03. 比固定脚本编译更灵活，但受音频分析质量和工具延迟限制。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2403.09527
 JO  - arXiv
 N1  - arXiv: 2403.09527
@@ -4338,8 +4338,8 @@ AU  - Plumbley, Mark D.
 AU  - Wang, Wenwu
 PY  - 2023
 UR  - https://arxiv.org/abs/2307.14335
-AB  - Generates audio scripts compiled into tool-calling Python; the compiler is human-designed.
-N1  - Key: WavJourney; media/audio; method; reading: sections; checked: 2026-09-12; first public: 2023-07. 核心系统的程序由人工编译器产生，是结构化编排的边界案例。 code_url: https://github.com/Audio-AGI/WavJourney code_link_status: link recorded; availability not uniformly rechecked
+AB  - Represents speech, music and effects as JSON events with volume, duration and foreground/background relations; a compiler schedules specialist generation, concatenation and mixing.
+N1  - Key: WavJourney; media/audio; method; first public: 2023-07. 核心系统的程序由人工编译器产生，是结构化编排的边界案例。 checked_version: https://arxiv.org/html/2307.14335v2 code_url: https://github.com/Audio-AGI/WavJourney code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2307.14335
 JO  - arXiv
 N1  - arXiv: 2307.14335
@@ -4362,7 +4362,7 @@ AU  - Faust, Aleksandra
 PY  - 2023
 UR  - https://arxiv.org/abs/2307.12856
 AB  - Uses planning, long-context understanding and program synthesis for web tasks.
-N1  - Key: WebAgent; digital/interfaces; method; reading: abstract; checked: 2026-09-12; first public: 2023-07. 代码提供网页动作组合，但网站接口和状态仍限制泛化。 code_link_status: not recorded
+N1  - Key: WebAgent; digital/interfaces; method; first public: 2023-07. 代码提供网页动作组合，但网站接口和状态仍限制泛化。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2307.12856
 JO  - ICLR 2024
 N1  - arXiv: 2307.12856
@@ -4386,7 +4386,7 @@ AU  - Yu, Dong
 PY  - 2024
 UR  - https://arxiv.org/abs/2401.13919
 AB  - Navigates websites through multimodal observations and GUI actions; a complementary route.
-N1  - Key: WebVoyager; digital/interfaces; comparison; reading: abstract; checked: 2026-09-12; first public: 2024-01. 用于比较直接GUI动作路线。 code_url: https://github.com/MinorJerry/WebVoyager code_link_status: link recorded; availability not uniformly rechecked
+N1  - Key: WebVoyager; digital/interfaces; comparison; first public: 2024-01. 用于比较直接GUI动作路线。 code_url: https://github.com/MinorJerry/WebVoyager code_link_status: link recorded; availability not uniformly rechecked
 DO  - 10.48550/arXiv.2401.13919
 JO  - ACL 2024
 N1  - arXiv: 2401.13919
@@ -4417,7 +4417,7 @@ AU  - Yao, Huaxiu
 PY  - 2026
 UR  - https://arxiv.org/abs/2604.13318
 AB  - Studies learned web skills; inspect the executable representation and held-out task reuse.
-N1  - Key: WebXSkill; foundations/tools; method; reading: abstract; checked: 2026-09-12; first public: 2026-04. 值得进一步检查未见网站和任务上的直接迁移。 code_link_status: not recorded
+N1  - Key: WebXSkill; foundations/tools; method; first public: 2026-04. 值得进一步检查未见网站和任务上的直接迁移。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2604.13318
 JO  - EMNLP 2026
 N1  - arXiv: 2604.13318
@@ -4445,7 +4445,7 @@ AU  - Lacoste, Alexandre
 PY  - 2024
 UR  - https://arxiv.org/abs/2403.07718
 AB  - Evaluates agents on enterprise knowledge-work interfaces.
-N1  - Key: WorkArena; digital/evaluation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2024-03. 真实工作流评测对代码工具泛化构成补充。 code_link_status: not recorded
+N1  - Key: WorkArena; digital/evaluation; benchmark; first public: 2024-03. 真实工作流评测对代码工具泛化构成补充。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2403.07718
 JO  - arXiv
 N1  - arXiv: 2403.07718
@@ -4463,8 +4463,8 @@ AU  - Key, Darren
 AU  - Ellis, Kevin
 PY  - 2024
 UR  - https://arxiv.org/abs/2402.12275
-AB  - Learns executable transition and reward models from interaction and uses them for planning.
-N1  - Key: WorldCoder; worlds/transition; method; reading: sections; checked: 2026-09-12; first public: 2024-02. 主要验证结构化、确定性环境；稀有转移错误会破坏规划。 code_link_status: not recorded
+AB  - Synthesizes transition and reward programs under experience-consistency and reward-reachability constraints. Prediction counterexamples or planning failures trigger refinement; learned dynamics can persist across goals.
+N1  - Key: WorldCoder; worlds/transition; method; first public: 2024-02. 主要验证结构化、确定性环境；稀有转移错误会破坏规划。 checked_version: https://arxiv.org/html/2402.12275v3 code_link_status: not recorded
 DO  - 10.48550/arXiv.2402.12275
 JO  - arXiv
 N1  - arXiv: 2402.12275
@@ -4491,7 +4491,7 @@ AU  - Liang, Jian
 PY  - 2026
 UR  - https://arxiv.org/abs/2606.01869
 AB  - Evaluates physically grounded 3D world synthesis.
-N1  - Key: WorldCoderBench; worlds/generation; benchmark; reading: abstract; checked: 2026-09-12; first public: 2026-06. 与2024年WorldCoder是不同工作，几何和物理需同时评价。 code_link_status: not recorded
+N1  - Key: WorldCoderBench; worlds/generation; benchmark; first public: 2026-06. 与2024年WorldCoder是不同工作，几何和物理需同时评价。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2606.01869
 JO  - arXiv
 N1  - arXiv: 2606.01869
@@ -4522,7 +4522,7 @@ AU  - Li, Yong
 PY  - 2024
 UR  - https://arxiv.org/abs/2411.14499
 AB  - Surveys world-model definitions, predictions and applications beyond program models.
-N1  - Key: WorldModelSurvey; surveys/surveys; survey; reading: sections; checked: 2026-09-12; first public: 2024-11. 适合提供神经与结构化环境建模背景。 code_link_status: not recorded
+N1  - Key: WorldModelSurvey; surveys/surveys; survey; first public: 2024-11. 适合提供神经与结构化环境建模背景。 code_link_status: not recorded
 DO  - 10.48550/arXiv.2411.14499
 JO  - arXiv
 N1  - arXiv: 2411.14499

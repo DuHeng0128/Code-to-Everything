@@ -1,6 +1,6 @@
 # Contributing papers and corrections
 
-Thank you for helping make this collection useful. A good contribution explains why a paper changes our understanding, not just where to insert its title.
+Contributions include papers, method analysis, experimental comparisons and metadata corrections.
 
 ## Inclusion
 
@@ -13,8 +13,8 @@ Use original papers, proceedings, publisher pages and author repositories. Keep 
 1. Search `data/papers.json` by arXiv ID, DOI and normalized title before adding anything.
 2. Copy an existing record and assign a stable, unique alphanumeric `id`. Keep full authors and verified title. Unknown DOI, venue or code URL stays empty.
 3. Select one domain/subcategory from `data/taxonomy.json`. Use `related_domains` for cross-domain connections. See [taxonomy](docs/taxonomy.md).
-4. Write short `summary` and `summary_zh` annotations. Say what code does and why the paper belongs; avoid copying the abstract or adding unsupported performance claims.
-5. Set `reading_depth` honestly. `abstract` means metadata/abstract screened; `sections` means specified original sections were read. Fill `read_sections`, `checked_on`, version and protocol notes accordingly. Neither label means reproduction.
+4. Write short `summary` and `summary_zh` annotations that identify the mechanism and distinctive design. For an expanded analysis, fill bilingual `io`, `feedback` and `takeaway` fields, plus `compare_with` keys. Detailed mechanisms and experiments use `mechanism`, `experiment` and their `_zh` counterparts, with an `analysis_source` URL and bilingual `analysis_location` identifying sections or tables. Add the paper to its domain's `focus_papers` for inclusion in the analysis page.
+5. Preserve internal source provenance in `reading_depth`, `read_sections`, `checked_on` and version fields. `abstract` records abstract/metadata screening; `sections` records the specified source sections. Public pages display method analysis and source citations without reading-depth badges.
 6. Sort by first public date, normally arXiv v1. Keep available precision (`YYYY-MM` is fine). `year` can be the publication year; explain the relation in metadata. A conference template does not prove acceptance.
 7. If proposing `milestone: true`, explain the specific turning point in both languages. Recency, citation count and a high score are not sufficient by themselves.
 8. Run the commands below, inspect the generated diff, and open a pull request.
@@ -26,7 +26,7 @@ python scripts/build.py --check
 python -m unittest discover -s tests -v
 ```
 
-The build and checks use Python 3.10+ and the standard library. Edit the JSON source rather than changing one generated table while leaving the other exports stale.
+The build and checks use Python 3.10+ and the standard library. README files, `docs/paper-notes*.md` and bibliographic exports are generated from the JSON source. Domain introductions and analysis selections live in `data/taxonomy.json`.
 
 ## What to include in a submission
 
@@ -44,4 +44,4 @@ Especially useful corrections include a missing foundational paper, a misleading
 
 ## 中文维护要点
 
-优先保留原始来源、准确作者、稳定ID与首次公开时间；不要把“用了代码”一概当成code agent，也不要给论文推测录用会议。每次新增只改统一JSON数据，再生成中英文目录与文献文件。提出里程碑时说明它改变了哪一步工作方式。阅读仅到摘要就保留A标签；补读方法、消融和局限后再改为K。
+原始来源、作者、稳定 ID 与首次公开时间保存在 JSON 中。方法分析注明程序表示、核心机制和实验条件，详细结论附具体版本与章节或表格。里程碑说明对应的研究进展。内部来源核查记录随补读更新，公开页面不显示阅读深度标记。
