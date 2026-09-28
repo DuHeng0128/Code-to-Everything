@@ -1,0 +1,16 @@
+name: Correct a record or classification
+description: Report factual errors, duplicate versions, missing context or an improved category.
+title: '[Correction] '
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Citation key or paper title
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction and supporting original source
+    validations:
+      required: true

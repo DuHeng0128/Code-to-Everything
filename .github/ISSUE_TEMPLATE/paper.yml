@@ -1,0 +1,42 @@
+name: Suggest a paper
+description: Propose a relevant paper, important precursor, or missing benchmark.
+title: '[Paper] '
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Original paper URL / arXiv ID / DOI
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: What does code do, and why does this paper belong?
+      description: Identify the generated program, executor and feedback where possible. For background or comparisons, explain the connection.
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Suggested domain and subcategory
+  - type: dropdown
+    id: reading
+    attributes:
+      label: Source examined
+      options:
+        - Abstract / metadata
+        - Methods and experiments
+        - Full paper and relevant supplements
+        - Independently reproduced (please provide evidence)
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Versions, limitations, code links, or milestone rationale

@@ -1,0 +1,10 @@
+[
+  {"area":"vision-media", "query":"(all:\"visual programming\" OR all:\"chart-to-code\" OR all:\"code generation\") AND (all:visual OR all:audio OR all:video OR all:diagram)"},
+  {"area":"spatial", "query":"(all:\"program generation\" OR all:\"code generation\" OR all:\"coding agent\") AND (all:CAD OR all:Blender OR all:3D)"},
+  {"area":"digital", "query":"(all:\"code action\" OR all:\"code-first\" OR all:\"coding agents\") AND (all:browser OR all:\"computer use\" OR all:generalist)"},
+  {"area":"robotics", "query":"(all:\"code generation\" OR all:\"code as policies\" OR all:\"coding agent\") AND (all:robot OR all:robotic OR all:embodied)"},
+  {"area":"worlds", "query":"(all:\"world model\" OR all:simulation OR all:environment) AND (all:\"code generation\" OR all:\"program synthesis\" OR all:\"coding agent\")"},
+  {"area":"mathematics", "query":"(all:Lean OR all:\"theorem proving\" OR all:\"mathematical discovery\") AND (all:\"language model\" OR all:agent)"},
+  {"area":"science", "query":"(all:\"scientific discovery\" OR all:\"algorithm discovery\" OR all:\"scientific coding\") AND (all:program OR all:code OR all:agent)"},
+  {"area":"tools-skills", "query":"(all:\"tool generation\" OR all:\"skill library\" OR all:\"program synthesis\") AND (all:agent OR all:\"language model\")"}
+]

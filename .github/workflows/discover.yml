@@ -1,0 +1,35 @@
+name: Discover literature candidates
+on:
+  schedule:
+    - cron: '23 1 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: literature-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Search arXiv with an overlapping review window
+        run: python scripts/discover.py --days 21
+      - name: Save candidate report, including partial failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: literature-candidates-${{ github.run_id }}
+          path: candidate_reports/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Add discovery report to workflow summary
+        if: always()
+        run: |
+          if [ -f candidate_reports/candidates.md ]; then
+            cat candidate_reports/candidates.md >> "$GITHUB_STEP_SUMMARY"
+          fi

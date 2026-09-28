@@ -1,0 +1,247 @@
+[
+  {
+    "id": "vision",
+    "title": "Visual reasoning & graphics",
+    "title_zh": "视觉推理与图形",
+    "description": "Programs connect perception, reasoning and editable visual outputs.",
+    "description_zh": "程序连接感知、推理和可编辑的视觉产物。",
+    "subcategories": [
+      {
+        "id": "reasoning",
+        "title": "Visual reasoning through programs",
+        "title_zh": "通过程序进行视觉推理"
+      },
+      {
+        "id": "graphics",
+        "title": "Charts, vector graphics & interaction",
+        "title_zh": "图表、矢量图与交互内容"
+      },
+      {
+        "id": "models",
+        "title": "Multimodal coding models & benchmarks",
+        "title_zh": "多模态代码模型与基准"
+      },
+      {
+        "id": "context",
+        "title": "Perception & tool-orchestration context",
+        "title_zh": "感知与工具编排参照"
+      }
+    ]
+  },
+  {
+    "id": "media",
+    "title": "Audio, video & documents",
+    "title_zh": "音频、视频与文档",
+    "description": "Distinguish model-written programs, compiled scripts and expert generation models.",
+    "description_zh": "区分模型直接写代码、脚本编译器和专用生成模型。",
+    "subcategories": [
+      {
+        "id": "audio",
+        "title": "Audio generation & editing",
+        "title_zh": "音频生成与编辑"
+      },
+      {
+        "id": "video",
+        "title": "Video editing & programmatic animation",
+        "title_zh": "视频编辑与程序动画"
+      },
+      {
+        "id": "documents",
+        "title": "Slides, posters & document programs",
+        "title_zh": "幻灯片、海报与文档程序"
+      }
+    ]
+  },
+  {
+    "id": "spatial",
+    "title": "3D, CAD & scene reconstruction",
+    "title_zh": "3D、CAD与场景重建",
+    "description": "An executable construction can preserve editable structure that a final image or mesh does not.",
+    "description_zh": "可执行构造能保留最终图像或网格未显式表达的可编辑结构。",
+    "subcategories": [
+      {
+        "id": "reconstruction",
+        "title": "Reconstructing objects as programs",
+        "title_zh": "将对象重建为程序"
+      },
+      {
+        "id": "cad",
+        "title": "Parametric CAD & verification",
+        "title_zh": "参数化CAD与检查"
+      },
+      {
+        "id": "scenes",
+        "title": "Procedural shape & scene editing",
+        "title_zh": "程序化形状与场景编辑"
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Computer use & digital workflows",
+    "title_zh": "Computer use与数字工作流",
+    "description": "Code actions, browser operations and GUI interaction solve different parts of a workflow.",
+    "description_zh": "代码动作、浏览器操作和GUI交互承担工作流中不同的任务。",
+    "subcategories": [
+      {
+        "id": "actions",
+        "title": "Executable actions & generalist frameworks",
+        "title_zh": "可执行动作与通用框架"
+      },
+      {
+        "id": "interfaces",
+        "title": "Browsers & desktop interaction",
+        "title_zh": "浏览器与桌面交互"
+      },
+      {
+        "id": "evaluation",
+        "title": "Digital-task evaluation",
+        "title_zh": "数字任务评估"
+      }
+    ]
+  },
+  {
+    "id": "robotics",
+    "title": "Embodied agents & robotics",
+    "title_zh": "具身智能与机器人",
+    "description": "Separate policies, reusable skills, reward programs and training-data generation.",
+    "description_zh": "区分策略、可复用技能、奖励程序和训练数据生成。",
+    "subcategories": [
+      {
+        "id": "policies",
+        "title": "Policies, planners & generated robot systems",
+        "title_zh": "策略、规划与机器人程序系统"
+      },
+      {
+        "id": "skills",
+        "title": "Executable experience & skill reuse",
+        "title_zh": "可执行经验与技能复用"
+      },
+      {
+        "id": "training",
+        "title": "Rewards, simulation tasks & robot data",
+        "title_zh": "奖励、仿真任务与机器人数据"
+      },
+      {
+        "id": "context",
+        "title": "Vision-language-action comparators",
+        "title_zh": "VLA参照路线"
+      }
+    ]
+  },
+  {
+    "id": "worlds",
+    "title": "World models & environment construction",
+    "title_zh": "世界模型与环境构建",
+    "description": "Transition code, next-observation code and explicit state with neural rendering are different targets.",
+    "description_zh": "转移程序、下一观察代码、显式状态与神经渲染对应不同的建模对象。",
+    "subcategories": [
+      {
+        "id": "transition",
+        "title": "Learning executable transition models",
+        "title_zh": "学习可执行状态转移"
+      },
+      {
+        "id": "generation",
+        "title": "Interfaces, persistent worlds & generated environments",
+        "title_zh": "界面、持久世界与生成环境"
+      },
+      {
+        "id": "context",
+        "title": "Neural world-model comparators",
+        "title_zh": "神经世界模型参照"
+      }
+    ]
+  },
+  {
+    "id": "math",
+    "title": "Mathematics & formal proofs",
+    "title_zh": "数学与形式化证明",
+    "description": "Computation, a checked construction and a formal proof support different conclusions.",
+    "description_zh": "计算、经检查的构造与形式证明支持不同层次的结论。",
+    "subcategories": [
+      {
+        "id": "computation",
+        "title": "Program-aided reasoning & visualization",
+        "title_zh": "程序辅助推理与可视化"
+      },
+      {
+        "id": "proofs",
+        "title": "Formalization, proof search & learning",
+        "title_zh": "形式化、证明搜索与学习"
+      },
+      {
+        "id": "research",
+        "title": "Mathematical research systems",
+        "title_zh": "数学研究系统"
+      }
+    ]
+  },
+  {
+    "id": "science",
+    "title": "Scientific & algorithmic discovery",
+    "title_zh": "科学与算法发现",
+    "description": "Search code, scientific objectives and experimental confirmation must be examined together.",
+    "description_zh": "结合搜索程序、科学目标和实验确认来理解成果。",
+    "subcategories": [
+      {
+        "id": "algorithms",
+        "title": "Program search & algorithm discovery",
+        "title_zh": "程序搜索与算法发现"
+      },
+      {
+        "id": "equations",
+        "title": "Equations, physics & engineering design",
+        "title_zh": "方程、物理与工程设计"
+      },
+      {
+        "id": "agents",
+        "title": "Data analysis & research workflows",
+        "title_zh": "数据分析与研究工作流"
+      },
+      {
+        "id": "evaluation",
+        "title": "Scientific evaluation & reproduction",
+        "title_zh": "科学评估与复现"
+      }
+    ]
+  },
+  {
+    "id": "foundations",
+    "title": "Shared foundations, tools & skills",
+    "title_zh": "共同基础、工具与技能",
+    "description": "The lineage includes synthesis, execution, search and reusable libraries, not only recent LLM agents.",
+    "description_zh": "这一方向源于程序合成、执行、搜索与库复用，也包含LLM agent之前的研究。",
+    "subcategories": [
+      {
+        "id": "synthesis",
+        "title": "Program synthesis & code models",
+        "title_zh": "程序合成与代码模型"
+      },
+      {
+        "id": "feedback",
+        "title": "Interaction, feedback & collaboration",
+        "title_zh": "交互、反馈与协作"
+      },
+      {
+        "id": "tools",
+        "title": "Tool building & skill management",
+        "title_zh": "工具构建与技能管理"
+      }
+    ]
+  },
+  {
+    "id": "surveys",
+    "title": "Related surveys",
+    "title_zh": "相关综述",
+    "description": "Compare coverage and arguments directly; breadth alone is not a claim of novelty.",
+    "description_zh": "直接比较覆盖和论证；覆盖更广本身不等于首次提出共同视角。",
+    "subcategories": [
+      {
+        "id": "surveys",
+        "title": "Surveys & perspectives",
+        "title_zh": "综述与观点"
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc">
+<title id="title">Code to Everything</title>
+<desc id="desc">Programs connect creation, action and discovery. The collection follows the role of code, its executor, feedback and evidence.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081a2a"/><stop offset="1" stop-color="#123b46"/></linearGradient></defs>
+<rect width="1200" height="410" rx="24" fill="url(#bg)"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+<text x="48" y="59" font-size="15" font-weight="700" letter-spacing="3" fill="#76e2d2">A LIVING MAP OF CODE AGENTS</text>
+<text x="48" y="113" font-size="42" font-weight="700" fill="#fff">Beyond software. Across domains.</text>
+<text x="48" y="145" font-size="18" fill="#bad0dc">How programs let agents create, act, and discover.</text>
+<rect x="48" y="177" width="352" height="144" rx="12" fill="#164251" stroke="#387386"/>
+<rect x="424" y="177" width="352" height="144" rx="12" fill="#164251" stroke="#387386"/>
+<rect x="800" y="177" width="352" height="144" rx="12" fill="#164251" stroke="#387386"/>
+<g font-size="25" font-weight="700" fill="#7ee6d5"><text x="72" y="218">CREATE</text><text x="448" y="218">ACT</text><text x="824" y="218">DISCOVER</text></g>
+<g font-size="18" fill="#e5f2f6">
+<text x="72" y="254">Visual reasoning · Media</text><text x="72" y="285">Documents · Editable 3D</text>
+<text x="448" y="254">Computer use · Robotics</text><text x="448" y="285">Skills · World models</text>
+<text x="824" y="254">Mathematics · Formal proofs</text><text x="824" y="285">Science · Algorithms</text>
+</g>
+<text x="48" y="365" font-size="16" fill="#bad0dc">WHAT CODE?</text><text x="281" y="365" font-size="16" fill="#bad0dc">WHICH EXECUTOR?</text><text x="571" y="365" font-size="16" fill="#bad0dc">WHAT FEEDBACK?</text><text x="875" y="365" font-size="16" fill="#bad0dc">WHAT EVIDENCE?</text>
+</g></svg>
